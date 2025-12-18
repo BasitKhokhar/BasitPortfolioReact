@@ -1,0 +1,226 @@
+{
+  "mainTitle": "Websites Projects",
+  "subTitle": "Explore my portfolio showcasing diverse web projects highlighting creativity, functionality, and technical expertise.",
+
+  "featured": [
+    {
+      "id": 1,
+      "title": "ShadowSuite",
+      "subtitle": "Cybersecurity / Next.js Platform",
+      "category": "Cybersecurity",
+      "description": "A secure and modern cybersecurity marketplace platform built for an Indian client. Users can explore, evaluate, and purchase specialized cybersecurity tools with a polished and professional UI.",
+      "image": "images/shadowsuit.PNG",
+      "previewLink": "https://www.shadowsuit.shop/",
+      "tags": ["Next.js", "Cybersecurity", "UI/UX", "WhatsApp Support"],
+      "features": [
+        "Developed a complete cybersecurity marketplace with secure product browsing.",
+        "Integrated WhatsApp-based instant client communication.",
+        "Implemented dynamic product pages with interactive sections."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png",
+        "src/assets/images/lottery/wallet.png",
+        "src/assets/images/lottery/winner-popup.png",
+        "src/assets/images/lottery/history.png",
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png",
+        "src/assets/images/lottery/wallet.png",
+        "src/assets/images/lottery/winner-popup.png",
+        "src/assets/images/lottery/history.png"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "ShadowSuite",
+      "subtitle": "Cybersecurity / Next.js Platform",
+      "category": "Cybersecurity",
+      "description": "A secure and modern cybersecurity marketplace platform built for an Indian client. Users can explore, evaluate, and purchase specialized cybersecurity tools with a polished and professional UI.",
+      "image": "src/assets/images/shadowsuit.PNG",
+      "previewLink": "https://www.shadowsuit.shop/",
+      "tags": ["Next.js", "Cybersecurity", "UI/UX", "WhatsApp Support"],
+      "features": [
+        "Developed a complete cybersecurity marketplace with secure product browsing.",
+        "Integrated WhatsApp-based instant client communication.",
+        "Implemented dynamic product pages with interactive sections."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Medical Health Hub",
+      "category": "Medical",
+       "image": "src/assets/images/web1.PNG",
+      "previewLink": "https://basithealthhub.netlify.app/",
+      "tags": ["HTML", "CSS", "JavaScript", "Responsive Design"],
+      "features": [
+        "Built a clean medical-themed UI.",
+        "Optimized for responsive layouts.",
+        "Designed for clinics and healthcare consultants."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "AutoCare Service Website",
+      "category": "Automobile",
+       "image": "src/assets/images/web2.PNG",
+      "previewLink": "https://autocarehub.netlify.app/",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "features": [
+        "Automobile service layout with service sections.",
+        "User-friendly and visually appealing interface."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Royal Hotel Website",
+      "category": "Hotel",
+      "image": "src/assets/images/web3.PNG",
+      "previewLink": "https://basitsroyalhotel.netlify.app/",
+      "tags": ["HTML", "CSS", "UI/UX"],
+      "features": [
+        "Modern hotel landing page.",
+        "Clean room sections and contact form integration."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "IU University Clone",
+      "category": "University",
+    "image": "src/assets/images/web4.PNG",
+      "previewLink": "https://basitkhokhar.github.io/second-project/",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "features": [
+        "Educational institution-themed modern UI.",
+        "Home, courses, and admission sections recreated."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Admin Panel Frontend",
+      "category": "Dashboard",
+      "image": "src/assets/images/web5.PNG",
+      "previewLink": "https://basitadminpanel.netlify.app/",
+      "tags": ["React.js", "Tailwind CSS", "UI Components"],
+      "features": [
+        "Dashboard-themed responsive UI.",
+        "Clean and modern admin panel design."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Figma to Web Conversion",
+      "category": "UI/UX to Code",
+       "image": "src/assets/images/web6.PNG",
+      "previewLink": "https://basitkhokhar.github.io/project-figma/",
+      "tags": ["HTML", "CSS", "Figma"],
+      "features": [
+        "Converted a Figma design into pixel-perfect code.",
+        "Accurate layout recreation with responsive design."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Fashion Blog Website",
+      "category": "Fashion",
+       "image": "src/assets/images/web7.PNG",
+      "previewLink": "https://basitkhokhar.github.io/projectfashionblog/",
+      "tags": ["HTML", "CSS", "Blog Layout"],
+      "features": [
+        "Modern blog-style layout for fashion content.",
+        "Aesthetic UI with clean typography."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ]
+    }
+  ],
+
+  "fullStackProjects": [
+    {
+      "id": 1,
+      "title": "Basit Sanitary Store",
+      "subtitle": "Full-Stack E-commerce Website",
+      "description": "A complete full-stack e-commerce platform specializing in sanitary products. Features include browsing, filtering, cart, user accounts, admin dashboard, and full backend integration.",
+      "tags": ["React.js", "Tailwind CSS", "Node.js", "Express.js", "REST API", "MySQL", "Firebase"],
+      "features": [
+        "Fully functional product browsing and search.",
+        "User authentication and account management.",
+        "Admin dashboard for inventory and analytics.",
+        "Secure backend built with REST APIs and MySQL."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ],
+      "videos": [
+        {
+          "title": "Website Overview",
+          "file": "Videos/abcd.mp4"
+        },
+        {
+          "title": "Admin Dashboard",
+          "file": "Videos/Basitsanitarydashboard.mp4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Basit Sanitary Store 2",
+      "subtitle": "Full-Stack E-commerce Website",
+      "description": "A complete full-stack e-commerce platform specializing in sanitary products. Features include browsing, filtering, cart, user accounts, admin dashboard, and full backend integration.",
+      "tags": ["React.js", "Tailwind CSS", "Node.js", "Express.js", "REST API", "MySQL", "Firebase"],
+      "features": [
+        "Fully functional product browsing and search.",
+        "User authentication and account management.",
+        "Admin dashboard for inventory and analytics.",
+        "Secure backend built with REST APIs and MySQL."
+      ],
+       "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ],
+      "videos": [
+        {
+          "title": "Website Overview",
+          "file": "Videos/abcd.mp4"
+        },
+        {
+          "title": "Admin Dashboard",
+          "file": "Videos/Basitsanitarydashboard.mp4"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "mainTitle": "React Native Apps Projects",
+  "subTitle": "Explore my portfolio showcasing diverse React Native App projects highlighting creativity, functionality, and technical expertise.",
+  "apps": [
+    {
+      "id": 1,
+      "title": "Full-stack Ecommerce App",
+      "description": "A powerful cross-platform e-commerce mobile application built for seamless sanitary product shopping. Designed with a modern UI, smooth navigation, and secure backend integration.",
+      "image": "/src/assets/images/web1.PNG",
+      "screenshots": [
+        "/src/assets/images/basitsanitaryapp/1.png",
+        "/src/assets/images/basitsanitaryapp/2.png",
+        "/src/assets/images/basitsanitaryapp/3.png",
+        "/src/assets/images/basitsanitaryapp/4.png",
+        "/src/assets/images/basitsanitaryapp/5.png",
+        "/src/assets/images/basitsanitaryapp/6.png",
+        "/src/assets/images/basitsanitaryapp/7.png",
+        "/src/assets/images/basitsanitaryapp/8.png",
+        "/src/assets/images/basitsanitaryapp/9.png",
+        "/src/assets/images/basitsanitaryapp/10.png",
+        "/src/assets/images/basitsanitaryapp/11.png",
+        "/src/assets/images/basitsanitaryapp/12.png",
+        "/src/assets/images/basitsanitaryapp/13.png",
+        "/src/assets/images/basitsanitaryapp/14.png",
+        "/src/assets/images/basitsanitaryapp/15.png",
+        "/src/assets/images/basitsanitaryapp/16.png",
+        "/src/assets/images/basitsanitaryapp/17.png",
+        "/src/assets/images/basitsanitaryapp/18.png",
+        "/src/assets/images/basitsanitaryapp/19.png",
+        "/src/assets/images/basitsanitaryapp/20.png",
+        "/src/assets/images/basitsanitaryapp/21.png",
+        "/src/assets/images/basitsanitaryapp/22.png",
+        "/src/assets/images/basitsanitaryapp/23.png",
+        "/src/assets/images/basitsanitaryapp/24.png"
+    
+      ],
+      "descriptionPoints": [
+        "Cross-platform app built using React Native for Android & iOS.",
+        "Smart product browsing with category filters.",
+        "Dynamic cart system with real-time updates.",
+        "Stripe payment integration for secure transactions.",
+        "User authentication & profile management.",
+        "Admin dashboard for product and order management.",
+        "Backend powered by Node.js, Express.js, MySQL.",
+        "Images stored in Firebase Storage."
+      ],
+      "tags": [
+        "React Native",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "Firebase",
+        "Stripe",
+        "Cross-platform"
+      ],
+      "videos": [
+        {
+          "title": "User Side",
+          "file": "Videos/Basit sanitary App useside.mp4"
+        },
+        {
+          "title": "Admin Side",
+          "file": "Videos/Basit sanitary App dasboard.mp4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Pic Nova AI (AI Based Pics & Videos Editing App)",
+      "description": "An advanced AI-powered media editing app that allows users to edit photos and videos using machine learning models. Designed for creators who want powerful effects with simplicity.",
+      "image": "/src/assets/images/web2.PNG",
+      "screenshots": [
+        "/src/assets/images/picnova/editor.png",
+        "/src/assets/images/picnova/ai-filters.png",
+        "/src/assets/images/picnova/background-removal.png",
+        "/src/assets/images/picnova/video-effects.png",
+        "/src/assets/images/picnova/profile.png"
+      ],
+      "descriptionPoints": [
+        "AI-based photo editing with advanced enhancement tools.",
+        "Background removal using machine learning models.",
+        "AI filters & face enhancement.",
+        "Video stylization using real-time AI effects.",
+        "Cloud-based processing for efficiency.",
+        "Smooth cross-platform performance.",
+        "Secure backend API powered by Node.js & Express.js.",
+        "Firebase integrated for storage and authentication."
+      ],
+      "tags": [
+        "React Native",
+        "AI Models",
+        "Firebase",
+        "Node.js",
+        "Express.js",
+        "Computer Vision",
+        "Cross-platform"
+      ],
+      "videos": [
+        {
+          "title": "Under Development",
+          "file": "Videos/picnova.mp4"
+        },
+        {
+          "title": "Tap & Win Prizes Game (Lottery Type)",
+          "file": "Videos/demo1.mp4"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Tap & Win Game (Lottery Type)",
+      "description": "A lottery-based prize-winning mobile game featuring hidden reward boxes, wallet integration, and real-time interaction via sockets.",
+      "image": "/src/assets/images/web3.PNG",
+      "screenshots": [
+        "/src/assets/images/lottery/home.png",
+        "/src/assets/images/lottery/game-board.png",
+        "/src/assets/images/lottery/wallet.png",
+        "/src/assets/images/lottery/winner-popup.png",
+        "/src/assets/images/lottery/history.png",
+        "/src/assets/images/lottery/home.png",
+        "/src/assets/images/lottery/game-board.png",
+        "/src/assets/images/lottery/wallet.png",
+        "/src/assets/images/lottery/winner-popup.png",
+        "/src/assets/images/lottery/history.png"
+      ],
+      "descriptionPoints": [
+        "Fun and interactive lottery-style gameplay.",
+        "Wallet integration for EasyPaisa, JazzCash, and Stripe.",
+        "User registration and secure authentication.",
+        "Real-time events using socket communication.",
+        "Animated UI/UX for smooth gameplay.",
+        "Prize tracking with winner history.",
+        "Backend built using Node.js, Express.js, and MySQL.",
+        "Scalable architecture with cross-platform support."
+      ],
+      "tags": [
+        "React Native",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "Socket.io",
+        "Stripe",
+        "Mobile Payments"
+      ],
+      "videos": [
+        {
+          "title": "PicNova (AI Based Pics & Video Editing App)",
+          "file": "Videos/demo.mp4"
+        },
+        {
+          "title": "Coming Soon",
+          "file": "Videos/lottery.mp4"
+        }
+      ]
+    }
+  ]
+}

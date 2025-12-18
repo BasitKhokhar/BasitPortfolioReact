@@ -56,11 +56,11 @@
       "videos": [
         {
           "title": "User Side",
-          "file": "Videos/Basit sanitary App useside.mp4"
+          "file": "src/assets/videos/Basit sanitary App useside.mp4"
         },
         {
           "title": "Admin Side",
-          "file": "Videos/Basit sanitary App dasboard.mp4"
+          "file": "src/assets/videos/Basit sanitary App dasboard.mp4"
         }
       ]
     },

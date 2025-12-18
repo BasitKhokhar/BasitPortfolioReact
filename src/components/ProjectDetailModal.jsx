@@ -10,7 +10,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
   const hasImages = project.images && project.images.length > 0;
   const hasScreenshots = project.screenshots && project.screenshots.length > 0;
   const descriptionItems = project.descriptionPoints || project.features || [];
-  
+
   // Determine project type and orientation
   const isAppProject = project.descriptionPoints !== undefined; // App projects use descriptionPoints
   const screenshotOrientation = isAppProject ? "portrait" : "landscape";
@@ -50,7 +50,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-y-auto relative"
+        className="rounded-3xl max-w-6xl w-full max-h-[95vh] overflow-y-auto relative"
         style={{
           backgroundColor: colors.background,
           border: `2px solid ${colors.primary}`,
@@ -68,7 +68,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
 
         <div className="flex flex-col lg:flex-row gap-8 p-8">
           {/* LEFT SIDE - Project Details */}
-          <div className="flex-1">
+          <div className="flex-1 lg:w-[50%]">
             {/* Main Image */}
             <div className="mb-8 rounded-2xl overflow-hidden">
               <img
@@ -159,6 +159,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
             )}
 
             {/* Videos Section */}
+            {/* Videos Section */}
             {project.videos && project.videos.length > 0 && (
               <div className="mb-8">
                 <h3
@@ -167,14 +168,33 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                 >
                   Project Videos
                 </h3>
-                <div className="grid grid-cols-1 gap-6">
+
+                <div
+                  className={`grid gap-6 ${isAppProject ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1"
+                    }`}
+                >
                   {project.videos.map((video, i) => (
-                    <div key={i} className="flex flex-col gap-2">
-                      <h5 className="font-semibold text-white">{video.title}</h5>
+                    <div
+                      key={i}
+                      className="flex flex-col gap-2 rounded-2xl p-3"
+                      style={{
+                        border: `1px solid ${colors.primary}40`,
+                        background: "rgba(255,255,255,0.04)",
+                      }}
+                    >
+                      <h5 className="font-semibold text-white text-sm">
+                        {video.title}
+                      </h5>
+
                       <video
-                        className="w-full rounded-xl"
                         controls
-                        style={{ border: `1px solid ${colors.primary}40` }}
+                        className="rounded-xl w-full"
+                        style={{
+                          aspectRatio: isAppProject ? "9 / 16" : "16 / 9",
+                          objectFit: "contain",
+                          backgroundColor: "#000",
+                          border: `1px solid ${colors.primary}40`,
+                        }}
                       >
                         <source src={video.file} type="video/mp4" />
                       </video>
@@ -183,6 +203,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                 </div>
               </div>
             )}
+
 
             {/* Preview Link if exists */}
             {project.previewLink && (
@@ -204,7 +225,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
           </div>
 
           {/* RIGHT SIDE - Images & Screenshots Sliders */}
-          <div className="w-full lg:w-96 flex flex-col gap-8">
+          <div className="w-full lg:w-[50%] flex flex-col gap-8">
             {/* IMAGES Gallery - Top */}
             {hasImages && (
               <div className="flex flex-col">
@@ -293,21 +314,20 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
             {hasScreenshots && (
               <div className="flex flex-col">
                 <h3
-                  className="text-xl font-bold mb-4"
+                  className="text-xl text-center font-bold mb-4"
                   style={{ color: colors.primary }}
                 >
                   📸 Screenshots
                 </h3>
 
                 <div
-                  className={`relative flex-1 rounded-2xl overflow-hidden mb-4 group ${
-                    screenshotOrientation === "portrait" ? "max-w-sm mx-auto" : ""
-                  }`}
+                  className={`relative flex-1 rounded-2xl mb-4 group ${screenshotOrientation === "portrait" ? "max-w-sm mx-auto" : ""
+                    }`}
                   style={{
                     background: `linear-gradient(135deg, ${colors.primary}20, ${colors.gradients.warmGold[1]}20)`,
                     border: `2px solid ${colors.primary}40`,
-                    minHeight: screenshotOrientation === "portrait" ? "420px" : "280px",
-                    width: screenshotOrientation === "portrait" ? "280px" : "100%",
+                    minHeight: screenshotOrientation === "portrait" ? "400px" : "350px",
+                    width: screenshotOrientation === "portrait" ? "250px" : "100%",
                   }}
                 >
                   {/* Main Screenshot */}
@@ -323,7 +343,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                   {/* Navigation Buttons */}
                   <button
                     onClick={prevScreenshot}
-                    className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                    className="absolute left-[-20%] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
                     style={{
                       background: colors.primary,
                       color: colors.background,
@@ -333,7 +353,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                   </button>
                   <button
                     onClick={nextScreenshot}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                    className="absolute right-[-20%] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
                     style={{
                       background: colors.primary,
                       color: colors.background,
@@ -360,11 +380,10 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                     <button
                       key={i}
                       onClick={() => setScreenshotSliderIndex(i)}
-                      className={`flex-shrink-0 rounded-lg overflow-hidden transition-all hover:scale-110 ${
-                        screenshotOrientation === "portrait"
+                      className={`flex-shrink-0 rounded-lg overflow-hidden transition-all hover:scale-110 ${screenshotOrientation === "portrait"
                           ? "w-12 h-20"
                           : "w-16 h-16"
-                      }`}
+                        }`}
                       style={{
                         border:
                           i === screenshotSliderIndex

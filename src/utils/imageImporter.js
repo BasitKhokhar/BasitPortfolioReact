@@ -1,0 +1,98 @@
+// Utility to dynamically import images
+export const importImage = (imagePath) => {
+  try {
+    // Normalize the path by removing leading slashes
+    const normalizedPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+    return new URL(`../${normalizedPath}`, import.meta.url).href;
+  } catch (err) {
+    console.error(`Failed to import image: ${imagePath}`, err);
+    return null;
+  }
+};
+
+// Comprehensive image map for all project images and screenshots
+export const imageMap = {
+  // App Projects
+  'src/assets/images/BasitsanitaryAppmain.jpg': new URL('../assets/images/BasitsanitaryAppmain.jpg', import.meta.url).href,
+  'src/assets/images/lotteryappmain.jpg': new URL('../assets/images/lotteryappmain.jpg', import.meta.url).href,
+  'src/assets/images/web2.PNG': new URL('../assets/images/web2.PNG', import.meta.url).href,
+  
+  // Website Projects
+  'src/assets/images/web1.PNG': new URL('../assets/images/web1.PNG', import.meta.url).href,
+  'src/assets/images/web3.PNG': new URL('../assets/images/web3.PNG', import.meta.url).href,
+  'src/assets/images/web4.PNG': new URL('../assets/images/web4.PNG', import.meta.url).href,
+  'src/assets/images/web5.PNG': new URL('../assets/images/web5.PNG', import.meta.url).href,
+  'src/assets/images/web6.PNG': new URL('../assets/images/web6.PNG', import.meta.url).href,
+  'src/assets/images/web7.PNG': new URL('../assets/images/web7.PNG', import.meta.url).href,
+  'src/assets/images/shadowsuit.PNG': new URL('../assets/images/shadowsuit.PNG', import.meta.url).href,
+  
+  // App Screenshots - Basit Sanitary App
+  'src/assets/images/basitsanitaryapp/1.png': new URL('../assets/images/basitsanitaryapp/1.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/2.png': new URL('../assets/images/basitsanitaryapp/2.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/3.png': new URL('../assets/images/basitsanitaryapp/3.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/4.png': new URL('../assets/images/basitsanitaryapp/4.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/5.png': new URL('../assets/images/basitsanitaryapp/5.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/6.png': new URL('../assets/images/basitsanitaryapp/6.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/7.png': new URL('../assets/images/basitsanitaryapp/7.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/8.png': new URL('../assets/images/basitsanitaryapp/8.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/9.png': new URL('../assets/images/basitsanitaryapp/9.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/10.png': new URL('../assets/images/basitsanitaryapp/10.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/11.png': new URL('../assets/images/basitsanitaryapp/11.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/12.png': new URL('../assets/images/basitsanitaryapp/12.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/13.png': new URL('../assets/images/basitsanitaryapp/13.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/14.png': new URL('../assets/images/basitsanitaryapp/14.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/15.png': new URL('../assets/images/basitsanitaryapp/15.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/16.png': new URL('../assets/images/basitsanitaryapp/16.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/17.png': new URL('../assets/images/basitsanitaryapp/17.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/18.png': new URL('../assets/images/basitsanitaryapp/18.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/19.png': new URL('../assets/images/basitsanitaryapp/19.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/20.png': new URL('../assets/images/basitsanitaryapp/20.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/21.png': new URL('../assets/images/basitsanitaryapp/21.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/22.png': new URL('../assets/images/basitsanitaryapp/22.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/23.png': new URL('../assets/images/basitsanitaryapp/23.png', import.meta.url).href,
+  'src/assets/images/basitsanitaryapp/24.png': new URL('../assets/images/basitsanitaryapp/24.png', import.meta.url).href,
+  
+  // Lottery App Screenshots
+  'src/assets/images/lottery/home.png': new URL('../assets/images/lottery/home.png', import.meta.url).href,
+  'src/assets/images/lottery/game-board.png': new URL('../assets/images/lottery/game-board.png', import.meta.url).href,
+  'src/assets/images/lottery/wallet.png': new URL('../assets/images/lottery/wallet.png', import.meta.url).href,
+  'src/assets/images/lottery/winner-popup.png': new URL('../assets/images/lottery/winner-popup.png', import.meta.url).href,
+  'src/assets/images/lottery/history.png': new URL('../assets/images/lottery/history.png', import.meta.url).href,
+  
+  // PicNova Screenshots
+  'src/assets/images/picnova/editor.png': new URL('../assets/images/picnova/editor.png', import.meta.url).href,
+  'src/assets/images/picnova/ai-filters.png': new URL('../assets/images/picnova/ai-filters.png', import.meta.url).href,
+  'src/assets/images/picnova/background-removal.png': new URL('../assets/images/picnova/background-removal.png', import.meta.url).href,
+  'src/assets/images/picnova/video-effects.png': new URL('../assets/images/picnova/video-effects.png', import.meta.url).href,
+  'src/assets/images/picnova/profile.png': new URL('../assets/images/picnova/profile.png', import.meta.url).href,
+  
+  // Videos
+  'src/assets/videos/Basit sanitary App dasboard.mp4': new URL('../assets/videos/Basit sanitary App dasboard.mp4', import.meta.url).href,
+  'src/assets/videos/abcd.mp4': new URL('../assets/videos/abcd.mp4', import.meta.url).href,
+  'src/assets/videos/Basitsanitarydashboard.mp4': new URL('../assets/videos/Basitsanitarydashboard.mp4', import.meta.url).href,
+  'src/assets/videos/Elctropakuserside.mp4': new URL('../assets/videos/Elctropakuserside.mp4', import.meta.url).href,
+  'src/assets/videos/electropakadmin.mp4': new URL('../assets/videos/electropakadmin.mp4', import.meta.url).href,
+  'src/assets/videos/ElectropakElectrician.mp4': new URL('../assets/videos/ElectropakElectrician.mp4', import.meta.url).href,
+  'src/assets/videos/picnova.mp4': new URL('../assets/videos/picnova.mp4', import.meta.url).href,
+  'src/assets/videos/Portfolio video.mp4': new URL('../assets/videos/Portfolio video.mp4', import.meta.url).href,
+};
+
+export const getImageUrl = (imagePath) => {
+  if (!imagePath) return null;
+  
+  // If it's an absolute URL (http:// or https://), return it as-is
+  if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+    return imagePath;
+  }
+  
+  // Normalize path - remove leading slashes
+  const normalizedPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+  
+  // If it's in our map, use the mapped version
+  if (imageMap[normalizedPath]) {
+    return imageMap[normalizedPath];
+  }
+  
+  // Otherwise try to import it dynamically
+  return importImage(normalizedPath);
+};

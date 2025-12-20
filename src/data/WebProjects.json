@@ -9,7 +9,7 @@
       "subtitle": "Cybersecurity / Next.js Platform",
       "category": "Cybersecurity",
       "description": "A secure and modern cybersecurity marketplace platform built for an Indian client. Users can explore, evaluate, and purchase specialized cybersecurity tools with a polished and professional UI.",
-      "image": "images/shadowsuit.PNG",
+      "image": "src/assets/images/shadowsuit.PNG",
       "previewLink": "https://www.shadowsuit.shop/",
       "tags": ["Next.js", "Cybersecurity", "UI/UX", "WhatsApp Support"],
       "features": [

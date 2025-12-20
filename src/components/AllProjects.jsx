@@ -1,13 +1,25 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import colors from "../themes/colors";
 import appProjects from "../data/AppProjects.json";
 import websiteProjects from "../data/WebProjects.json";
 import ProjectDetailModal from "./ProjectDetailModal";
+import { getImageUrl } from "../utils/imageImporter";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const AllProjects = () => {
   const [activeTab, setActiveTab] = useState("apps");
   const [selectedProject, setSelectedProject] = useState(null);
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: 'ease-in-out',
+      once: false, 
+      mirror: false, 
+    });
+  }, []);
   return (
     <section
       className="min-h-screen py-20"
@@ -22,11 +34,11 @@ const AllProjects = () => {
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-            }}
+            }}data-aos="fade-up"
           >
             All Projects
           </h1>
-          <p style={{ color: colors.mutedText }} className="text-lg">
+          <p style={{ color: colors.mutedText }} className="text-lg" data-aos="fade-up">
             Explore my complete portfolio of projects
           </p>
         </div>
@@ -67,12 +79,12 @@ const AllProjects = () => {
                     background: `rgba(240, 248, 255, 0.05)`,
                     border: `1px solid ${colors.primary}30`,
                     backdropFilter: "blur(10px)",
-                  }}
+                  }} data-aos="flip-left"
                 >
                   {/* Image at Top */}
                   <div className="relative h-56 overflow-hidden group">
                     <img
-                      src={app.image}
+                      src={getImageUrl(app.image)}
                       alt={app.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
@@ -159,12 +171,12 @@ const AllProjects = () => {
                       background: `rgba(240, 248, 255, 0.05)`,
                       border: `1px solid ${colors.primary}30`,
                       backdropFilter: "blur(10px)",
-                    }}
+                    }}data-aos="flip-left"
                   >
                     {/* Image at Top */}
                     <div className="relative h-56 overflow-hidden group">
                       <img
-                        src={project.image}
+                        src={getImageUrl(project.image)}
                         alt={project.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
@@ -245,7 +257,7 @@ const AllProjects = () => {
 
             {/* Full Stack Projects */}
             {websiteProjects.fullStackProjects && websiteProjects.fullStackProjects.length > 0 && (
-              <div>
+              <div data-aos="flip-left">
                 <h3
                   className="text-2xl font-bold mb-8"
                   style={{ color: colors.primary }}

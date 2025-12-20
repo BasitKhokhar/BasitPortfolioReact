@@ -7,33 +7,32 @@
       "title": "Full-stack Ecommerce App",
       "description": "A powerful cross-platform e-commerce mobile application built for seamless sanitary product shopping. Designed with a modern UI, smooth navigation, and secure backend integration.",
       "image": "src/assets/images/BasitsanitaryAppmain.jpg",
-      "apklink":"src/assets/basitsanitaryapp.apk",
+      "apklink": "src/assets/basitsanitaryapp.apk",
       "screenshots": [
-        "/src/assets/images/basitsanitaryapp/1.png",
-        "/src/assets/images/basitsanitaryapp/2.png",
-        "/src/assets/images/basitsanitaryapp/3.png",
-        "/src/assets/images/basitsanitaryapp/4.png",
-        "/src/assets/images/basitsanitaryapp/5.png",
-        "/src/assets/images/basitsanitaryapp/6.png",
-        "/src/assets/images/basitsanitaryapp/7.png",
-        "/src/assets/images/basitsanitaryapp/8.png",
-        "/src/assets/images/basitsanitaryapp/9.png",
-        "/src/assets/images/basitsanitaryapp/10.png",
-        "/src/assets/images/basitsanitaryapp/11.png",
-        "/src/assets/images/basitsanitaryapp/12.png",
-        "/src/assets/images/basitsanitaryapp/13.png",
-        "/src/assets/images/basitsanitaryapp/14.png",
-        "/src/assets/images/basitsanitaryapp/15.png",
-        "/src/assets/images/basitsanitaryapp/16.png",
-        "/src/assets/images/basitsanitaryapp/17.png",
-        "/src/assets/images/basitsanitaryapp/18.png",
-        "/src/assets/images/basitsanitaryapp/19.png",
-        "/src/assets/images/basitsanitaryapp/20.png",
-        "/src/assets/images/basitsanitaryapp/21.png",
-        "/src/assets/images/basitsanitaryapp/22.png",
-        "/src/assets/images/basitsanitaryapp/23.png",
-        "/src/assets/images/basitsanitaryapp/24.png"
-    
+        "src/assets/images/basitsanitaryapp/1.png",
+        "src/assets/images/basitsanitaryapp/2.png",
+        "src/assets/images/basitsanitaryapp/3.png",
+        "src/assets/images/basitsanitaryapp/4.png",
+        "src/assets/images/basitsanitaryapp/5.png",
+        "src/assets/images/basitsanitaryapp/6.png",
+        "src/assets/images/basitsanitaryapp/7.png",
+        "src/assets/images/basitsanitaryapp/8.png",
+        "src/assets/images/basitsanitaryapp/9.png",
+        "src/assets/images/basitsanitaryapp/10.png",
+        "src/assets/images/basitsanitaryapp/11.png",
+        "src/assets/images/basitsanitaryapp/12.png",
+        "src/assets/images/basitsanitaryapp/13.png",
+        "src/assets/images/basitsanitaryapp/14.png",
+        "src/assets/images/basitsanitaryapp/15.png",
+        "src/assets/images/basitsanitaryapp/16.png",
+        "src/assets/images/basitsanitaryapp/17.png",
+        "src/assets/images/basitsanitaryapp/18.png",
+        "src/assets/images/basitsanitaryapp/19.png",
+        "src/assets/images/basitsanitaryapp/20.png",
+        "src/assets/images/basitsanitaryapp/21.png",
+        "src/assets/images/basitsanitaryapp/22.png",
+        "src/assets/images/basitsanitaryapp/23.png",
+        "src/assets/images/basitsanitaryapp/24.png"
       ],
       "descriptionPoints": [
         "Cross-platform app built using React Native for Android & iOS.",
@@ -57,7 +56,7 @@
       "videos": [
         {
           "title": "User Side",
-          "file": "src/assets/videos/Basit sanitary App useside.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FbasitsanitaryUserApp.mp4?alt=media&token=878f2d5c-12f3-4867-a79a-9e4e11093d04"
         },
         {
           "title": "Admin Side",
@@ -65,17 +64,116 @@
         }
       ]
     },
+  
     {
+      "id": 3,
+      "title": "Tap & Win Game (Lottery Type)",
+      "description": "A lottery-based prize-winning mobile game featuring hidden reward boxes, wallet integration, and real-time interaction via sockets.",
+      "image": "src/assets/images/lotteryappmain.jpg",
+      "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png",
+        "src/assets/images/lottery/wallet.png",
+        "src/assets/images/lottery/winner-popup.png",
+        "src/assets/images/lottery/history.png",
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png",
+        "src/assets/images/lottery/wallet.png",
+        "src/assets/images/lottery/winner-popup.png",
+        "src/assets/images/lottery/history.png"
+      ],
+      "descriptionPoints": [
+        "Fun and interactive lottery-style gameplay.",
+        "Wallet integration for EasyPaisa, JazzCash, and Stripe.",
+        "User registration and secure authentication.",
+        "Real-time events using socket communication.",
+        "Animated UI/UX for smooth gameplay.",
+        "Prize tracking with winner history.",
+        "Backend built using Node.js, Express.js, and MySQL.",
+        "Scalable architecture with cross-platform support."
+      ],
+      "tags": [
+        "React Native",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "Socket.io",
+        "Stripe",
+        "Mobile Payments"
+      ],
+      "videos": [
+        {
+          "title": "PicNova (AI Based Pics & Video Editing App)",
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FloterryAppvideo.mp4?alt=media&token=fd3e9054-79d4-4448-aa4d-f2cb6d10b892"
+        },
+        {
+          "title": "Coming Soon",
+          "file": "Videos/lottery.mp4"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "ElectroPak App",
+      "description": "A lottery-based prize-winning mobile game featuring hidden reward boxes, wallet integration, and real-time interaction via sockets.",
+      "image": "src/assets/images/Electropakmain.jpg",
+      "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png",
+        "src/assets/images/lottery/wallet.png",
+        "src/assets/images/lottery/winner-popup.png",
+        "src/assets/images/lottery/history.png",
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png",
+        "src/assets/images/lottery/wallet.png",
+        "src/assets/images/lottery/winner-popup.png",
+        "src/assets/images/lottery/history.png"
+      ],
+      "descriptionPoints": [
+        "Fun and interactive lottery-style gameplay.",
+        "Wallet integration for EasyPaisa, JazzCash, and Stripe.",
+        "User registration and secure authentication.",
+        "Real-time events using socket communication.",
+        "Animated UI/UX for smooth gameplay.",
+        "Prize tracking with winner history.",
+        "Backend built using Node.js, Express.js, and MySQL.",
+        "Scalable architecture with cross-platform support."
+      ],
+      "tags": [
+        "React Native",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "Socket.io",
+        "Stripe",
+        "Mobile Payments"
+      ],
+      "videos": [
+        {
+          "title": "ElectroPak App Userside",
+          "file": "src/assets/videos/Elctropakuserside.mp4"
+        },
+        {
+          "title": "ElectricianSide",
+          "file": "src/assets/videos/ElectropakElectrician.mp4"
+        },
+        {
+          "title": "AdminSide",
+          "file": "src/assets/videos/electropakadmin.mp4"
+        }
+      ]
+    },
+      {
       "id": 2,
       "title": "Pic Nova AI (AI Based Pics & Videos Editing App)",
       "description": "An advanced AI-powered media editing app that allows users to edit photos and videos using machine learning models. Designed for creators who want powerful effects with simplicity.",
-      "image": "/src/assets/images/web2.PNG",
+      "image": "src/assets/images/web2.PNG",
       "screenshots": [
-        "/src/assets/images/picnova/editor.png",
-        "/src/assets/images/picnova/ai-filters.png",
-        "/src/assets/images/picnova/background-removal.png",
-        "/src/assets/images/picnova/video-effects.png",
-        "/src/assets/images/picnova/profile.png"
+        "src/assets/images/picnova/editor.png",
+        "src/assets/images/picnova/ai-filters.png",
+        "src/assets/images/picnova/background-removal.png",
+        "src/assets/images/picnova/video-effects.png",
+        "src/assets/images/picnova/profile.png"
       ],
       "descriptionPoints": [
         "AI-based photo editing with advanced enhancement tools.",
@@ -104,53 +202,6 @@
         {
           "title": "Tap & Win Prizes Game (Lottery Type)",
           "file": "Videos/demo1.mp4"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Tap & Win Game (Lottery Type)",
-      "description": "A lottery-based prize-winning mobile game featuring hidden reward boxes, wallet integration, and real-time interaction via sockets.",
-      "image": "/src/assets/images/web3.PNG",
-      "screenshots": [
-        "/src/assets/images/lottery/home.png",
-        "/src/assets/images/lottery/game-board.png",
-        "/src/assets/images/lottery/wallet.png",
-        "/src/assets/images/lottery/winner-popup.png",
-        "/src/assets/images/lottery/history.png",
-        "/src/assets/images/lottery/home.png",
-        "/src/assets/images/lottery/game-board.png",
-        "/src/assets/images/lottery/wallet.png",
-        "/src/assets/images/lottery/winner-popup.png",
-        "/src/assets/images/lottery/history.png"
-      ],
-      "descriptionPoints": [
-        "Fun and interactive lottery-style gameplay.",
-        "Wallet integration for EasyPaisa, JazzCash, and Stripe.",
-        "User registration and secure authentication.",
-        "Real-time events using socket communication.",
-        "Animated UI/UX for smooth gameplay.",
-        "Prize tracking with winner history.",
-        "Backend built using Node.js, Express.js, and MySQL.",
-        "Scalable architecture with cross-platform support."
-      ],
-      "tags": [
-        "React Native",
-        "Node.js",
-        "Express.js",
-        "MySQL",
-        "Socket.io",
-        "Stripe",
-        "Mobile Payments"
-      ],
-      "videos": [
-        {
-          "title": "PicNova (AI Based Pics & Video Editing App)",
-          "file": "Videos/demo.mp4"
-        },
-        {
-          "title": "Coming Soon",
-          "file": "Videos/lottery.mp4"
         }
       ]
     }

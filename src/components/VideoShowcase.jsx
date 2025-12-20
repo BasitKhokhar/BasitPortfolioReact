@@ -2,6 +2,7 @@ import colors from "../themes/colors";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { getImageUrl } from "../utils/imageImporter";
 const VideoShowcase = () => {
   useEffect(() => {
   AOS.init({
@@ -31,7 +32,7 @@ const VideoShowcase = () => {
               controls
             >
               <source
-                src="/src/assets/videos/Portfolio video.mp4"
+                src={getImageUrl("src/assets/videos/Portfolio video.mp4")}
                 type="video/mp4"
               />
               Your browser does not support the video tag.

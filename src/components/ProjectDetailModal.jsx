@@ -1,5 +1,6 @@
 import { useState } from "react";
 import colors from "../themes/colors";
+import { getImageUrl } from "../utils/imageImporter";
 
 const ProjectDetailModal = ({ project, isOpen, onClose }) => {
   const [imageSliderIndex, setImageSliderIndex] = useState(0);
@@ -72,7 +73,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
             {/* Main Image */}
             <div className="mb-8 rounded-2xl overflow-hidden bg-gray-900">
               <img
-                src={project.image}
+                src={getImageUrl(project.image)}
                 alt={project.title}
                 className="w-full h-auto object-contain"
                 style={{ maxHeight: "400px" }}
@@ -158,54 +159,6 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                 </ul>
               </div>
             )}
-
-            {/* Videos Section */}
-            {/* Videos Section */}
-            {project.videos && project.videos.length > 0 && (
-              <div className="mb-8">
-                <h3
-                  className="text-xl font-bold mb-6"
-                  style={{ color: colors.primary }}
-                >
-                  Project Videos
-                </h3>
-
-                <div
-                  className={`grid gap-6 ${isAppProject ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1"
-                    }`}
-                >
-                  {project.videos.map((video, i) => (
-                    <div
-                      key={i}
-                      className="flex flex-col gap-2 rounded-2xl p-3"
-                      style={{
-                        border: `1px solid ${colors.primary}40`,
-                        background: "rgba(255,255,255,0.04)",
-                      }}
-                    >
-                      <h5 className="font-semibold text-white text-sm">
-                        {video.title}
-                      </h5>
-
-                      <video
-                        controls
-                        className="rounded-xl w-full"
-                        style={{
-                          aspectRatio: isAppProject ? "9 / 16" : "16 / 9",
-                          objectFit: "contain",
-                          backgroundColor: "#000",
-                          border: `1px solid ${colors.primary}40`,
-                        }}
-                      >
-                        <source src={video.file} type="video/mp4" />
-                      </video>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-
             {/* Download APK Button if exists */}
             {project.apklink && (
               <button
@@ -268,7 +221,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                 >
                   {/* Main Slider Image */}
                   <img
-                    src={project.images[imageSliderIndex]}
+                    src={getImageUrl(project.images[imageSliderIndex])}
                     alt={`Screenshot ${imageSliderIndex + 1}`}
                     className="w-full h-full object-cover"
                   />
@@ -322,7 +275,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                       }}
                     >
                       <img
-                        src={img}
+                        src={getImageUrl(img)}
                         alt={`Thumbnail ${i + 1}`}
                         className="w-full h-full object-cover"
                       />
@@ -354,7 +307,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                 >
                   {/* Main Screenshot */}
                   <img
-                    src={project.screenshots[screenshotSliderIndex]}
+                    src={getImageUrl(project.screenshots[screenshotSliderIndex])}
                     alt={`App Screenshot ${screenshotSliderIndex + 1}`}
                     className="w-full h-full object-cover"
                     style={{
@@ -403,8 +356,8 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                       key={i}
                       onClick={() => setScreenshotSliderIndex(i)}
                       className={`flex-shrink-0 rounded-lg overflow-hidden transition-all hover:scale-110 ${screenshotOrientation === "portrait"
-                          ? "w-12 h-20"
-                          : "w-16 h-16"
+                        ? "w-12 h-20"
+                        : "w-16 h-16"
                         }`}
                       style={{
                         border:
@@ -414,7 +367,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                       }}
                     >
                       <img
-                        src={screenshot}
+                        src={getImageUrl(screenshot)}
                         alt={`Screenshot Thumbnail ${i + 1}`}
                         className="w-full h-full object-cover"
                       />
@@ -425,6 +378,58 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
             )}
           </div>
         </div>
+        {/* Videos Section */}
+        <div className=" pl-10">
+          {project.videos && project.videos.length > 0 && (
+            <div className="mb-8">
+              <h3
+                className="text-xl font-bold mb-6"
+                style={{ color: colors.primary }}
+              >
+                Project Videos
+              </h3>
+
+              <div
+                className={`grid gap-6
+                  ${isAppProject
+                    ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                    : "grid-cols-1 lg:grid-cols-2"
+                  }
+             `}
+              >
+
+                {project.videos.map((video, i) => (
+                  <div
+                    key={i}
+                    className="flex flex-col gap-2 rounded-2xl p-3"
+                    style={{
+                      border: `1px solid ${colors.primary}40`,
+                      background: "rgba(255,255,255,0.04)",
+                    }}
+                  >
+                    <h5 className="font-semibold text-white text-sm">
+                      {video.title}
+                    </h5>
+
+                    <video
+                      controls
+                      className="rounded-xl w-full"
+                      style={{
+                        aspectRatio: isAppProject ? "9 / 16" : "16 / 9",
+                        objectFit: "contain",
+                        backgroundColor: "#000",
+                        border: `1px solid ${colors.primary}40`,
+                      }}
+                    >
+                      <source src={getImageUrl(video.file)} type="video/mp4" />
+                    </video>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
       </div>
 
       <style>{`

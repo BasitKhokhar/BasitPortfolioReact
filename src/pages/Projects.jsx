@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import colors from "../themes/colors";
 import appProjects from "../data/AppProjects.json";
 import websiteProjects from "../data/WebProjects.json";
 import ProjectDetailModal from "../components/ProjectDetailModal";
+import { getImageUrl } from "../utils/imageImporter";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -17,6 +22,17 @@ const Projects = () => {
 
   // Take first 6 projects (2 rows of 3)
   const displayProjects = combinedProjects.slice(0, 6);
+ 
+   useEffect(() => {
+     AOS.init({
+       duration: 1000, 
+       easing: 'ease-in-out',
+       once: false, 
+       mirror: false, 
+     });
+   }, []);
+
+
 
   return (
     <section
@@ -46,7 +62,7 @@ const Projects = () => {
               fontSize: "clamp(60px, 12vw, 120px)",
               color: "rgba(255,255,255,0.05)",
               letterSpacing: "12px",
-            }}
+            }}data-aos="fade-up"
           >
             Projects
           </h1>
@@ -58,8 +74,8 @@ const Projects = () => {
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-              animation: "slideInUp 0.8s ease-out",
-            }}
+
+            }}data-aos="fade-up"
           >
             My Projects
           </h2>
@@ -67,8 +83,8 @@ const Projects = () => {
             className="relative max-w-2xl mx-auto"
             style={{
               color: colors.mutedText,
-              animation: "slideInUp 0.8s ease-out 0.2s backwards",
-            }}
+             
+            }}data-aos="fade-up"
           >
             Explore my portfolio showcasing diverse projects highlighting creativity, functionality, and
             technical expertise.
@@ -86,12 +102,12 @@ const Projects = () => {
                 border: `1px solid ${colors.primary}30`,
                 backdropFilter: "blur(10px)",
                 animation: `slideInUp 0.8s ease-out ${0.1 * idx}s`,
-              }}
+              }} data-aos="flip-left"
             >
               {/* Image at Top */}
               <div className="relative h-56 overflow-hidden group">
                 <img
-                  src={project.image}
+                  src={getImageUrl(project.image)}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />

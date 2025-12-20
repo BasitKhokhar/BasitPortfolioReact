@@ -70,11 +70,12 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
           {/* LEFT SIDE - Project Details */}
           <div className="flex-1 lg:w-[50%]">
             {/* Main Image */}
-            <div className="mb-8 rounded-2xl overflow-hidden">
+            <div className="mb-8 rounded-2xl overflow-hidden bg-gray-900">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-64 object-cover"
+                className="w-full h-auto object-contain"
+                style={{ maxHeight: "400px" }}
               />
             </div>
 

@@ -10,26 +10,28 @@ const HeroSection = () => {
 
   const typeWriter = (text, setter, delay = 100, callback) => {
     let i = 0;
-    const interval = setInterval(() => {
-      setter((prev) => prev + text.charAt(i));
-      i++;
-      if (i === text.length) {
-        clearInterval(interval);
+    const type = () => {
+      if (i < text.length) {
+        setter((prev) => prev + text.charAt(i));
+        i++;
+        setTimeout(type, delay);
+      } else {
         if (callback) callback();
       }
-    }, delay);
+    };
+    type();
   };
 
   useEffect(() => {
     if (hasTyped.current) return;
     hasTyped.current = true;
 
-    typeWriter("Hello!", setSubheading, 100, () => {
-      typeWriter("I'm Talha Basit", setName, 100, () => {
+    typeWriter("Heello!", setSubheading, 150, () => {
+      typeWriter("I''m Talha Basit", setName, 150, () => {
         typeWriter(
-          "A Freelance Fullstack Web & App Developer",
+          "A  Freelance Fullstack Web & App Developer",
           setJob,
-          80
+          150
         );
       });
     });

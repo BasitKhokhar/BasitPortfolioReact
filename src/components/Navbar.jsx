@@ -47,7 +47,7 @@ const Navbar = () => {
         {/* Logo */}
         <button
           onClick={scrollToHome}
-          className="text-2xl font-bold tracking-wide cursor-pointer hover:opacity-80 transition-opacity"
+          className="text-2xl font-extrabold tracking-wide cursor-pointer hover:opacity-80 transition-opacity"
           style={{ color: colors.primary,background: "transparent", }}
         >
           B.Creatives

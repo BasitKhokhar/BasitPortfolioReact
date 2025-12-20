@@ -1,11 +1,18 @@
 import colors from "../themes/colors";
 import { useEffect, useRef, useState } from "react";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+     AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out', 
+        once: false,
+        mirror: false, 
+      });
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
@@ -69,10 +76,7 @@ const About = () => {
           {/* Left Image Section */}
           <div
             className="flex justify-center"
-            style={{
-              animation: isVisible ? "slideInLeft 0.8s ease-out forwards" : "none",
-              opacity: isVisible ? 1 : 0,
-            }}
+            data-aos="fade-right"
           >
             <div
               className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300"
@@ -92,10 +96,7 @@ const About = () => {
           {/* Right Text Section */}
           <div
             className="space-y-6"
-            style={{
-              animation: isVisible ? "slideInRight 0.8s ease-out forwards" : "none",
-              opacity: isVisible ? 1 : 0,
-            }}
+           data-aos="fade-left"
           >
             <p style={{ color: colors.text, fontSize: "14px" }} className="leading-relaxed">
               Hi there! I'm a dedicated <b>Full Stack Web & React Native Developer</b> with 2.5 years

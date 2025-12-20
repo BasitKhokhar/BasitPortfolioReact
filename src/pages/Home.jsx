@@ -3,6 +3,7 @@ import About from "./About";
 import Resume from "./Resume";
 import Services from "./Services";
 import Skills from "./Skills";
+import Pricing from "../components/Pricing";
 import Projects from "./Projects";
 import VideoShowcase from "../components/VideoShowcase";
 import Contact from "./Contact";
@@ -18,6 +19,7 @@ const Home = () => {
       <Resume />
       <Services />
       <Skills />
+      <Pricing />
       <Projects />
       <VideoShowcase />
       <Contact />

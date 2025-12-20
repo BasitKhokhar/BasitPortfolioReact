@@ -66,19 +66,39 @@ const Contact = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
-        <div className="text-center mb-16" style={{ animation: "slideInUp 0.8s ease-out" }}>
+        {/* ================= HEADING ================= */}
+        <div className="relative text-center mb-20 overflow-hidden">
+          {/* Background Shadow Heading */}
           <h1
-            className="text-5xl font-extrabold mb-4"
+            className="absolute inset-0 flex items-center justify-center font-extrabold uppercase select-none pointer-events-none"
             style={{
-              background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
+              fontSize: "clamp(60px, 12vw, 120px)",
+              color: "rgba(255,255,255,0.05)",
+              letterSpacing: "12px",
             }}
           >
             Contact
           </h1>
-          <h2 className="text-2xl font-bold text-white mb-4">Contact Me</h2>
-          <p style={{ color: colors.mutedText }}>
+
+          {/* Foreground Heading */}
+          <h2
+            className="relative text-5xl font-extrabold mb-4"
+            style={{
+              background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              animation: "slideInUp 0.8s ease-out",
+            }}
+          >
+            Contact Me
+          </h2>
+          <p
+            className="relative max-w-2xl mx-auto"
+            style={{
+              color: colors.mutedText,
+              animation: "slideInUp 0.8s ease-out 0.2s backwards",
+            }}
+          >
             Contact me to explore opportunities for creating innovative web solutions that resonate with your
             audience.
           </p>
@@ -307,4 +327,4 @@ const Contact = () => {
 };
 
 export default Contact;
-            
+

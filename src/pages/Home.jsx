@@ -4,6 +4,7 @@ import Resume from "./Resume";
 import Services from "./Services";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import VideoShowcase from "../components/VideoShowcase";
 import Contact from "./Contact";
 import colors from "../themes/colors";
 
@@ -18,6 +19,7 @@ const Home = () => {
       <Services />
       <Skills />
       <Projects />
+      <VideoShowcase />
       <Contact />
     </div>
   );

@@ -36,9 +36,8 @@ const Services = () => {
     >
       {/* ================= YELLOW GLOW BACKGROUND ================= */}
       <div
-        className={`absolute top-0 right-0 w-120 h-120 rounded-full blur-3xl opacity-10 ${
-          isVisible ? "animate-float" : ""
-        }`}
+        className={`absolute top-0 right-0 w-120 h-120 rounded-full blur-3xl opacity-10 ${isVisible ? "animate-float" : ""
+          }`}
         style={{
           background: `radial-gradient(circle, ${colors.gradients.sunsetGold[1]}, transparent)`,
         }}
@@ -52,7 +51,7 @@ const Services = () => {
           <h1
             className="absolute inset-0 flex items-center justify-center font-extrabold uppercase select-none pointer-events-none"
             style={{
-              fontSize: "120px",
+              fontSize: "clamp(60px, 12vw, 120px)",
               color: "rgba(255,255,255,0.05)",
               letterSpacing: "12px",
             }}
@@ -62,9 +61,8 @@ const Services = () => {
 
           {/* Foreground Heading */}
           <h2
-            className={`relative text-5xl font-extrabold mb-4 ${
-              isVisible ? "animate-fadeUp" : "opacity-0"
-            }`}
+            className={`relative text-5xl font-extrabold mb-4 ${isVisible ? "animate-fadeUp" : "opacity-0"
+              }`}
             style={{
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.sunsetGold[1]})`,
               WebkitBackgroundClip: "text",
@@ -75,9 +73,8 @@ const Services = () => {
           </h2>
 
           <p
-            className={`relative max-w-2xl mx-auto ${
-              isVisible ? "animate-fadeUp delay-200" : "opacity-0"
-            }`}
+            className={`relative max-w-2xl mx-auto ${isVisible ? "animate-fadeUp delay-200" : "opacity-0"
+              }`}
             style={{ color: colors.mutedText }}
           >
             I provide end-to-end digital solutions, crafting modern,
@@ -90,9 +87,8 @@ const Services = () => {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className={`relative group p-10 rounded-xl transition-all duration-300 hover:scale-110 cursor-pointer ${
-                isVisible ? "animate-fadeUp" : "opacity-0"
-              }`}
+              className={`relative group p-10 rounded-xl transition-all duration-300 hover:scale-110 cursor-pointer ${isVisible ? "animate-fadeUp" : "opacity-0"
+                }`}
               style={{
                 background: `linear-gradient(135deg, ${colors.gradients.dark[0]}, ${colors.gradients.dark[1]})`,
                 border: `2px solid ${colors.primary}30`,

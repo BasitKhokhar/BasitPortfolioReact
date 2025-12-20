@@ -205,6 +205,27 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
             )}
 
 
+            {/* Download APK Button if exists */}
+            {project.apklink && (
+              <button
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = project.apklink;
+                  link.download = `${project.title}.apk`;
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+                className="w-full py-3 px-8 rounded-xl font-semibold transition-all transform hover:scale-105 text-center"
+                style={{
+                  background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
+                  color: colors.background,
+                }}
+              >
+                📱 Download APK to Check App
+              </button>
+            )}
+
             {/* Preview Link if exists */}
             {project.previewLink && (
               <div className="flex gap-4">

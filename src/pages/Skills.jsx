@@ -36,9 +36,8 @@ const Skills = () => {
     >
       {/* Floating Background Glow */}
       <div
-        className={`absolute top-0 left-0 w-96 h-96 rounded-full blur-3xl opacity-10 ${
-          isVisible ? "animate-float" : ""
-        }`}
+        className={`absolute top-0 left-0 w-96 h-96 rounded-full blur-3xl opacity-10 ${isVisible ? "animate-float" : ""
+          }`}
         style={{
           background: `radial-gradient(circle, ${colors.primary}, transparent)`,
         }}
@@ -52,7 +51,7 @@ const Skills = () => {
           <h1
             className="absolute inset-0 flex items-center justify-center font-extrabold uppercase select-none pointer-events-none"
             style={{
-              fontSize: "120px",
+              fontSize: "clamp(60px, 12vw, 120px)",
               color: "rgba(255,255,255,0.05)",
               letterSpacing: "12px",
             }}
@@ -62,9 +61,8 @@ const Skills = () => {
 
           {/* Foreground Heading */}
           <h2
-            className={`relative text-5xl font-extrabold mb-4 ${
-              isVisible ? "animate-fadeUp" : "opacity-0"
-            }`}
+            className={`relative text-5xl font-extrabold mb-4 ${isVisible ? "animate-fadeUp" : "opacity-0"
+              }`}
             style={{
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
               WebkitBackgroundClip: "text",
@@ -75,9 +73,8 @@ const Skills = () => {
           </h2>
 
           <p
-            className={`relative max-w-2xl mx-auto ${
-              isVisible ? "animate-fadeUp delay-200" : "opacity-0"
-            }`}
+            className={`relative max-w-2xl mx-auto ${isVisible ? "animate-fadeUp delay-200" : "opacity-0"
+              }`}
             style={{ color: colors.mutedText }}
           >
             Proficient in modern front-end and back-end technologies with strong
@@ -91,9 +88,8 @@ const Skills = () => {
           {skills.map((skill, idx) => (
             <div
               key={idx}
-              className={`space-y-4 p-6 rounded-xl transition-all group ${
-                isVisible ? "animate-fadeUp" : "opacity-0"
-              }`}
+              className={`space-y-4 p-6 rounded-xl transition-all group ${isVisible ? "animate-fadeUp" : "opacity-0"
+                }`}
               style={{
                 background: `linear-gradient(135deg, ${colors.gradients.dark[0]}, ${colors.gradients.dark[1]})`,
                 border: `1px solid ${colors.primary}30`,

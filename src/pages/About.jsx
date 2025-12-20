@@ -1,8 +1,24 @@
 import colors from "../themes/colors";
+import { useEffect, useRef, useState } from "react";
 
 const About = () => {
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
   return (
     <section
+      ref={sectionRef}
       id="about-section"
       className="min-h-screen py-20 relative overflow-hidden"
       style={{
@@ -20,24 +36,44 @@ const About = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
-        <div className="text-center mb-16" style={{ animation: "slideInUp 0.8s ease-out" }}>
+        {/* ================= HEADING ================= */}
+        <div className="relative text-center mb-2 overflow-hidden pb-24">
+          {/* Background Shadow Heading */}
           <h1
-            className="text-5xl font-extrabold mb-4"
+            className="absolute inset-0 flex items-center justify-center font-extrabold uppercase select-none pointer-events-none"
             style={{
-              background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
+              fontSize: "clamp(60px, 12vw, 120px)",
+              color: "rgba(255,255,255,0.05)",
+              letterSpacing: "12px",
             }}
           >
             About
           </h1>
-          <h2 className="text-2xl font-bold text-white">About Me</h2>
+
+          {/* Foreground Heading */}
+          <h2
+            className="relative text-5xl font-extrabold mb-4"
+            style={{
+              background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              animation: "slideInUp 0.8s ease-out",
+            }}
+          >
+            About Me
+          </h2>
         </div>
 
         {/* Content Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Image Section */}
-          <div className="flex justify-center" style={{ animation: "slideInLeft 0.8s ease-out" }}>
+          <div
+            className="flex justify-center"
+            style={{
+              animation: isVisible ? "slideInLeft 0.8s ease-out forwards" : "none",
+              opacity: isVisible ? 1 : 0,
+            }}
+          >
             <div
               className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300"
               style={{
@@ -54,7 +90,13 @@ const About = () => {
           </div>
 
           {/* Right Text Section */}
-          <div className="space-y-6" style={{ animation: "slideInRight 0.8s ease-out" }}>
+          <div
+            className="space-y-6"
+            style={{
+              animation: isVisible ? "slideInRight 0.8s ease-out forwards" : "none",
+              opacity: isVisible ? 1 : 0,
+            }}
+          >
             <p style={{ color: colors.text, fontSize: "14px" }} className="leading-relaxed">
               Hi there! I'm a dedicated <b>Full Stack Web & React Native Developer</b> with 2.5 years
               of hands-on experience building modern, high-performance web and mobile applications.

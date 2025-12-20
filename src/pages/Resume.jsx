@@ -7,7 +7,7 @@ const Resume = () => {
 
   const resumeItems = [
     [
-       {
+      {
         date: "2024–continue",
         title: "Web & App Development",
         position: "Fullstack Developer @ Coderzpark",
@@ -17,7 +17,7 @@ const Resume = () => {
         title: "Bachelor of Software Engineering",
         position: "University Of Lahore",
       },
-     ,
+      ,
     ],
     [
       {
@@ -58,9 +58,8 @@ const Resume = () => {
     >
       {/* Floating Background Glow */}
       <div
-        className={`absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-10 ${
-          isVisible ? "animate-float" : ""
-        }`}
+        className={`absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-10 ${isVisible ? "animate-float" : ""
+          }`}
         style={{
           background: `radial-gradient(circle, ${colors.primary}, transparent)`,
         }}
@@ -74,7 +73,7 @@ const Resume = () => {
           <h1
             className="absolute inset-0 flex items-center justify-center font-extrabold uppercase select-none pointer-events-none"
             style={{
-              fontSize: "120px",
+              fontSize: "clamp(60px, 12vw, 120px)",
               color: "rgba(255,255,255,0.05)",
               letterSpacing: "12px",
             }}
@@ -84,9 +83,8 @@ const Resume = () => {
 
           {/* Foreground Title */}
           <h2
-            className={`relative text-5xl font-extrabold mb-4 ${
-              isVisible ? "animate-fadeUp" : "opacity-0"
-            }`}
+            className={`relative text-5xl font-extrabold mb-4 ${isVisible ? "animate-fadeUp" : "opacity-0"
+              }`}
             style={{
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
               WebkitBackgroundClip: "text",
@@ -97,9 +95,8 @@ const Resume = () => {
           </h2>
 
           <p
-            className={`relative max-w-2xl mx-auto ${
-              isVisible ? "animate-fadeUp delay-200" : "opacity-0"
-            }`}
+            className={`relative max-w-2xl mx-auto ${isVisible ? "animate-fadeUp delay-200" : "opacity-0"
+              }`}
             style={{ color: colors.mutedText }}
           >
             Explore my journey as a skilled web developer with a passion for
@@ -114,9 +111,8 @@ const Resume = () => {
               {column.map((item, idx) => (
                 <div
                   key={idx}
-                  className={`relative p-7 rounded-2xl group hover:scale-105 transition-all duration-300 ${
-                    isVisible ? "animate-fadeUp" : "opacity-0"
-                  }`}
+                  className={`relative p-7 rounded-2xl group hover:scale-105 transition-all duration-300 ${isVisible ? "animate-fadeUp" : "opacity-0"
+                    }`}
                   style={{
                     background: `linear-gradient(135deg, ${colors.gradients.dark[0]}, ${colors.gradients.dark[1]})`,
                     border: `2px solid ${colors.primary}30`,
@@ -161,9 +157,8 @@ const Resume = () => {
 
         {/* ================= DOWNLOAD BUTTON ================= */}
         <div
-          className={`text-center ${
-            isVisible ? "animate-fadeUp delay-600" : "opacity-0"
-          }`}
+          className={`text-center ${isVisible ? "animate-fadeUp delay-600" : "opacity-0"
+            }`}
         >
           <a
             href="/Files/Basit_Resume.pdf"

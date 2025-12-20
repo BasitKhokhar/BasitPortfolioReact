@@ -7,6 +7,7 @@
       "title": "Full-stack Ecommerce App",
       "description": "A powerful cross-platform e-commerce mobile application built for seamless sanitary product shopping. Designed with a modern UI, smooth navigation, and secure backend integration.",
       "image": "/src/assets/images/web1.PNG",
+      "apklink":"src/assets/basitsanitaryapp.apk",
       "screenshots": [
         "/src/assets/images/basitsanitaryapp/1.png",
         "/src/assets/images/basitsanitaryapp/2.png",

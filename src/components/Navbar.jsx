@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import colors from "../themes/colors";
 
 const navLinks = [
@@ -14,6 +15,7 @@ const navLinks = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home-section");
+  const navigate = useNavigate();
 
   const scrollToSection = (id) => {
     setActiveSection(id);
@@ -26,7 +28,10 @@ const Navbar = () => {
 
   const scrollToHome = () => {
     setActiveSection("home-section");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/");
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
     setOpen(false);
   };
 

@@ -231,11 +231,11 @@
       "videos": [
         {
           "title": "Website Overview",
-          "file": "src/assets/videos/abcd.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FBasitsanitaryWebuserside.mp4?alt=media&token=b6aa71d6-9489-44c3-8a2a-9ef3cd68d007"
         },
         {
           "title": "Admin Dashboard",
-          "file": "src/assets/videos/Basitsanitarydashboard.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FBasitsanitarydashboard.mp4?alt=media&token=f2f9fbe2-6c25-4b14-80de-da62763ae0ec"
         }
       ]
     },
@@ -266,11 +266,11 @@
       "videos": [
         {
           "title": "Website Overview",
-          "file": "src/assets/videos/abcd.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FBasitsanitaryWebuserside.mp4?alt=media&token=b6aa71d6-9489-44c3-8a2a-9ef3cd68d007"
         },
         {
           "title": "Admin Dashboard",
-          "file": "src/assets/videos/Basitsanitarydashboard.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FBasitsanitarydashboard.mp4?alt=media&token=f2f9fbe2-6c25-4b14-80de-da62763ae0ec"
         }
       ]
     }

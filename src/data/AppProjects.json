@@ -60,7 +60,7 @@
         },
         {
           "title": "Admin Side",
-          "file": "src/assets/videos/BasitSanitaryAppDashboard.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FBasitSanitaryAppDashboard.mp4?alt=media&token=d604e740-5fcc-413d-8ef3-e647baf7d750"
         }
       ]
     },
@@ -150,15 +150,15 @@
       "videos": [
         {
           "title": "ElectroPak App Userside",
-          "file": "src/assets/videos/Elctropakuserside.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FElctropakuserside.mp4?alt=media&token=ebc06f65-6bdd-4b50-b9ea-07ae010c30cc"
         },
         {
           "title": "ElectricianSide",
-          "file": "src/assets/videos/ElectropakElectrician.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FElectropakElectrician.mp4?alt=media&token=20cc5c73-03a6-4377-9a42-ec7752f92923"
         },
         {
           "title": "AdminSide",
-          "file": "src/assets/videos/electropakadmin.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2Felectropakadmin.mp4?alt=media&token=567ca2cb-cc0b-4ad3-bcfa-6dc9f85c2348"
         }
       ]
     },
@@ -196,7 +196,7 @@
       "videos": [
         {
           "title": "Under Development",
-          "file": "src/assets/videos/picnova.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2Fpicnova.mp4?alt=media&token=711e522d-4d08-4c86-b47e-e1c2a64c4004"
         }
       ]
     },
@@ -242,11 +242,11 @@
       "videos": [
         {
           "title": "Mechify User App",
-          "file": "src/assets/videos/Mechifyuserside.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FMechifyuserside.mp4?alt=media&token=ab6223b4-5551-4886-b3c4-ebe6d78bfc28"
         },
         {
           "title": "Mechanic Side App",
-          "file": "src/assets/videos/Mechifyuserside.mp4"
+          "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2Fmechifyadmin.mp4?alt=media&token=d74ad4bb-ec86-4ffc-8124-3f6366568ede"
         }
       ]
     }

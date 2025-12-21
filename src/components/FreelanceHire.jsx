@@ -1,7 +1,18 @@
 import colors from "../themes/colors";
+import { useEffect } from "react";
 import { getImageUrl } from "../utils/imageImporter";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const FreelanceHire = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
+  }, []);
   return (
     <div className="relative -mt-24 z-20">
       {/* Background Image Section */}
@@ -17,7 +28,7 @@ const FreelanceHire = () => {
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           {/* Content */}
           <div className="flex flex-col items-center justify-center text-center">
-            <h2 className="text-5xl lg:text-6xl font-extrabold mb-6">
+            <h2 className="text-5xl lg:text-6xl font-extrabold mb-6" data-aos="fade-up">
               <span style={{ color: colors.mutedText }}>I'm </span>
               <span
                 style={{
@@ -33,7 +44,7 @@ const FreelanceHire = () => {
 
             <p
               className="text-lg lg:text-xl max-w-3xl mx-auto mb-10"
-              style={{ color: "#e0e0e0" }}
+              style={{ color: "#e0e0e0" }} data-aos="fade-up"
             >
               I am available for freelance web development projects, ready to bring your ideas to life with
               expertise and creativity. Let's collaborate and create something amazing together.
@@ -45,7 +56,7 @@ const FreelanceHire = () => {
               style={{
                 background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
                 color: colors.background,
-              }}
+              }} data-aos="fade-up"
             >
               Get In Touch
             </button>

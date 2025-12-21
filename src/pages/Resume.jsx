@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import colors from "../themes/colors";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Resume = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -35,6 +36,15 @@ const Resume = () => {
 
   /* ================= INTERSECTION OBSERVER ================= */
   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
+
+
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
@@ -76,28 +86,28 @@ const Resume = () => {
               fontSize: "clamp(60px, 12vw, 120px)",
               color: "rgba(255,255,255,0.05)",
               letterSpacing: "12px",
-            }}
+            }} data-aos="fade-up"
           >
             Resume
           </h1>
 
           {/* Foreground Title */}
           <h2
-            className={`relative text-5xl font-extrabold mb-4 ${isVisible ? "animate-fadeUp" : "opacity-0"
+            className={`relative text-5xl font-extrabold mb-4 
               }`}
             style={{
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-            }}
+            }} data-aos="fade-up"
           >
             Resume
           </h2>
 
           <p
-            className={`relative max-w-2xl mx-auto ${isVisible ? "animate-fadeUp delay-200" : "opacity-0"
+            className={`relative max-w-2xl mx-auto 
               }`}
-            style={{ color: colors.mutedText }}
+            style={{ color: colors.mutedText }} data-aos="fade-up"
           >
             Explore my journey as a skilled web developer with a passion for
             crafting innovative digital experiences.
@@ -111,13 +121,13 @@ const Resume = () => {
               {column.map((item, idx) => (
                 <div
                   key={idx}
-                  className={`relative p-7 rounded-2xl group hover:scale-105 transition-all duration-300 ${isVisible ? "animate-fadeUp" : "opacity-0"
+                  className={`relative p-7 rounded-2xl group hover:scale-105 transition-all duration-300
                     }`}
                   style={{
                     background: `linear-gradient(135deg, ${colors.gradients.dark[0]}, ${colors.gradients.dark[1]})`,
                     border: `2px solid ${colors.primary}30`,
                     animationDelay: `${(colIdx * 2 + idx) * 0.2}s`,
-                  }}
+                  }} data-aos="flip-up"
                 >
                   {/* Hover Glow */}
                   <div

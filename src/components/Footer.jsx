@@ -1,5 +1,7 @@
 import colors from "../themes/colors";
-
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Footer = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -7,14 +9,21 @@ const Footer = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
+  }, []);
   return (
     <footer
       style={{ backgroundColor: colors.background }}
       className="py-12 border-t"
     >
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8" data-aos="fade-up">
           {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4" style={{ color: colors.primary }}>
@@ -33,7 +42,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                  style={{ color: colors.mutedText , background: "transparent",}}
+                  style={{ color: colors.mutedText, background: "transparent", }}
                   className="hover:text-yellow-400 transition-colors text-left"
                 >
                   ➜ Home
@@ -69,7 +78,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("contact-section")}
-                  style={{ color: colors.mutedText , background: "transparent",}}
+                  style={{ color: colors.mutedText, background: "transparent", }}
                   className="hover:text-yellow-400 transition-colors text-left"
                 >
                   ➜ Contact
@@ -155,9 +164,9 @@ const Footer = () => {
           className="pt-8 text-center"
           style={{ borderColor: colors.border, borderTop: `1px solid ${colors.border}` }}
         >
-          <p style={{ color: colors.mutedText }}>
+          <p style={{ color: colors.mutedText, fontWeight: 'bold' }}>
             Copyright © 2024 All rights reserved by{" "}
-            <span style={{ color: colors.primary }}>B.Creatives</span>
+            <span style={{ color: colors.primary, fontWeight: 'bolder', fontSize: 18 }}>B.Creatives</span>
           </p>
         </div>
       </div>

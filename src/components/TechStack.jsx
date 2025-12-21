@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import colors from "../themes/colors";
 import { getImageUrl } from "../utils/imageImporter";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const TechStack = () => {
   const technologies = [
     { name: "HTML", image: "src/assets/images/html.png" },
@@ -22,6 +23,14 @@ const TechStack = () => {
 
   // Auto-rotate carousel
   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
+
+
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % technologies.length);
     }, 3000);
@@ -64,18 +73,32 @@ const TechStack = () => {
 
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="relative text-center mb-20 overflow-hidden">
           <h1
-            className="text-5xl font-extrabold mb-4"
+            className="absolute inset-0 flex items-center justify-center font-extrabold uppercase select-none pointer-events-none"
+            style={{
+              fontSize: "clamp(60px, 12vw, 120px)",
+              color: "rgba(255,255,255,0.05)",
+              letterSpacing: "12px",
+            }} data-aos="fade-up"
+          >
+            Tech Stack
+          </h1>
+          <h2
+            className="relative text-5xl font-extrabold mb-4"
             style={{
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-            }}
+            }} data-aos="fade-up"
           >
             Tech Stack
-          </h1>
-          <p style={{ color: colors.mutedText }} className="text-lg max-w-2xl mx-auto">
+          </h2>
+          <p
+            className="relative text-lg max-w-2xl mx-auto"
+            style={{ color: colors.mutedText }}
+            data-aos="fade-up"
+          >
             These are the technologies I use to build web & mobile applications
           </p>
         </div>

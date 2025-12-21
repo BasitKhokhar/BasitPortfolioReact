@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import colors from "../themes/colors";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Services = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -16,6 +17,14 @@ const Services = () => {
 
   /* ================= INTERSECTION OBSERVER ================= */
   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
+
+
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
       { threshold: 0.3 }
@@ -54,20 +63,20 @@ const Services = () => {
               fontSize: "clamp(60px, 12vw, 120px)",
               color: "rgba(255,255,255,0.05)",
               letterSpacing: "12px",
-            }}
+            }} data-aos="fade-up"
           >
             Services
           </h1>
 
           {/* Foreground Heading */}
           <h2
-            className={`relative text-5xl font-extrabold mb-4 ${isVisible ? "animate-fadeUp" : "opacity-0"
+            className={`relative text-5xl font-extrabold mb-4
               }`}
             style={{
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.sunsetGold[1]})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-            }}
+            }} data-aos="fade-up"
           >
             My Services
           </h2>
@@ -75,7 +84,7 @@ const Services = () => {
           <p
             className={`relative max-w-2xl mx-auto ${isVisible ? "animate-fadeUp delay-200" : "opacity-0"
               }`}
-            style={{ color: colors.mutedText }}
+            style={{ color: colors.mutedText }} data-aos="fade-up"
           >
             I provide end-to-end digital solutions, crafting modern,
             scalable, and visually stunning products with long-term support.
@@ -87,13 +96,13 @@ const Services = () => {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className={`relative group p-10 rounded-xl transition-all duration-300 hover:scale-110 cursor-pointer ${isVisible ? "animate-fadeUp" : "opacity-0"
+              className={`relative group p-10 rounded-xl transition-all duration-300 hover:scale-110 cursor-pointer
                 }`}
               style={{
                 background: `linear-gradient(135deg, ${colors.gradients.dark[0]}, ${colors.gradients.dark[1]})`,
                 border: `2px solid ${colors.primary}30`,
-                animationDelay: `${idx * 0.15}s`,
-              }}
+                // animationDelay: `${idx * 0.15}s`,
+              }} data-aos="zoom-in"
             >
               {/* Hover Gold Overlay */}
               <div

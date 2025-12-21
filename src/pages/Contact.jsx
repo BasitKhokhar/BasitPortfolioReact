@@ -1,6 +1,7 @@
 import colors from "../themes/colors";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -47,6 +48,16 @@ const Contact = () => {
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
+  }, []);
+
+
   return (
     <section
       id="contact-section"
@@ -75,7 +86,7 @@ const Contact = () => {
               fontSize: "clamp(60px, 12vw, 120px)",
               color: "rgba(255,255,255,0.05)",
               letterSpacing: "12px",
-            }}
+            }} data-aos="fade-up"
           >
             Contact
           </h1>
@@ -87,8 +98,7 @@ const Contact = () => {
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-              animation: "slideInUp 0.8s ease-out",
-            }}
+            }} data-aos="fade-up"
           >
             Contact Me
           </h2>
@@ -114,7 +124,7 @@ const Contact = () => {
                 background: `linear-gradient(135deg, ${colors.gradients.dark[0]}, ${colors.gradients.dark[1]})`,
                 border: `2px solid ${colors.primary}30`,
                 animation: `slideInUp 0.8s ease-out ${idx * 0.1}s`,
-              }}
+              }} data-aos="flip-up"
             >
               {/* Gradient Overlay */}
               <div
@@ -156,8 +166,8 @@ const Contact = () => {
             style={{
               background: `linear-gradient(135deg, ${colors.gradients.dark[0]}, ${colors.gradients.dark[1]})`,
               border: `2px solid ${colors.primary}30`,
-              animation: "slideInLeft 0.8s ease-out 0.2s both",
-            }}
+
+            }} data-aos="fade-up"
           >
             {/* Background Gradient */}
             <div
@@ -272,10 +282,9 @@ const Contact = () => {
           <div
             className="rounded-2xl overflow-hidden h-full"
             style={{
-              animation: "slideInRight 0.8s ease-out 0.2s both",
               boxShadow: `0 0 40px ${colors.primary}40`,
               border: `2px solid ${colors.primary}20`,
-            }}
+            }} data-aos="fade-up"
           >
             <img
               src="/src/assets/images/basit.png"

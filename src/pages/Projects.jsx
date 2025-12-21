@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import colors from "../themes/colors";
 import appProjects from "../data/AppProjects.json";
@@ -22,15 +22,15 @@ const Projects = () => {
 
   // Take first 6 projects (2 rows of 3)
   const displayProjects = combinedProjects.slice(0, 6);
- 
-   useEffect(() => {
-     AOS.init({
-       duration: 1000, 
-       easing: 'ease-in-out',
-       once: false, 
-       mirror: false, 
-     });
-   }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
+  }, []);
 
 
 
@@ -62,7 +62,7 @@ const Projects = () => {
               fontSize: "clamp(60px, 12vw, 120px)",
               color: "rgba(255,255,255,0.05)",
               letterSpacing: "12px",
-            }}data-aos="fade-up"
+            }} data-aos="fade-up"
           >
             Projects
           </h1>
@@ -75,7 +75,7 @@ const Projects = () => {
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
 
-            }}data-aos="fade-up"
+            }} data-aos="fade-up"
           >
             My Projects
           </h2>
@@ -83,8 +83,8 @@ const Projects = () => {
             className="relative max-w-2xl mx-auto"
             style={{
               color: colors.mutedText,
-             
-            }}data-aos="fade-up"
+
+            }} data-aos="fade-up"
           >
             Explore my portfolio showcasing diverse projects highlighting creativity, functionality, and
             technical expertise.
@@ -94,103 +94,103 @@ const Projects = () => {
         {/* Projects Grid - 3 Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {displayProjects.map((project, idx) => (
-            <div
-              key={`${project.type}-${project.id}`}
-              className="rounded-2xl overflow-hidden transition-all hover:scale-105 hover:shadow-2xl"
-              style={{
-                background: `rgba(240, 248, 255, 0.05)`,
-                border: `1px solid ${colors.primary}30`,
-                backdropFilter: "blur(10px)",
-                animation: `slideInUp 0.8s ease-out ${0.1 * idx}s`,
-              }} data-aos="flip-left"
-            >
-              {/* Image at Top */}
-              <div className="relative h-56 overflow-hidden group">
-                <img
-                  src={getImageUrl(project.image)}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity"
-                  style={{
-                    background: `linear-gradient(135deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
-                  }}
-                />
-              </div>
+            <div key={`${project.type}-${project.id}`} data-aos="flip-left">
+              <div
+                className="rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 hover:shadow-2xl h-full"
+                style={{
+                  background: `rgba(240, 248, 255, 0.05)`,
+                  border: `1px solid ${colors.primary}30`,
+                  backdropFilter: "blur(10px)",
+                }}
+              >
+                {/* Image at Top */}
+                <div className="relative h-56 overflow-hidden group">
+                  <img
+                    src={getImageUrl(project.image)}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div
+                    className="absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity"
+                    style={{
+                      background: `linear-gradient(135deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
+                    }}
+                  />
+                </div>
 
-              {/* Card Content */}
-              <div className="p-6">
-                {/* Title */}
-                <h3
-                  className="text-xl font-bold mb-3"
-                  style={{ color: colors.primary }}
-                >
-                  {project.title}
-                </h3>
+                {/* Card Content */}
+                <div className="p-6">
+                  {/* Title */}
+                  <h3
+                    className="text-xl font-bold mb-3"
+                    style={{ color: colors.primary }}
+                  >
+                    {project.title}
+                  </h3>
 
-                {/* Category Badge (for websites) */}
-                {project.category && (
+                  {/* Category Badge (for websites) */}
+                  {project.category && (
+                    <p
+                      className="text-xs font-medium mb-3 px-3 py-1 rounded-full inline-block"
+                      style={{
+                        background: `${colors.primary}20`,
+                        color: colors.primary,
+                      }}
+                    >
+                      {project.category}
+                    </p>
+                  )}
+
+                  {/* Type Badge (app or web) */}
                   <p
                     className="text-xs font-medium mb-3 px-3 py-1 rounded-full inline-block"
                     style={{
-                      background: `${colors.primary}20`,
+                      background: project.type === "app" ? `${colors.primary}30` : `${colors.primary}20`,
                       color: colors.primary,
                     }}
                   >
-                    {project.category}
+                    {project.type === "app" ? "📱 App Project" : "🌐 Web Project"}
                   </p>
-                )}
 
-                {/* Type Badge (app or web) */}
-                <p
-                  className="text-xs font-medium mb-3 px-3 py-1 rounded-full inline-block"
-                  style={{
-                    background: project.type === "app" ? `${colors.primary}30` : `${colors.primary}20`,
-                    color: colors.primary,
-                  }}
-                >
-                  {project.type === "app" ? "📱 App Project" : "🌐 Web Project"}
-                </p>
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.slice(0, 4).map((tag, i) => (
+                      <span
+                        key={i}
+                        className="px-2 py-1 rounded-full text-xs font-medium border"
+                        style={{
+                          background: "rgba(255, 255, 255, 0.08)",
+                          color: colors.primary,
+                          borderColor: `${colors.primary}40`,
+                        }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
 
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.slice(0, 4).map((tag, i) => (
-                    <span
-                      key={i}
-                      className="px-2 py-1 rounded-full text-xs font-medium border"
-                      style={{
-                        background: "rgba(255, 255, 255, 0.08)",
-                        color: colors.primary,
-                        borderColor: `${colors.primary}40`,
-                      }}
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  {/* First 3 Features/Description Points */}
+                  <ul className="text-sm mb-6 space-y-1" style={{ color: "#ccc" }}>
+                    {(project.descriptionPoints || project.features || []).slice(0, 3).map((point, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <span style={{ color: colors.primary }}>•</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Detail Button */}
+                  <button
+                    onClick={() => setSelectedProject(project)}
+                    className="w-full py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
+                    style={{
+                      background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
+                      color: colors.background,
+                    }}
+                  >
+                    View Details
+                  </button>
                 </div>
-
-                {/* First 3 Features/Description Points */}
-                <ul className="text-sm mb-6 space-y-1" style={{ color: "#ccc" }}>
-                  {(project.descriptionPoints || project.features || []).slice(0, 3).map((point, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <span style={{ color: colors.primary }}>•</span>
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Detail Button */}
-                <button
-                  onClick={() => setSelectedProject(project)}
-                  className="w-full py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
-                  style={{
-                    background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
-                    color: colors.background,
-                  }}
-                >
-                  View Details
-                </button>
               </div>
             </div>
           ))}

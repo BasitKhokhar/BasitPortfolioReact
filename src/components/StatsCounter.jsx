@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import colors from "../themes/colors";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const StatsCounter = () => {
   const stats = [
     { number: 2, label: "Awards" },
@@ -15,10 +16,19 @@ const StatsCounter = () => {
   const animationTimeoutRef = useRef(null);
 
   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
+
+
+
     const observer = new IntersectionObserver(
       (entries) => {
         const isCurrentlyVisible = entries[0].isIntersecting;
-        
+
         if (isCurrentlyVisible && !isVisibleRef.current) {
           // Section just became visible - start animation
           isVisibleRef.current = true;
@@ -108,8 +118,9 @@ const StatsCounter = () => {
                 background: `rgba(240, 248, 255, 0.05)`,
                 border: `2px solid ${colors.primary}30`,
                 backdropFilter: "blur(10px)",
-                animation: `slideInUp 0.6s ease-out ${idx * 0.1}s both`,
-              }}
+
+              }} data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
             >
               {/* Counter Number */}
               <div className="mb-4">
@@ -147,7 +158,7 @@ const StatsCounter = () => {
         </div>
 
         {/* Optional: Decorative Element */}
-      
+
       </div>
     </section>
   );

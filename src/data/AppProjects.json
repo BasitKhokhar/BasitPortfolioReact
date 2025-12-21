@@ -64,9 +64,8 @@
         }
       ]
     },
-  
     {
-      "id": 3,
+      "id": 2,
       "title": "Tap & Win Game (Lottery Type)",
       "description": "A lottery-based prize-winning mobile game featuring hidden reward boxes, wallet integration, and real-time interaction via sockets.",
       "image": "src/assets/images/lotteryappmain.jpg",
@@ -103,7 +102,7 @@
       ],
       "videos": [
         {
-          "title": "PicNova (AI Based Pics & Video Editing App)",
+          "title": "Lottery App",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FloterryAppvideo.mp4?alt=media&token=fd3e9054-79d4-4448-aa4d-f2cb6d10b892"
         },
         {
@@ -115,7 +114,7 @@
     {
       "id": 4,
       "title": "ElectroPak App",
-      "description": "A lottery-based prize-winning mobile game featuring hidden reward boxes, wallet integration, and real-time interaction via sockets.",
+      "description": "A Final Year Project developed for university students, ElectroPak is a smart mobile application combining electricity items e-commerce, electrician service booking, and a lottery-based reward system with real-time interactions.",
       "image": "src/assets/images/Electropakmain.jpg",
       "screenshots": [
         "src/assets/images/lottery/home.png",
@@ -130,23 +129,23 @@
         "src/assets/images/lottery/history.png"
       ],
       "descriptionPoints": [
-        "Fun and interactive lottery-style gameplay.",
-        "Wallet integration for EasyPaisa, JazzCash, and Stripe.",
-        "User registration and secure authentication.",
-        "Real-time events using socket communication.",
-        "Animated UI/UX for smooth gameplay.",
-        "Prize tracking with winner history.",
-        "Backend built using Node.js, Express.js, and MySQL.",
-        "Scalable architecture with cross-platform support."
+        "Final Year Project designed for university-level implementation.",
+        "Electricity items e-commerce platform with reward-based engagement.",
+        "Electrician service booking with real-time system interaction.",
+        "Wallet integration supporting EasyPaisa, JazzCash, and Stripe.",
+        "Secure user registration and authentication system.",
+        "Backend powered by Node.js, Express.js, and MySQL database.",
+        "Scalable cross-platform mobile architecture using React Native."
       ],
       "tags": [
         "React Native",
         "Node.js",
         "Express.js",
         "MySQL",
-        "Socket.io",
-        "Stripe",
-        "Mobile Payments"
+        "E-commerce",
+        "Electrician Services",
+        "Mobile Payments",
+        "Final Year Project"
       ],
       "videos": [
         {
@@ -163,11 +162,11 @@
         }
       ]
     },
-      {
-      "id": 2,
+    {
+      "id": 4,
       "title": "Pic Nova AI (AI Based Pics & Videos Editing App)",
       "description": "An advanced AI-powered media editing app that allows users to edit photos and videos using machine learning models. Designed for creators who want powerful effects with simplicity.",
-      "image": "src/assets/images/web2.PNG",
+      "image": "src/assets/images/picnovaoldversion.jpg",
       "screenshots": [
         "src/assets/images/picnova/editor.png",
         "src/assets/images/picnova/ai-filters.png",
@@ -197,11 +196,57 @@
       "videos": [
         {
           "title": "Under Development",
-          "file": "Videos/picnova.mp4"
+          "file": "src/assets/videos/picnova.mp4"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Mechify App",
+      "description": "A Final Year Project developed for university students, Mechify is a smart mobile application that combines car spare parts e-commerce with on-demand nearby mechanic services using real-time Google Maps integration.",
+      "image": "src/assets/images/mechifymain.jpg",
+      "screenshots": [
+        "src/assets/images/mechify/home.png",
+        "src/assets/images/mechify/products.png",
+        "src/assets/images/mechify/cart.png",
+        "src/assets/images/mechify/map.png",
+        "src/assets/images/mechify/technician-profile.png",
+        "src/assets/images/mechify/home.png",
+        "src/assets/images/mechify/products.png",
+        "src/assets/images/mechify/cart.png",
+        "src/assets/images/mechify/map.png",
+        "src/assets/images/mechify/technician-profile.png"
+      ],
+      "descriptionPoints": [
+        "Final Year Project designed for university-level implementation.",
+        "Car spare parts e-commerce platform with categorized products.",
+        "On-demand mechanic service booking for emergency situations.",
+        "Nearby technicians discovery using Google Maps integration.",
+        "Real-time location tracking of mechanics and service requests.",
+        "Secure user registration and authentication system.",
+        "Order management for spare parts and service requests.",
+        "Backend powered by Node.js, Express.js, and MySQL database.",
+        "Scalable cross-platform mobile architecture using React Native."
+      ],
+      "tags": [
+        "React Native",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "E-commerce",
+        "Car Spare Parts",
+        "Mechanic Services",
+        "Google Maps API",
+        "Final Year Project"
+      ],
+      "videos": [
+        {
+          "title": "Mechify User App",
+          "file": "src/assets/videos/Mechifyuserside.mp4"
         },
         {
-          "title": "Tap & Win Prizes Game (Lottery Type)",
-          "file": "Videos/demo1.mp4"
+          "title": "Mechanic Side App",
+          "file": "src/assets/videos/Mechifyuserside.mp4"
         }
       ]
     }

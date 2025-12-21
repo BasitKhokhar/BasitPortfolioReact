@@ -15,6 +15,9 @@ export const imageMap = {
   // App Projects
   'src/assets/images/BasitsanitaryAppmain.jpg': new URL('../assets/images/BasitsanitaryAppmain.jpg', import.meta.url).href,
   'src/assets/images/lotteryappmain.jpg': new URL('../assets/images/lotteryappmain.jpg', import.meta.url).href,
+  'src/assets/images/Electropakmain.jpg': new URL('../assets/images/Electropakmain.jpg', import.meta.url).href,
+  'src/assets/images/mechifymain.jpg': new URL('../assets/images/mechifymain.jpg', import.meta.url).href,
+  'src/assets/images/picnovaoldversion.jpg': new URL('../assets/images/picnovaoldversion.jpg', import.meta.url).href,
   'src/assets/images/web2.PNG': new URL('../assets/images/web2.PNG', import.meta.url).href,
   
   // Website Projects
@@ -25,6 +28,23 @@ export const imageMap = {
   'src/assets/images/web6.PNG': new URL('../assets/images/web6.PNG', import.meta.url).href,
   'src/assets/images/web7.PNG': new URL('../assets/images/web7.PNG', import.meta.url).href,
   'src/assets/images/shadowsuit.PNG': new URL('../assets/images/shadowsuit.PNG', import.meta.url).href,
+  
+  // Tech Stack Images
+  'src/assets/images/html.png': new URL('../assets/images/html.png', import.meta.url).href,
+  'src/assets/images/css.png': new URL('../assets/images/css.png', import.meta.url).href,
+  'src/assets/images/tailwind.png': new URL('../assets/images/tailwind.png', import.meta.url).href,
+  'src/assets/images/JS.png': new URL('../assets/images/JS.png', import.meta.url).href,
+  'src/assets/images/react.png': new URL('../assets/images/react.png', import.meta.url).href,
+  'src/assets/images/reactnative.png': new URL('../assets/images/reactnative.png', import.meta.url).href,
+  'src/assets/images/Node.png': new URL('../assets/images/Node.png', import.meta.url).href,
+  'src/assets/images/express.png': new URL('../assets/images/express.png', import.meta.url).href,
+  'src/assets/images/mysql.png': new URL('../assets/images/mysql.png', import.meta.url).href,
+  'src/assets/images/firebase.png': new URL('../assets/images/firebase.png', import.meta.url).href,
+  'src/assets/images/mongodb.png': new URL('../assets/images/mongodb.png', import.meta.url).href,
+  
+  // Background Images
+  'src/assets/images/bg_1.jpg': new URL('../assets/images/bg_1.jpg', import.meta.url).href,
+  'src/assets/images/bg2.png': new URL('../assets/images/bg2.png', import.meta.url).href,
   
   // App Screenshots - Basit Sanitary App
   'src/assets/images/basitsanitaryapp/1.png': new URL('../assets/images/basitsanitaryapp/1.png', import.meta.url).href,
@@ -58,6 +78,20 @@ export const imageMap = {
   'src/assets/images/lottery/wallet.png': new URL('../assets/images/lottery/wallet.png', import.meta.url).href,
   'src/assets/images/lottery/winner-popup.png': new URL('../assets/images/lottery/winner-popup.png', import.meta.url).href,
   'src/assets/images/lottery/history.png': new URL('../assets/images/lottery/history.png', import.meta.url).href,
+  
+  // ElectroPak Screenshots
+  'src/assets/images/electropak/home.png': new URL('../assets/images/electropak/home.png', import.meta.url).href,
+  'src/assets/images/electropak/products.png': new URL('../assets/images/electropak/products.png', import.meta.url).href,
+  'src/assets/images/electropak/cart.png': new URL('../assets/images/electropak/cart.png', import.meta.url).href,
+  'src/assets/images/electropak/services.png': new URL('../assets/images/electropak/services.png', import.meta.url).href,
+  'src/assets/images/electropak/profile.png': new URL('../assets/images/electropak/profile.png', import.meta.url).href,
+  
+  // Mechify Screenshots
+  'src/assets/images/mechify/home.png': new URL('../assets/images/mechify/home.png', import.meta.url).href,
+  'src/assets/images/mechify/products.png': new URL('../assets/images/mechify/products.png', import.meta.url).href,
+  'src/assets/images/mechify/cart.png': new URL('../assets/images/mechify/cart.png', import.meta.url).href,
+  'src/assets/images/mechify/map.png': new URL('../assets/images/mechify/map.png', import.meta.url).href,
+  'src/assets/images/mechify/technician-profile.png': new URL('../assets/images/mechify/technician-profile.png', import.meta.url).href,
   
   // PicNova Screenshots
   'src/assets/images/picnova/editor.png': new URL('../assets/images/picnova/editor.png', import.meta.url).href,

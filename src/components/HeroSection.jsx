@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import colors from "../themes/colors";
+import heroImage from "../assets/images/basit.png";
 
 const HeroSection = () => {
   const [subheading, setSubheading] = useState("");
@@ -181,7 +182,7 @@ const HeroSection = () => {
             style={{ animation: "slideInRight 1s ease-out" }}
           >
             <img
-              src="/src/assets/images/basit.png"
+              src={heroImage}
               alt="Hero"
               className="w-72 sm:w-80 md:w-105 rounded-lg shadow-2xl transition-transform transform hover:scale-105"
               style={{

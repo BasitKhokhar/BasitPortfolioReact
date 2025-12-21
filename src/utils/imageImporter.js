@@ -115,14 +115,14 @@ export const imageMap = {
   'src/assets/images/picnova/profile.png': new URL('../assets/images/picnova/profile.png', import.meta.url).href,
 
   // Videos
-  'src/assets/videos/Basit sanitary App dasboard.mp4': new URL('../assets/videos/Basit sanitary App dasboard.mp4', import.meta.url).href,
+  'src/assets/videos/BasitSanitaryAppDashboard.mp4': new URL('../assets/videos/BasitSanitaryAppDashboard.mp4', import.meta.url).href,
   'src/assets/videos/abcd.mp4': new URL('../assets/videos/abcd.mp4', import.meta.url).href,
   'src/assets/videos/Basitsanitarydashboard.mp4': new URL('../assets/videos/Basitsanitarydashboard.mp4', import.meta.url).href,
   'src/assets/videos/Elctropakuserside.mp4': new URL('../assets/videos/Elctropakuserside.mp4', import.meta.url).href,
   'src/assets/videos/electropakadmin.mp4': new URL('../assets/videos/electropakadmin.mp4', import.meta.url).href,
   'src/assets/videos/ElectropakElectrician.mp4': new URL('../assets/videos/ElectropakElectrician.mp4', import.meta.url).href,
   'src/assets/videos/picnova.mp4': new URL('../assets/videos/picnova.mp4', import.meta.url).href,
-  'src/assets/videos/Portfolio video.mp4': new URL('../assets/videos/Portfolio video.mp4', import.meta.url).href,
+  'src/assets/videos/PortfolioVideo.mp4': new URL('../assets/videos/PortfolioVideo.mp4', import.meta.url).href,
 };
 
 export const getImageUrl = (imagePath) => {

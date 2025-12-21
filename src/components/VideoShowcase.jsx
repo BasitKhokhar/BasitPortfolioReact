@@ -5,13 +5,13 @@ import { useEffect } from 'react';
 import { getImageUrl } from "../utils/imageImporter";
 const VideoShowcase = () => {
   useEffect(() => {
-  AOS.init({
-    duration: 1000, 
-    easing: 'ease-in-out',
-    once: false, 
-    mirror: false, 
-  });
-}, []);
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
+  }, []);
 
   return (
     <div className="flex items-center justify-center min-h-screen">
@@ -32,7 +32,7 @@ const VideoShowcase = () => {
               controls
             >
               <source
-                src={getImageUrl("src/assets/videos/Portfolio video.mp4")}
+                src={getImageUrl("src/assets/videos/PortfolioVideo.mp4")}
                 type="video/mp4"
               />
               Your browser does not support the video tag.

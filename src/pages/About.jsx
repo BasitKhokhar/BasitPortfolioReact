@@ -1,4 +1,5 @@
 import colors from "../themes/colors";
+import aboutImage from "../assets/images/bg2.png";
 import { useEffect, useRef, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -7,12 +8,12 @@ const About = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-     AOS.init({
-        duration: 1000,
-        easing: 'ease-in-out', 
-        once: false,
-        mirror: false, 
-      });
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false,
+    });
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
@@ -86,7 +87,7 @@ const About = () => {
               }}
             >
               <img
-                src="/src/assets/images/bg2.png"
+                src={aboutImage}
                 alt="About Image"
                 className="w-full h-full object-cover"
               />
@@ -96,7 +97,7 @@ const About = () => {
           {/* Right Text Section */}
           <div
             className="space-y-6"
-           data-aos="fade-left"
+            data-aos="fade-left"
           >
             <p style={{ color: colors.text, fontSize: "14px" }} className="leading-relaxed">
               Hi there! I'm a dedicated <b>Full Stack Web & React Native Developer</b> with 2.5 years

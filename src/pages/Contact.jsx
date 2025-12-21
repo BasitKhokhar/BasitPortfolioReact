@@ -1,4 +1,5 @@
 import colors from "../themes/colors";
+import contactImage from "../assets/images/basit.png";
 import { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -287,7 +288,7 @@ const Contact = () => {
             }} data-aos="fade-up"
           >
             <img
-              src="/src/assets/images/basit.png"
+              src={contactImage}
               alt="Contact"
               className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
             />

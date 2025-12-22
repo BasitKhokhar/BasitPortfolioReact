@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import colors from "../themes/colors";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import resumeFile from "../assets/Pdfs/Basit Resume20-12-25.pdf";
+
 const Resume = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -171,8 +173,8 @@ const Resume = () => {
             }`}
         >
           <a
-            href="/Files/Basit_Resume.pdf"
-            download
+            href={resumeFile}
+            download="Basit_Resume.pdf"
             className="relative inline-block px-10 py-4 rounded-xl font-bold text-lg hover:scale-110 transition-all duration-300 overflow-hidden"
             style={{
               background: `linear-gradient(135deg, ${colors.gradients.sunsetGold[0]}, ${colors.gradients.sunsetGold[1]})`,

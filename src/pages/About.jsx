@@ -3,6 +3,8 @@ import aboutImage from "../assets/images/bg2.png";
 import { useEffect, useRef, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import cvFile from "../assets/Pdfs/Basit CV20-12-25.pdf";
+
 const About = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -149,8 +151,8 @@ const About = () => {
                 </p>
               </div>
               <a
-                href="/Files/Basit_cv.pdf"
-                download
+                href={cvFile}
+                download="Basit_CV.pdf"
                 className="px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-2xl relative group overflow-hidden"
                 style={{
                   background: `linear-gradient(135deg, ${colors.gradients.sunsetGold[0]}, ${colors.gradients.sunsetGold[1]})`,

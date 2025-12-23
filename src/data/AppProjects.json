@@ -69,6 +69,7 @@
       "title": "Tap & Win Game (Lottery Type)",
       "description": "A lottery-based prize-winning mobile game featuring hidden reward boxes, wallet integration, and real-time interaction via sockets.",
       "image": "src/assets/images/lotteryappmain.jpg",
+      "apklink": "src/assets/lotteryapp.apk",
       "screenshots": [
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png",

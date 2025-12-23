@@ -164,7 +164,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
               <button
                 onClick={() => {
                   const link = document.createElement("a");
-                  link.href = project.apklink;
+                  link.href = getImageUrl(project.apklink);
                   link.download = `${project.title}.apk`;
                   document.body.appendChild(link);
                   link.click();

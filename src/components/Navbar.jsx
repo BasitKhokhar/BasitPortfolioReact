@@ -48,7 +48,7 @@ const Navbar = () => {
         <button
           onClick={scrollToHome}
           className="text-2xl font-extrabold tracking-wide cursor-pointer hover:opacity-80 transition-opacity"
-          style={{ color: colors.primary,background: "transparent", }}
+          style={{ color: colors.primary, background: "transparent", }}
         >
           B.Creatives
         </button>
@@ -66,12 +66,12 @@ const Navbar = () => {
                 }}
               >
                 {link.label}
-                
+
                 {/* Underline indicator */}
                 <span
                   className="absolute bottom-0 left-0 h-1 rounded-full transition-all duration-300"
                   style={{
-                    background: activeSection === link.id 
+                    background: activeSection === link.id
                       ? `linear-gradient(90deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.warmGold[1]})`
                       : "transparent",
                     width: activeSection === link.id ? "100%" : "0%",
@@ -85,7 +85,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           className="lg:hidden text-2xl"
-          style={{ color: colors.text }}
+          style={{ color: colors.text, background: "transparent" }}
           onClick={() => setOpen(!open)}
           aria-label="Toggle Menu"
         >
@@ -115,7 +115,7 @@ const Navbar = () => {
                   }}
                 >
                   {link.label}
-                  
+
                   {/* Active indicator bar */}
                   {activeSection === link.id && (
                     <span
@@ -145,4 +145,4 @@ const Navbar = () => {
 
 export default Navbar;
 
-      
+

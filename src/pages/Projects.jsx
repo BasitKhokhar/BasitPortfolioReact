@@ -104,7 +104,7 @@ const Projects = () => {
                 }}
               >
                 {/* Image at Top */}
-                <div className="relative h-56 overflow-hidden group">
+                <div className="relative h-48 sm:h-56 overflow-hidden group">
                   <img
                     src={getImageUrl(project.image)}
                     alt={project.title}
@@ -117,6 +117,7 @@ const Projects = () => {
                     }}
                   />
                 </div>
+
 
                 {/* Card Content */}
                 <div className="p-6">

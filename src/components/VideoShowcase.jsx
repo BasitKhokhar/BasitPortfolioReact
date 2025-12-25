@@ -14,7 +14,7 @@ const VideoShowcase = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center">
       <section data-aos="flip-up"
         className="w-full max-w-4xl px-4 py-12 rounded-2xl"
         style={{ backgroundColor: colors.background }}
@@ -32,7 +32,7 @@ const VideoShowcase = () => {
               controls
             >
               <source
-                src={getImageUrl("https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FPortfolioVideo.mp4?alt=media&token=fff0f9bd-4ba1-4638-90d9-0c3d998d17bc")}
+                src={getImageUrl("https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FPortfolio%20Video.mp4?alt=media&token=e785a409-20ec-467d-9bba-cc6106c43ec9")}
                 type="video/mp4"
               />
               Your browser does not support the video tag.

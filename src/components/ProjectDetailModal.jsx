@@ -144,11 +144,11 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
                 >
                   {project.descriptionPoints ? "Key Features & Details" : "Features"}
                 </h3>
-                <ul className="space-y-3" style={{ color: "#ccc" }}>
+                <ul className="space-y-0" style={{ color: "#ccc" }}>
                   {descriptionItems.map((point, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span
-                        className="text-xl mt-1 flex-shrink-0"
+                        className="text-xl mt-0 flex-shrink-0"
                         style={{ color: colors.primary }}
                       >
                         ✓
@@ -181,19 +181,19 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
             )}
 
             {/* Preview Link if exists */}
-            {project.previewLink && (
-              <div className="flex gap-4">
+            {(project.previewLink || project.url || project.projectUrl) && (
+              <div className="mt-4">
                 <a
-                  href={project.previewLink}
+                  href={project.previewLink || project.url || project.projectUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-block py-3 px-8 rounded-xl font-semibold transition-all transform hover:scale-105 text-center"
+                  className="w-full inline-block py-3 px-8 rounded-xl font-semibold transition-all transform hover:scale-105 text-center"
                   style={{
                     background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
                     color: colors.background,
                   }}
                 >
-                  👁️ Preview Live Website
+                  {isAppProject ? "👁️ View Project Demo" : "👁️ Preview Live Website"}
                 </a>
               </div>
             )}

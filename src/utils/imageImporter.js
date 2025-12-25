@@ -87,6 +87,21 @@ export const imageMap = {
   'src/assets/images/basitsanitaryapp/24.png': new URL('../assets/images/basitsanitaryapp/24.png', import.meta.url).href,
 
   // Lottery App Screenshots
+  'src/assets/images/lotteryapp/lottery1.png': new URL('../assets/images/lotteryapp/lottery1.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery2.png': new URL('../assets/images/lotteryapp/lottery2.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery3.png': new URL('../assets/images/lotteryapp/lottery3.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery4.png': new URL('../assets/images/lotteryapp/lottery4.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery5.png': new URL('../assets/images/lotteryapp/lottery5.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery6.png': new URL('../assets/images/lotteryapp/lottery6.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery7.png': new URL('../assets/images/lotteryapp/lottery7.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery8.png': new URL('../assets/images/lotteryapp/lottery8.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery9.png': new URL('../assets/images/lotteryapp/lottery9.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery10.png': new URL('../assets/images/lotteryapp/lottery10.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery11.png': new URL('../assets/images/lotteryapp/lottery11.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery12.png': new URL('../assets/images/lotteryapp/lottery12.png', import.meta.url).href,
+  'src/assets/images/lotteryapp/lottery13.png': new URL('../assets/images/lotteryapp/lottery13.png', import.meta.url).href,
+
+  // Old Lottery/ElectroPak Screenshots
   'src/assets/images/lottery/home.png': new URL('../assets/images/lottery/home.png', import.meta.url).href,
   'src/assets/images/lottery/game-board.png': new URL('../assets/images/lottery/game-board.png', import.meta.url).href,
   'src/assets/images/lottery/wallet.png': new URL('../assets/images/lottery/wallet.png', import.meta.url).href,

@@ -42,6 +42,8 @@ export const imageMap = {
   'src/assets/images/web6.PNG': new URL('../assets/images/web6.PNG', import.meta.url).href,
   'src/assets/images/web7.PNG': new URL('../assets/images/web7.PNG', import.meta.url).href,
   'src/assets/images/shadowsuit.PNG': new URL('../assets/images/shadowsuit.PNG', import.meta.url).href,
+  'src/assets/images/electropakweb.PNG': new URL('../assets/images/electropakweb.PNG', import.meta.url).href,
+  'src/assets/images/BS1.PNG': new URL('../assets/images/BS1.PNG', import.meta.url).href,
 
   // Tech Stack Images
   'src/assets/images/html.png': new URL('../assets/images/html.png', import.meta.url).href,

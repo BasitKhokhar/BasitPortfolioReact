@@ -62,6 +62,35 @@
   "projects": [
     {
       "id": 1,
+      "title": "ElectroPak – Smart Electronics Platform",
+      "category": "E-Commerce / Education",
+      "image": "src/assets/images/electropakweb.PNG",
+      "previewLink": "https://electro-pak-web.vercel.app/",
+      "tags": [
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "Firebase",
+        "REST APIs"
+      ],
+      "features": [
+        "Developed a full-stack electronics platform for university students.",
+        "Built a responsive web interface using React.js and Tailwind CSS.",
+        "Created a mobile app integrated with the same backend services.",
+        "Implemented backend APIs using Node.js and Express.js.",
+        "Used MySQL for structured data and Firebase for authentication and real-time services."
+      ],
+      "screenshots": [
+        "src/assets/images/electropak/web-home.png",
+        "src/assets/images/electropak/web-products.png",
+        "src/assets/images/electropak/app-home.png",
+        "src/assets/images/electropak/app-details.png"
+      ]
+    },
+    {
+      "id": 2,
       "title": "Medical Health Hub",
       "category": "Medical",
       "image": "src/assets/images/web1.PNG",
@@ -83,7 +112,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "AutoCare Service Website",
       "category": "Automobile",
       "image": "src/assets/images/web2.PNG",
@@ -103,7 +132,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Royal Hotel Website",
       "category": "Hotel",
       "image": "src/assets/images/web3.PNG",
@@ -123,7 +152,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "IU University Clone",
       "category": "University",
       "image": "src/assets/images/web4.PNG",
@@ -143,7 +172,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Admin Panel Frontend",
       "category": "Dashboard",
       "image": "src/assets/images/web5.PNG",
@@ -163,7 +192,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Figma to Web Conversion",
       "category": "UI/UX to Code",
       "image": "src/assets/images/web6.PNG",
@@ -183,7 +212,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Fashion Blog Website",
       "category": "Fashion",
       "image": "src/assets/images/web7.PNG",
@@ -208,6 +237,7 @@
       "id": 1,
       "title": "Basit Sanitary Store",
       "subtitle": "Full-Stack E-commerce Website",
+      "image": "src/assets/images/BS1.PNG",
       "description": "A complete full-stack e-commerce platform specializing in sanitary products. Features include browsing, filtering, cart, user accounts, admin dashboard, and full backend integration.",
       "tags": [
         "React.js",

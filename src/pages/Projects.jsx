@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import colors from "../themes/colors";
 import appProjects from "../data/AppProjects.json";
 import websiteProjects from "../data/WebProjects.json";
-import ProjectDetailModal from "../components/ProjectDetailModal";
 import { getImageUrl } from "../utils/imageImporter";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,7 +11,6 @@ import 'aos/dist/aos.css';
 
 const Projects = () => {
   const navigate = useNavigate();
-  const [selectedProject, setSelectedProject] = useState(null);
 
   // Combine projects from both JSON files
   const combinedProjects = [
@@ -182,7 +180,7 @@ const Projects = () => {
 
                   {/* Detail Button */}
                   <button
-                    onClick={() => setSelectedProject(project)}
+                    onClick={() => navigate(`/project/${project.type}/${project.id}`)}
                     className="w-full py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
                     style={{
                       background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
@@ -218,13 +216,6 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Detail Modal */}
-      <ProjectDetailModal
-        project={selectedProject}
-        isOpen={!!selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
-
       <style>{`
         @keyframes slideInUp {
           from {
@@ -251,7 +242,7 @@ const Projects = () => {
           50% { transform: translateY(20px); }
         }
       `}</style>
-    </section>
+    </section >
   );
 };
 

@@ -1,8 +1,8 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import colors from "../themes/colors";
 import appProjects from "../data/AppProjects.json";
 import websiteProjects from "../data/WebProjects.json";
-import ProjectDetailModal from "./ProjectDetailModal";
 import { getImageUrl } from "../utils/imageImporter";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -10,14 +10,14 @@ import 'aos/dist/aos.css';
 
 
 const AllProjects = () => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("apps");
-  const [selectedProject, setSelectedProject] = useState(null);
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 1000,
       easing: 'ease-in-out',
-      once: false, 
-      mirror: false, 
+      once: false,
+      mirror: false,
     });
   }, []);
   return (
@@ -34,7 +34,7 @@ const AllProjects = () => {
               background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-            }}data-aos="fade-up"
+            }} data-aos="fade-up"
           >
             All Projects
           </h1>
@@ -135,7 +135,7 @@ const AllProjects = () => {
 
                     {/* Detail Button */}
                     <button
-                      onClick={() => setSelectedProject(app)}
+                      onClick={() => navigate(`/project/app/${app.id}`)}
                       className="w-full py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
                       style={{
                         background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
@@ -171,7 +171,7 @@ const AllProjects = () => {
                       background: `rgba(240, 248, 255, 0.05)`,
                       border: `1px solid ${colors.primary}30`,
                       backdropFilter: "blur(10px)",
-                    }}data-aos="flip-left"
+                    }} data-aos="flip-left"
                   >
                     {/* Image at Top */}
                     <div className="relative h-56 overflow-hidden group">
@@ -240,7 +240,7 @@ const AllProjects = () => {
 
                       {/* Detail Button */}
                       <button
-                        onClick={() => setSelectedProject(project)}
+                        onClick={() => navigate(`/project/web/${project.id}`)}
                         className="w-full py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
                         style={{
                           background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
@@ -268,53 +268,71 @@ const AllProjects = () => {
                   {websiteProjects.fullStackProjects.map((project) => (
                     <div
                       key={project.id}
-                      className="rounded-2xl p-8 transition-all hover:scale-105 cursor-pointer"
+                      className="rounded-2xl overflow-hidden transition-all hover:scale-105 cursor-pointer"
                       style={{
                         background: `rgba(240, 248, 255, 0.05)`,
                         border: `1px solid ${colors.primary}30`,
                         backdropFilter: "blur(10px)",
                       }}
                     >
-                      <h4
-                        className="text-2xl font-bold mb-2"
-                        style={{ color: colors.primary }}
-                      >
-                        {project.title}
-                      </h4>
-                      <p className="text-sm font-medium mb-4" style={{ color: "#aaa" }}>
-                        {project.subtitle}
-                      </p>
-
-                      <p className="mb-6 leading-relaxed line-clamp-3" style={{ color: "#ddd" }}>
-                        {project.description}
-                      </p>
-
-                      {/* Tags */}
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tags.slice(0, 4).map((tag, i) => (
-                          <span
-                            key={i}
-                            className="px-2 py-1 text-xs rounded-full"
-                            style={{
-                              background: `${colors.primary}20`,
-                              color: colors.primary,
-                            }}
-                          >
-                            {tag}
-                          </span>
-                        ))}
+                      {/* Image at Top */}
+                      <div className="relative h-56 overflow-hidden group">
+                        <img
+                          src={getImageUrl(project.image)}
+                          alt={project.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div
+                          className="absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity"
+                          style={{
+                            background: `linear-gradient(135deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
+                          }}
+                        />
                       </div>
 
-                      <button
-                        onClick={() => setSelectedProject(project)}
-                        className="py-2 px-4 rounded-lg font-semibold text-sm transition-all"
-                        style={{
-                          background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
-                          color: colors.background,
-                        }}
-                      >
-                        View Details
-                      </button>
+                      {/* Card Content */}
+                      <div className="p-6">
+                        <h4
+                          className="text-2xl font-bold mb-2"
+                          style={{ color: colors.primary }}
+                        >
+                          {project.title}
+                        </h4>
+                        <p className="text-sm font-medium mb-4" style={{ color: "#aaa" }}>
+                          {project.subtitle}
+                        </p>
+
+                        <p className="mb-6 leading-relaxed line-clamp-3" style={{ color: "#ddd" }}>
+                          {project.description}
+                        </p>
+
+                        {/* Tags */}
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {project.tags.slice(0, 4).map((tag, i) => (
+                            <span
+                              key={i}
+                              className="px-2 py-1 text-xs rounded-full"
+                              style={{
+                                background: `${colors.primary}20`,
+                                color: colors.primary,
+                              }}
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+
+                        <button
+                          onClick={() => navigate(`/project/fullstack/${project.id}`)}
+                          className="py-2 px-4 rounded-lg font-semibold text-sm transition-all"
+                          style={{
+                            background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
+                            color: colors.background,
+                          }}
+                        >
+                          View Details
+                        </button>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -323,13 +341,6 @@ const AllProjects = () => {
           </div>
         )}
       </div>
-
-      {/* DETAIL MODAL */}
-      <ProjectDetailModal 
-        project={selectedProject} 
-        isOpen={!!selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
 
       <style>{`
         @keyframes fadeIn {
@@ -354,7 +365,7 @@ const AllProjects = () => {
           overflow: hidden;
         }
       `}</style>
-    </section>
+    </section >
   );
 };
 

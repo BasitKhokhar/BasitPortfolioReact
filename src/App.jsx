@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import AllProjects from "./components/AllProjects";
+import ProjectDetail from "./pages/ProjectDetail";
 import colors from "./themes/colors";
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
 
             {/* All Projects Screen */}
             <Route path="/project/all" element={<AllProjects />} />
+
+            {/* Project Detail Screen */}
+            <Route path="/project/:type/:id" element={<ProjectDetail />} />
           </Routes>
         </main>
 

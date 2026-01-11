@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import HeroSection from "../components/HeroSection";
 import About from "./About";
 import Resume from "./Resume";
@@ -15,6 +16,13 @@ import colors from "../themes/colors";
 const Home = () => {
   return (
     <div style={{ backgroundColor: colors.background }}>
+      <Helmet>
+        <title>B.Creatives | Basit Khokhar Portfolio</title>
+        <meta name="description" content="Professional Full Stack Developer and App Designer portfolio. Showcasing AI-based projects, mobile apps, and web solutions." />
+        <meta property="og:title" content="B.Creatives | Basit Khokhar Portfolio" />
+        <meta property="og:description" content="Professional Full Stack Developer and App Designer portfolio. Showcasing AI-based projects, mobile apps, and web solutions." />
+        <meta property="og:url" content="https://basitportfolioweb.netlify.app/" />
+      </Helmet>
       <section id="home-section">
         <HeroSection />
       </section>

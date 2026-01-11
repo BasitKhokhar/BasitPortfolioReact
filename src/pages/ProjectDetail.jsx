@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import colors from "../themes/colors";
 import appProjects from "../data/AppProjects.json";
 import websiteProjects from "../data/WebProjects.json";
@@ -82,6 +83,22 @@ const ProjectDetail = () => {
 
     return (
         <div className="min-h-screen pt-24 pb-12" style={{ backgroundColor: colors.background }}>
+            <Helmet>
+                <title>{project.title} | B.Creatives</title>
+                <meta name="description" content={project.description || project.subtitle} />
+
+                {/* OG Tags */}
+                <meta property="og:title" content={`${project.title} - Full Stack Project`} />
+                <meta property="og:description" content={project.description || project.subtitle} />
+                <meta property="og:image" content={new URL(getImageUrl(project.image), window.location.origin).href} />
+                <meta property="og:url" content={window.location.href} />
+                <meta property="og:type" content="article" />
+
+                {/* Twitter Tags */}
+                <meta name="twitter:title" content={project.title} />
+                <meta name="twitter:description" content={project.description || project.subtitle} />
+                <meta name="twitter:image" content={new URL(getImageUrl(project.image), window.location.origin).href} />
+            </Helmet>
             <div className="container mx-auto px-6 max-w-7xl">
                 {/* Back Button */}
                 <button

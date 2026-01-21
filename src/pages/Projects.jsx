@@ -12,14 +12,11 @@ import 'aos/dist/aos.css';
 const Projects = () => {
   const navigate = useNavigate();
 
-  // Combine projects from both JSON files
-  const combinedProjects = [
-    ...appProjects.apps.map((app) => ({ ...app, type: "app" })),
-    ...websiteProjects.projects.map((web) => ({ ...web, type: "web" })),
+  // Display exactly 3 apps and 3 website projects
+  const displayProjects = [
+    ...appProjects.apps.slice(0, 3).map((app) => ({ ...app, type: "app" })),
+    ...websiteProjects.projects.slice(0, 3).map((web) => ({ ...web, type: "web" })),
   ];
-
-  // Take first 6 projects (2 rows of 3)
-  const displayProjects = combinedProjects.slice(0, 6);
 
   useEffect(() => {
     AOS.init({

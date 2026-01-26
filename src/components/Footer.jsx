@@ -166,7 +166,7 @@ const Footer = () => {
         >
           <p style={{ color: colors.mutedText, fontWeight: 'bold' }}>
             Copyright © 2024 All rights reserved by{" "}
-            <span style={{ color: colors.primary, fontWeight: 'bolder', fontSize: 18 }}>B.Creatives</span>
+            <span style={{ color: colors.primary, fontWeight: 'bolder', fontSize: 18 }}>Basit Tech Solutions</span>
           </p>
         </div>
       </div>

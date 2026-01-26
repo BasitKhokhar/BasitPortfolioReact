@@ -61,7 +61,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${isScrolled ? "py-4" : "py-4"
+      className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${isScrolled ? "py-2" : "py-4"
         }`}
       style={{
         backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.7)" : "transparent",

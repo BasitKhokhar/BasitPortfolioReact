@@ -99,7 +99,7 @@ const ProjectDetail = () => {
                 <meta name="twitter:description" content={project.description || project.subtitle} />
                 <meta name="twitter:image" content={new URL(getImageUrl(project.image), window.location.origin).href} />
             </Helmet>
-            <div className="container mx-auto px-6 max-w-7xl">
+            <div className="container mx-auto px-6">
                 {/* Back Button */}
                 <button
                     onClick={() => navigate(-1)}

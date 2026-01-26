@@ -27,7 +27,7 @@ const Footer = () => {
           {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4" style={{ color: colors.primary }}>
-              B.Creatives
+              Basit Tech Solutions
             </h3>
             <p style={{ color: colors.mutedText }}>
               This is my portfolio where I showcase my expertise in Web & App development. Explore a

@@ -22,10 +22,10 @@ const AllProjects = () => {
   }, []);
   return (
     <section
-      className="min-h-screen py-20"
+      className="min-h-screen py-20 w-full"
       style={{ backgroundColor: colors.background }}
     >
-      <div className="container mx-auto px-6 max-w-7xl">
+      <div className="container mx-auto px-6 w-full">
         {/* Heading */}
         <div className="text-center mb-16">
           <h1

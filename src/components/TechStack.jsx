@@ -3,6 +3,8 @@ import colors from "../themes/colors";
 import { getImageUrl } from "../utils/imageImporter";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import TechSphere from "./TechSphere";
+
 const TechStack = () => {
   const technologies = [
     { name: "HTML", image: "src/assets/images/html.png" },
@@ -54,7 +56,7 @@ const TechStack = () => {
   };
 
   return (
-    <section className="py-20 relative overflow-hidden" style={{ backgroundColor: colors.background }}>
+    <section className="py-20 relative overflow-hidden" style={{ backgroundColor: "transparent" }}>
       {/* Animated Background Elements */}
       <div
         className="absolute top-0 left-0 w-96 h-96 rounded-full opacity-10 blur-3xl"
@@ -82,7 +84,7 @@ const TechStack = () => {
               letterSpacing: "12px",
             }} data-aos="fade-up"
           >
-            Tech Stack
+            Core Tech
           </h1>
           <h2
             className="relative text-5xl font-extrabold mb-4"
@@ -92,19 +94,29 @@ const TechStack = () => {
               WebkitTextFillColor: "transparent",
             }} data-aos="fade-up"
           >
-            Tech Stack
+            My Tech Universe
           </h2>
           <p
             className="relative text-lg max-w-2xl mx-auto"
             style={{ color: colors.mutedText }}
             data-aos="fade-up"
           >
-            These are the technologies I use to build web & mobile applications
+            Explore the 3D rotating globe of my core technologies and tools
           </p>
         </div>
 
-        {/* Carousel Container */}
+        {/* 3D Tech Sphere */}
+        <div data-aos="zoom-in" className="mb-20">
+          <TechSphere technologies={technologies} />
+        </div>
+
+        {/* Carousel Container (Secondary view) */}
         <div className="relative">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl font-bold mb-2" style={{ color: colors.primary }}>Technical Proficiency</h3>
+            <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
+          </div>
+          
           {/* Carousel Items */}
           <div className="overflow-hidden">
             <div className="flex gap-6 transition-all duration-500 ease-out">
@@ -119,7 +131,6 @@ const TechStack = () => {
                       background: `rgba(240, 248, 255, 0.05)`,
                       border: `2px solid ${colors.primary}30`,
                       backdropFilter: "blur(10px)",
-                      animation: `slideInUp 0.6s ease-out ${idx * 0.1}s both`,
                     }}
                   >
                     {/* Tech Image */}
@@ -138,17 +149,6 @@ const TechStack = () => {
                     >
                       {tech.name}
                     </h3>
-
-                    {/* Animated Bottom Border */}
-                    <div
-                      className="h-1 rounded-full mt-4 transition-all duration-300"
-                      style={{
-                        background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
-                        width: "0%",
-                        marginLeft: "auto",
-                        marginRight: "auto",
-                      }}
-                    />
                   </div>
                 </div>
               ))}

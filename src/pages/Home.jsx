@@ -15,7 +15,7 @@ import colors from "../themes/colors";
 
 const Home = () => {
   return (
-    <div style={{ backgroundColor: colors.background }}>
+    <div style={{ backgroundColor: "transparent" }}>
       <Helmet>
         <title>B.Creatives | Basit Khokhar Portfolio</title>
         <meta name="description" content="Professional Full Stack Developer and App Designer portfolio. Showcasing AI-based projects, mobile apps, and web solutions." />

@@ -59,7 +59,7 @@ const About = () => {
       id="about-section"
       className="min-h-screen py-20 relative overflow-hidden"
       style={{
-        background: `linear-gradient(135deg, ${colors.background} 0%, #0a0a0a 100%)`,
+        background: "transparent",
       }}
     >
       {/* Decorative Animated Background Orbs */}

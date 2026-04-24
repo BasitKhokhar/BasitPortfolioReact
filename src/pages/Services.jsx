@@ -40,7 +40,7 @@ const Services = () => {
       id="services-section"
       className="min-h-screen py-20 relative overflow-hidden"
       style={{
-        background: `linear-gradient(135deg, ${colors.background}, #1a1a1a)`,
+        background: "transparent",
       }}
     >
       {/* ================= YELLOW GLOW BACKGROUND ================= */}

@@ -6,15 +6,17 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import AllProjects from "./components/AllProjects";
 import ProjectDetail from "./pages/ProjectDetail";
+import Background3D from "./components/Background3D";
 import colors from "./themes/colors";
 
 function App() {
   return (
     <Router>
-      <div style={{ backgroundColor: colors.background }}>
+      <div className="relative min-h-screen overflow-hidden" style={{ backgroundColor: "transparent" }}>
+        <Background3D />
         <Navbar />
 
-        <main>
+        <main className="relative z-10">
           <Routes>
             {/* Home - Shows all sections with scroll */}
             <Route path="/" element={<Home />} />

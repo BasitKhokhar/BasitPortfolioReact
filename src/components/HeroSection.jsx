@@ -43,7 +43,7 @@ const HeroSection = () => {
       id="home-section"
       className="min-h-screen flex items-center pt-20 relative overflow-hidden"
       style={{
-        background: `linear-gradient(135deg, ${colors.background} 0%, #1a1a1a 50%, ${colors.background} 100%)`,
+        background: "transparent",
       }}
     >
       {/* Animated Background Elements */}

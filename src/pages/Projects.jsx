@@ -34,7 +34,7 @@ const Projects = () => {
       id="projects-section"
       className="min-h-screen py-20 relative overflow-hidden"
       style={{
-        background: `linear-gradient(135deg, ${colors.background} 0%, #1a1a1a 100%)`,
+        background: "transparent",
       }}
     >
       {/* Animated Background */}

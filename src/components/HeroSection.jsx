@@ -27,10 +27,10 @@ const HeroSection = () => {
     if (hasTyped.current) return;
     hasTyped.current = true;
 
-    typeWriter("Heello!", setSubheading, 150, () => {
-      typeWriter("I''m Talha Basit", setName, 150, () => {
+    typeWriter("Hello!", setSubheading, 150, () => {
+      typeWriter("I'm Basit Khokhar", setName, 150, () => {
         typeWriter(
-          "A  Freelance Fullstack Web & App Developer",
+          "Senior Full Stack Web & Mobile App Developer",
           setJob,
           150
         );

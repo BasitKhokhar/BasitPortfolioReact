@@ -73,7 +73,7 @@ const SphereContent = ({ technologies }) => {
       {items.map((item, index) => (
         <TechItem key={index} tech={item.tech} position={item.position} />
       ))}
-      
+
       {/* Central Glow */}
       <mesh>
         <sphereGeometry args={[2, 32, 32]} />
@@ -89,13 +89,13 @@ const SphereContent = ({ technologies }) => {
 
 const TechSphere = ({ technologies }) => {
   return (
-    <div className="w-full h-[600px] relative">
+    <div className="w-full h-[450px] relative">
       <Canvas>
         <PerspectiveCamera makeDefault position={[0, 0, 20]} />
         <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.5} />
         <ambientLight intensity={1} />
         <pointLight position={[10, 10, 10]} intensity={1} />
-        
+
         <SphereContent technologies={technologies} />
       </Canvas>
     </div>

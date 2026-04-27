@@ -13,26 +13,46 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: "📍",
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+      ),
       title: "Address",
       content: "Sargodha, Pakistan",
     },
     {
-      icon: "📞",
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      ),
       title: "Contact Number",
       content: "+92306-0760549",
       link: "tel:+923060760549",
     },
     {
-      icon: "✉️",
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      ),
       title: "Email Address",
       content: "basitkhokhar957@gmail.com",
       link: "mailto:basitkhokhar957@gmail.com",
     },
     {
-      icon: "🌐",
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+      ),
       title: "Website",
-      content: "https://basitportfolioweb.netlify.app",
+      content: "basitportfolioweb.netlify.app",
       link: "https://basitportfolioweb.netlify.app",
     },
   ];
@@ -77,84 +97,93 @@ const Contact = () => {
       />
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* Heading */}
-        {/* ================= HEADING ================= */}
-        <div className="relative text-center mb-20 overflow-hidden">
-          {/* Background Shadow Heading */}
+        {/* ================= HEADING WITH SHADOW ================= */}
+        <div className="relative text-center mb-24 overflow-hidden">
+          {/* Shadow Text */}
           <h1
             className="absolute inset-0 flex items-center justify-center font-extrabold uppercase select-none pointer-events-none"
             style={{
-              fontSize: "clamp(60px, 12vw, 120px)",
-              color: "rgba(255,255,255,0.05)",
-              letterSpacing: "12px",
-            }} data-aos="fade-up"
+              fontSize: "clamp(60px, 15vw, 150px)",
+              color: "rgba(255,255,255,0.03)",
+              letterSpacing: "15px",
+            }}
           >
-            Contact
+            CONTACT
           </h1>
 
           {/* Foreground Heading */}
-          <h2
-            className="relative text-5xl font-extrabold mb-4"
-            style={{
-              background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
+          <h2 className="relative text-5xl md:text-7xl font-black mb-6" data-aos="zoom-in">
+            <span style={{ 
+              background: `linear-gradient(to right, #fff, ${colors.primary})`,
               WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }} data-aos="fade-up"
-          >
-            Contact Me
+              WebkitTextFillColor: "transparent"
+            }}>
+              Get In Touch
+            </span>
           </h2>
-          <p
-            className="relative max-w-2xl mx-auto"
-            style={{
-              color: colors.mutedText,
-              animation: "slideInUp 0.8s ease-out 0.2s backwards",
-            }}
-          >
-            Contact me to explore opportunities for creating innovative web solutions that resonate with your
-            audience.
+          <div className="w-24 h-1.5 mx-auto rounded-full mb-8" style={{ background: colors.primary }} />
+          <p className="relative max-w-2xl mx-auto text-lg leading-relaxed" style={{ color: colors.mutedText }} data-aos="fade-up">
+            Let's discuss your next project. I'm always open to new opportunities, 
+            collaborations, or just a friendly chat about technology.
           </p>
         </div>
 
         {/* Contact Info Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {contactInfo.map((info, idx) => (
             <div
               key={idx}
-              className="text-center p-6 rounded-2xl transition-all transform hover:scale-110 hover:shadow-2xl group relative overflow-hidden"
+              className="group relative p-8 rounded-[2rem] text-center transition-all duration-500 hover:-translate-y-2 cursor-pointer overflow-hidden shadow-2xl"
               style={{
-                background: `linear-gradient(135deg, ${colors.gradients.dark[0]}, ${colors.gradients.dark[1]})`,
-                border: `2px solid ${colors.primary}30`,
-                animation: `slideInUp 0.8s ease-out ${idx * 0.1}s`,
-              }} data-aos="flip-up"
+                background: `rgba(255, 255, 255, 0.02)`,
+                border: `1px solid rgba(255, 255, 255, 0.05)`,
+                backdropFilter: "blur(10px)"
+              }}
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
             >
-              {/* Gradient Overlay */}
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{
-                  background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}20, ${colors.gradients.sunsetGold[1]}20)`,
-                }}
+              {/* Glow Background */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ background: `radial-gradient(circle at center, ${colors.primary}10, transparent 70%)` }}
               />
 
-              <div className="relative z-10">
-                <div className="text-5xl mb-4 group-hover:scale-125 transition-transform duration-300">
+              <div className="relative z-10 flex flex-col items-center">
+                {/* Icon Container */}
+                <div className="w-16 h-16 flex items-center justify-center rounded-2xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-xl"
+                  style={{ 
+                    background: `rgba(0,0,0,0.3)`, 
+                    border: `1px solid ${colors.primary}30`,
+                    color: colors.primary
+                  }}
+                >
                   {info.icon}
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">
+
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">
                   {info.title}
                 </h3>
+
                 {info.link ? (
                   <a
                     href={info.link}
-                    className="text-gray-400 hover:text-yellow-400 transition-colors break-all text-sm"
+                    className="text-sm font-medium transition-colors break-all"
+                    style={{ color: colors.mutedText }}
+                    onMouseEnter={(e) => e.target.style.color = colors.primary}
+                    onMouseLeave={(e) => e.target.style.color = colors.mutedText}
                   >
                     {info.content}
                   </a>
                 ) : (
-                  <p style={{ color: colors.mutedText }} className="text-sm">
+                  <p className="text-sm font-medium" style={{ color: colors.mutedText }}>
                     {info.content}
                   </p>
                 )}
               </div>
+
+              {/* Decorative Accent */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] group-hover:w-full transition-all duration-700"
+                style={{ background: colors.primary }}
+              />
             </div>
           ))}
         </div>

@@ -26,20 +26,34 @@ const AllProjects = () => {
       style={{ backgroundColor: colors.background }}
     >
       <div className="container mx-auto px-6 w-full">
-        {/* Heading */}
-        <div className="text-center mb-16">
+        {/* ================= HEADING WITH SHADOW ================= */}
+        <div className="relative text-center mb-24 overflow-hidden">
+          {/* Shadow Text */}
           <h1
-            className="text-5xl font-extrabold mb-4"
+            className="absolute inset-0 flex items-center justify-center font-extrabold uppercase select-none pointer-events-none"
             style={{
-              background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }} data-aos="fade-up"
+              fontSize: "clamp(60px, 15vw, 150px)",
+              color: "rgba(255,255,255,0.03)",
+              letterSpacing: "15px",
+            }}
           >
-            All Projects
+            PORTFOLIO
           </h1>
-          <p style={{ color: colors.mutedText }} className="text-lg" data-aos="fade-up">
-            Explore my complete portfolio of projects
+
+          {/* Foreground Heading */}
+          <h2 className="relative text-5xl md:text-7xl font-black mb-6" data-aos="zoom-in">
+            <span style={{ 
+              background: `linear-gradient(to right, #fff, ${colors.primary})`,
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent"
+            }}>
+              All Projects
+            </span>
+          </h2>
+          <div className="w-24 h-1.5 mx-auto rounded-full mb-8" style={{ background: colors.primary }} />
+          <p className="relative max-w-2xl mx-auto text-lg leading-relaxed" style={{ color: colors.mutedText }} data-aos="fade-up">
+            Explore my complete collection of web and mobile applications, 
+            featuring custom designs and robust technical architectures.
           </p>
         </div>
 

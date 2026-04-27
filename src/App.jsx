@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import AllProjects from "./components/AllProjects";
 import ProjectDetail from "./pages/ProjectDetail";
+import ServiceDetail from "./pages/ServiceDetail";
 import Background3D from "./components/Background3D";
 import colors from "./themes/colors";
 
@@ -26,6 +27,10 @@ function App() {
 
             {/* Project Detail Screen */}
             <Route path="/project/:type/:id" element={<ProjectDetail />} />
+
+
+            {/* Service Detail Screen */}
+            <Route path="/service/:id" element={<ServiceDetail />} />
           </Routes>
         </main>
 

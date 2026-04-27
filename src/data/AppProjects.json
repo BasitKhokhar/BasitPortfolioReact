@@ -1,11 +1,11 @@
 {
-  "mainTitle": "React Native Apps Projects",
-  "subTitle": "Explore my portfolio showcasing diverse React Native App projects highlighting creativity, functionality, and technical expertise.",
+  "mainTitle": "React Native Mobile App Development",
+  "subTitle": "High-performance, cross-platform mobile applications for iOS and Android, built with React Native and featuring robust full-stack integrations.",
   "apps": [
     {
       "id": 1,
-      "title": "Full-stack Ecommerce App",
-      "description": "A powerful cross-platform e-commerce mobile application built for seamless sanitary product shopping. Designed with a modern UI, smooth navigation, and secure backend integration.",
+      "title": "Full-Stack E-commerce Mobile Solution",
+      "description": "A premium cross-platform e-commerce mobile application designed for the sanitary and hardware industry. Built with React Native, it features a seamless shopping experience, secure payment processing, and real-time inventory management.",
       "image": "src/assets/images/BasitsanitaryAppmain.jpg",
       "apklink": "src/assets/basitsanitaryapp.apk",
       "screenshots": [
@@ -35,14 +35,12 @@
         "src/assets/images/basitsanitaryapp/24.png"
       ],
       "descriptionPoints": [
-        "Cross-platform app built using React Native for Android & iOS.",
-        "Smart product browsing with category filters.",
-        "Dynamic cart system with real-time updates.",
-        "Stripe payment integration for secure transactions.",
-        "User authentication & profile management.",
-        "Admin dashboard for product and order management.",
-        "Backend powered by Node.js, Express.js, MySQL.",
-        "Images stored in Firebase Storage."
+        "Architected a high-performance cross-platform app for Android & iOS using React Native.",
+        "Integrated secure Stripe payment gateway for seamless, frictionless transactions.",
+        "Developed a custom dynamic cart system with real-time backend synchronization.",
+        "Implemented secure user authentication and profile management via Firebase and Node.js.",
+        "Engineered a comprehensive admin dashboard for real-time order and product tracking.",
+        "Leveraged a robust tech stack: Node.js, Express, MySQL, and Firebase Storage."
       ],
       "tags": [
         "React Native",
@@ -55,19 +53,19 @@
       ],
       "videos": [
         {
-          "title": "User Side",
+          "title": "Customer App Demo",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FbasitsanitaryUserApp.mp4?alt=media&token=878f2d5c-12f3-4867-a79a-9e4e11093d04"
         },
         {
-          "title": "Admin Side",
+          "title": "Admin Dashboard Showcase",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FBasitSanitaryAppDashboard.mp4?alt=media&token=d604e740-5fcc-413d-8ef3-e647baf7d750"
         }
       ]
     },
     {
       "id": 2,
-      "title": "Tap & Win Game (Lottery Type)",
-      "description": "A lottery-based prize-winning mobile game featuring hidden reward boxes, wallet integration, and real-time interaction via sockets.",
+      "title": "Tap & Win - Real-time Prize Game App",
+      "description": "An interactive, real-time lottery-style mobile game built with React Native. It features animated reward mechanics, mobile wallet integrations, and live socket communication for a highly engaging user experience.",
       "image": "src/assets/images/lotteryappmain.jpg",
       "apklink": "src/assets/lotteryapp.apk",
       "screenshots": [
@@ -86,14 +84,12 @@
         "src/assets/images/lotteryapp/lottery13.png"
       ],
       "descriptionPoints": [
-        "Fun and interactive lottery-style gameplay.",
-        "Wallet integration for EasyPaisa, JazzCash, and Stripe.",
-        "User registration and secure authentication.",
-        "Real-time events using socket communication.",
-        "Animated UI/UX for smooth gameplay.",
-        "Prize tracking with winner history.",
-        "Backend built using Node.js, Express.js, and MySQL.",
-        "Scalable architecture with cross-platform support."
+        "Developed interactive game mechanics with real-time Socket.io integration.",
+        "Integrated local mobile wallets (EasyPaisa, JazzCash) and Stripe for global payments.",
+        "Implemented smooth, performance-driven animations using React Native Reanimated.",
+        "Engineered a scalable backend architecture with Node.js and MySQL for high concurrency.",
+        "Designed a transparent prize tracking system with live winner history and leaderboards.",
+        "Focused on security with encrypted user data and fraud-resistant game logic."
       ],
       "tags": [
         "React Native",
@@ -106,26 +102,17 @@
       ],
       "videos": [
         {
-          "title": "Lottery App",
+          "title": "Gameplay Walkthrough",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FloterryAppvideo.mp4?alt=media&token=fd3e9054-79d4-4448-aa4d-f2cb6d10b892"
-        },
-        {
-          "title": "Coming Soon",
-          "file": "src/assets/videos/abcd.mp4"
         }
       ]
     },
     {
       "id": 3,
-      "title": "ElectroPak App",
-      "description": "A Final Year Project developed for university students, ElectroPak is a smart mobile application combining electricity items e-commerce, electrician service booking, and a lottery-based reward system with real-time interactions.",
+      "title": "ElectroPak - Smart Electronics Ecosystem",
+      "description": "A comprehensive mobile solution developed as a Final Year Project. It integrates e-commerce for electrical items, on-demand service booking for electricians, and a reward-based engagement system.",
       "image": "src/assets/images/Electropakmain.jpg",
       "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png",
-        "src/assets/images/lottery/wallet.png",
-        "src/assets/images/lottery/winner-popup.png",
-        "src/assets/images/lottery/history.png",
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png",
         "src/assets/images/lottery/wallet.png",
@@ -133,13 +120,12 @@
         "src/assets/images/lottery/history.png"
       ],
       "descriptionPoints": [
-        "Final Year Project designed for university-level implementation.",
-        "Electricity items e-commerce platform with reward-based engagement.",
-        "Electrician service booking with real-time system interaction.",
-        "Wallet integration supporting EasyPaisa, JazzCash, and Stripe.",
-        "Secure user registration and authentication system.",
-        "Backend powered by Node.js, Express.js, and MySQL database.",
-        "Scalable cross-platform mobile architecture using React Native."
+        "Architected a multi-functional ecosystem combining retail and service sectors.",
+        "Integrated real-time electrician service booking with geolocation support.",
+        "Implemented a secure wallet system supporting multiple local and global providers.",
+        "Developed a robust full-stack backend with Node.js and MySQL for data integrity.",
+        "Designed a reward-based gamification system to increase user retention.",
+        "Showcased at a university level as a high-impact technical implementation."
       ],
       "tags": [
         "React Native",
@@ -147,29 +133,28 @@
         "Express.js",
         "MySQL",
         "E-commerce",
-        "Electrician Services",
-        "Mobile Payments",
+        "Service Booking",
         "Final Year Project"
       ],
       "videos": [
         {
-          "title": "ElectroPak App Userside",
+          "title": "User Experience Demo",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FElctropakuserside.mp4?alt=media&token=ebc06f65-6bdd-4b50-b9ea-07ae010c30cc"
         },
         {
-          "title": "ElectricianSide",
+          "title": "Professional Provider Portal",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FElectropakElectrician.mp4?alt=media&token=20cc5c73-03a6-4377-9a42-ec7752f92923"
         },
         {
-          "title": "AdminSide",
+          "title": "Admin Ecosystem Management",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2Felectropakadmin.mp4?alt=media&token=567ca2cb-cc0b-4ad3-bcfa-6dc9f85c2348"
         }
       ]
     },
     {
       "id": 4,
-      "title": "Pic Nova AI (AI Based Pics & Videos Editing App)",
-      "description": "An advanced AI-powered media editing app that allows users to edit photos and videos using machine learning models. Designed for creators who want powerful effects with simplicity.",
+      "title": "Pic Nova AI - AI-Powered Media Suite",
+      "description": "An advanced AI-driven photo and video editing application. It leverages cutting-edge machine learning models to provide background removal, AI filters, and real-time media stylization.",
       "image": "src/assets/images/picnovaoldversion.jpg",
       "screenshots": [
         "src/assets/images/picnova/editor.png",
@@ -179,42 +164,34 @@
         "src/assets/images/picnova/profile.png"
       ],
       "descriptionPoints": [
-        "AI-based photo editing with advanced enhancement tools.",
-        "Background removal using machine learning models.",
-        "AI filters & face enhancement.",
-        "Video stylization using real-time AI effects.",
-        "Cloud-based processing for efficiency.",
-        "Smooth cross-platform performance.",
-        "Secure backend API powered by Node.js & Express.js.",
-        "Firebase integrated for storage and authentication."
+        "Integrated computer vision models for AI-powered object detection and removal.",
+        "Developed high-performance AI filters for real-time photo and video stylization.",
+        "Engineered cloud-based ML processing pipelines for efficient mobile editing.",
+        "Built a secure backend API with Node.js to manage AI model requests and storage.",
+        "Implemented seamless media management using Firebase Storage and Firestore.",
+        "Optimized cross-platform performance for a fluid creative workflow."
       ],
       "tags": [
         "React Native",
         "AI Models",
         "Firebase",
         "Node.js",
-        "Express.js",
         "Computer Vision",
-        "Cross-platform"
+        "Image Processing"
       ],
       "videos": [
         {
-          "title": "Under Development",
+          "title": "AI Feature Showcase",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2Fpicnova.mp4?alt=media&token=711e522d-4d08-4c86-b47e-e1c2a64c4004"
         }
       ]
     },
     {
       "id": 5,
-      "title": "Mechify App",
-      "description": "A Final Year Project developed for university students, Mechify is a smart mobile application that combines car spare parts e-commerce with on-demand nearby mechanic services using real-time Google Maps integration.",
+      "title": "Mechify - On-Demand Mechanic Service",
+      "description": "A smart mobile application combining car spare parts e-commerce with real-time, on-demand mechanic discovery. Features Google Maps integration for live tracking and service booking.",
       "image": "src/assets/images/mechifymain.jpg",
       "screenshots": [
-        "src/assets/images/mechify/home.png",
-        "src/assets/images/mechify/products.png",
-        "src/assets/images/mechify/cart.png",
-        "src/assets/images/mechify/map.png",
-        "src/assets/images/mechify/technician-profile.png",
         "src/assets/images/mechify/home.png",
         "src/assets/images/mechify/products.png",
         "src/assets/images/mechify/cart.png",
@@ -222,34 +199,29 @@
         "src/assets/images/mechify/technician-profile.png"
       ],
       "descriptionPoints": [
-        "Final Year Project designed for university-level implementation.",
-        "Car spare parts e-commerce platform with categorized products.",
-        "On-demand mechanic service booking for emergency situations.",
-        "Nearby technicians discovery using Google Maps integration.",
-        "Real-time location tracking of mechanics and service requests.",
-        "Secure user registration and authentication system.",
-        "Order management for spare parts and service requests.",
-        "Backend powered by Node.js, Express.js, and MySQL database.",
-        "Scalable cross-platform mobile architecture using React Native."
+        "Engineered a dual-purpose platform for automotive retail and emergency services.",
+        "Integrated Google Maps API for real-time technician discovery and live tracking.",
+        "Developed a comprehensive e-commerce flow for automotive spare parts.",
+        "Implemented a secure service booking system with real-time status updates.",
+        "Built a robust full-stack backend using Node.js and MySQL for high reliability.",
+        "Recognized as a high-utility Final Year Project with significant commercial potential."
       ],
       "tags": [
         "React Native",
         "Node.js",
         "Express.js",
         "MySQL",
-        "E-commerce",
-        "Car Spare Parts",
-        "Mechanic Services",
         "Google Maps API",
-        "Final Year Project"
+        "Service Discovery",
+        "Automotive"
       ],
       "videos": [
         {
-          "title": "Mechify User App",
+          "title": "User Service Booking",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FMechifyuserside.mp4?alt=media&token=ab6223b4-5551-4886-b3c4-ebe6d78bfc28"
         },
         {
-          "title": "Mechanic Side App",
+          "title": "Technician Management",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2Fmechifyadmin.mp4?alt=media&token=d74ad4bb-ec86-4ffc-8124-3f6366568ede"
         }
       ]

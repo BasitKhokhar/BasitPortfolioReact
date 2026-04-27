@@ -84,7 +84,7 @@ const ProjectDetail = () => {
     return (
         <div className="min-h-screen pt-24 pb-12" style={{ backgroundColor: colors.background }}>
             <Helmet>
-                <title>{project.title} | B.Creatives</title>
+                <title>{project.title} | Basit Khokhar Portfolio</title>
                 <meta name="description" content={project.description || project.subtitle} />
 
                 {/* OG Tags */}

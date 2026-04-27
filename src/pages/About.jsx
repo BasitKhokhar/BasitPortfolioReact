@@ -99,9 +99,9 @@ const About = () => {
             About
           </h1>
           <h2
-            className="relative text-5xl md:text-6xl font-extrabold mb-4"
+            className="relative text-5xl md:text-7xl font-black mb-6"
             style={{
-              background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
+              background: `linear-gradient(to right, #fff, ${colors.primary})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               animation: "slideInUp 0.8s ease-out",
@@ -109,7 +109,7 @@ const About = () => {
           >
             About Me
           </h2>
-          <div className="w-20 h-1.5 mx-auto rounded-full" style={{ background: colors.primary }}></div>
+          <div className="w-24 h-1.5 mx-auto rounded-full" style={{ background: colors.primary }}></div>
         </div>
 
         {/* Content Section */}

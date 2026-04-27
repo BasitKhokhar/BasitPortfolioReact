@@ -1,68 +1,40 @@
 {
-  "mainTitle": "Websites Projects",
-  "subTitle": "Explore my portfolio showcasing diverse web projects highlighting creativity, functionality, and technical expertise.",
+  "mainTitle": "Web Development Portfolio",
+  "subTitle": "Showcasing high-performance, SEO-optimized web applications and full-stack solutions built with React, Next.js, and modern technologies.",
   "featured": [
     {
       "id": 1,
-      "title": "ShadowSuite",
-      "subtitle": "Cybersecurity / Next.js Platform",
+      "title": "ShadowSuite - Cybersecurity Marketplace",
+      "subtitle": "Next.js Cybersecurity E-commerce Platform",
       "category": "Cybersecurity",
-      "description": "A secure and modern cybersecurity marketplace platform built for an Indian client. Users can explore, evaluate, and purchase specialized cybersecurity tools with a polished and professional UI.",
+      "description": "ShadowSuite is a premium, secure cybersecurity marketplace built with Next.js and Tailwind CSS. It provides a professional environment for exploring and purchasing advanced penetration testing tools, featuring real-time WhatsApp integration and optimized product visibility.",
       "image": "src/assets/images/shadowsuit.PNG",
       "previewLink": "https://www.shadowsuit.shop/",
       "tags": [
         "Next.js",
         "Cybersecurity",
-        "UI/UX",
-        "WhatsApp Support"
+        "Tailwind CSS",
+        "WhatsApp API",
+        "E-commerce"
       ],
       "features": [
-        "Developed a complete cybersecurity marketplace with secure product browsing.",
-        "Integrated WhatsApp-based instant client communication.",
-        "Implemented dynamic product pages with interactive sections."
+        "Architected a secure marketplace for specialized cybersecurity software.",
+        "Integrated instant customer support via WhatsApp API.",
+        "Implemented SEO-friendly dynamic routing for product pages."
       ],
       "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png",
-        "src/assets/images/lottery/wallet.png",
-        "src/assets/images/lottery/winner-popup.png",
-        "src/assets/images/lottery/history.png",
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png",
         "src/assets/images/lottery/wallet.png",
         "src/assets/images/lottery/winner-popup.png",
         "src/assets/images/lottery/history.png"
       ]
-    },
-    {
-      "id": 2,
-      "title": "ShadowSuite",
-      "subtitle": "Cybersecurity / Next.js Platform",
-      "category": "Cybersecurity",
-      "description": "A secure and modern cybersecurity marketplace platform built for an Indian client. Users can explore, evaluate, and purchase specialized cybersecurity tools with a polished and professional UI.",
-      "image": "src/assets/images/shadowsuit.PNG",
-      "previewLink": "https://www.shadowsuit.shop/",
-      "tags": [
-        "Next.js",
-        "Cybersecurity",
-        "UI/UX",
-        "WhatsApp Support"
-      ],
-      "features": [
-        "Developed a complete cybersecurity marketplace with secure product browsing.",
-        "Integrated WhatsApp-based instant client communication.",
-        "Implemented dynamic product pages with interactive sections."
-      ],
-      "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png"
-      ]
     }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "ElectroPak – Smart Electronics Platform",
+      "title": "ElectroPak – Smart Electronics Hub",
       "category": "E-Commerce / Education",
       "image": "src/assets/images/electropakweb.PNG",
       "previewLink": "https://electro-pak-web.vercel.app/",
@@ -70,41 +42,36 @@
         "React.js",
         "Tailwind CSS",
         "Node.js",
-        "Express.js",
         "MySQL",
-        "Firebase",
-        "REST APIs"
+        "Full Stack"
       ],
       "features": [
-        "Developed a full-stack electronics platform for university students.",
-        "Built a responsive web interface using React.js and Tailwind CSS.",
-        "Created a mobile app integrated with the same backend services.",
-        "Implemented backend APIs using Node.js and Express.js.",
-        "Used MySQL for structured data and Firebase for authentication and real-time services."
+        "Developed a scalable full-stack marketplace for engineering components.",
+        "Engineered a mobile-responsive UI with React.js and Tailwind CSS.",
+        "Built a robust REST API backend using Node.js and Express.",
+        "Integrated real-time data sync with MySQL and Firebase services."
       ],
       "screenshots": [
         "src/assets/images/electropak/web-home.png",
-        "src/assets/images/electropak/web-products.png",
-        "src/assets/images/electropak/app-home.png",
-        "src/assets/images/electropak/app-details.png"
+        "src/assets/images/electropak/web-products.png"
       ]
     },
     {
       "id": 2,
-      "title": "Medical Health Hub",
+      "title": "HealthHub - Healthcare Consulting Portal",
       "category": "Medical",
       "image": "src/assets/images/web1.PNG",
       "previewLink": "https://basithealthhub.netlify.app/",
       "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Responsive Design"
+        "React UI",
+        "Healthcare",
+        "Responsive Design",
+        "JavaScript"
       ],
       "features": [
-        "Built a clean medical-themed UI.",
-        "Optimized for responsive layouts.",
-        "Designed for clinics and healthcare consultants."
+        "Designed a professional medical-themed interface for consultants.",
+        "Optimized for high accessibility and mobile responsiveness.",
+        "Focused on patient-centric UX and readable clinic profiles."
       ],
       "screenshots": [
         "src/assets/images/lottery/home.png",
@@ -113,18 +80,20 @@
     },
     {
       "id": 3,
-      "title": "AutoCare Service Website",
+      "title": "AutoCare Service Hub - Automobile Landing Page",
       "category": "Automobile",
       "image": "src/assets/images/web2.PNG",
       "previewLink": "https://autocarehub.netlify.app/",
       "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript"
+        "HTML5",
+        "CSS3",
+        "Landing Page",
+        "UI Design"
       ],
       "features": [
-        "Automobile service layout with service sections.",
-        "User-friendly and visually appealing interface."
+        "Strategic automobile service landing page for higher conversions.",
+        "Interactive service sections and intuitive contact forms.",
+        "Modern aesthetic with performance-optimized asset loading."
       ],
       "screenshots": [
         "src/assets/images/lottery/home.png",
@@ -133,18 +102,19 @@
     },
     {
       "id": 4,
-      "title": "Royal Hotel Website",
+      "title": "Royal Hotel - Luxury Hospitality Website",
       "category": "Hotel",
       "image": "src/assets/images/web3.PNG",
       "previewLink": "https://basitsroyalhotel.netlify.app/",
       "tags": [
-        "HTML",
-        "CSS",
-        "UI/UX"
+        "UI/UX Design",
+        "Hospitality",
+        "CSS Animations"
       ],
       "features": [
-        "Modern hotel landing page.",
-        "Clean room sections and contact form integration."
+        "Premium hotel landing page showcasing luxury accommodations.",
+        "Elegant room categories and seamless booking call-to-actions.",
+        "Aesthetic UI focused on hospitality brand storytelling."
       ],
       "screenshots": [
         "src/assets/images/lottery/home.png",
@@ -153,18 +123,20 @@
     },
     {
       "id": 5,
-      "title": "IU University Clone",
-      "category": "University",
+      "title": "IU University Clone - Academic Landing Page",
+      "category": "Education",
       "image": "src/assets/images/web4.PNG",
       "previewLink": "https://basitkhokhar.github.io/second-project/",
       "tags": [
         "HTML",
         "CSS",
-        "JavaScript"
+        "JavaScript",
+        "Cloning"
       ],
       "features": [
-        "Educational institution-themed modern UI.",
-        "Home, courses, and admission sections recreated."
+        "Pixel-perfect recreation of a modern university website.",
+        "Comprehensive sections for courses, admissions, and campus life.",
+        "Optimized for readability and institutional branding."
       ],
       "screenshots": [
         "src/assets/images/lottery/home.png",
@@ -173,18 +145,19 @@
     },
     {
       "id": 6,
-      "title": "Admin Panel Frontend",
+      "title": "Modern Admin Dashboard - Frontend Framework",
       "category": "Dashboard",
       "image": "src/assets/images/web5.PNG",
       "previewLink": "https://basitadminpanel.netlify.app/",
       "tags": [
         "React.js",
         "Tailwind CSS",
-        "UI Components"
+        "Data Visualization"
       ],
       "features": [
-        "Dashboard-themed responsive UI.",
-        "Clean and modern admin panel design."
+        "Responsive admin panel with modern data visualization components.",
+        "Clean, modular UI design for enterprise-level management.",
+        "Optimized performance with React state management."
       ],
       "screenshots": [
         "src/assets/images/lottery/home.png",
@@ -193,18 +166,19 @@
     },
     {
       "id": 7,
-      "title": "Figma to Web Conversion",
+      "title": "Figma-to-Code Conversion - Design to React",
       "category": "UI/UX to Code",
       "image": "src/assets/images/web6.PNG",
       "previewLink": "https://basitkhokhar.github.io/project-figma/",
       "tags": [
-        "HTML",
-        "CSS",
-        "Figma"
+        "Figma",
+        "Responsive Code",
+        "Pixel Perfect"
       ],
       "features": [
-        "Converted a Figma design into pixel-perfect code.",
-        "Accurate layout recreation with responsive design."
+        "Transformed complex Figma designs into high-quality semantic code.",
+        "Focused on maintaining visual integrity and responsive flow.",
+        "Clean, maintainable HTML/CSS architecture."
       ],
       "screenshots": [
         "src/assets/images/lottery/home.png",
@@ -213,18 +187,19 @@
     },
     {
       "id": 8,
-      "title": "Fashion Blog Website",
+      "title": "Elite Fashion Blog - Aesthetic Layout",
       "category": "Fashion",
       "image": "src/assets/images/web7.PNG",
       "previewLink": "https://basitkhokhar.github.io/projectfashionblog/",
       "tags": [
-        "HTML",
-        "CSS",
-        "Blog Layout"
+        "Aesthetic UI",
+        "Blog CMS",
+        "Typography"
       ],
       "features": [
-        "Modern blog-style layout for fashion content.",
-        "Aesthetic UI with clean typography."
+        "Modern fashion blog layout with a focus on visual storytelling.",
+        "Elegant typography and whitespace management for readability.",
+        "Fully responsive design for mobile fashion enthusiasts."
       ],
       "screenshots": [
         "src/assets/images/lottery/home.png",
@@ -235,24 +210,22 @@
   "fullStackProjects": [
     {
       "id": 1,
-      "title": "Basit Sanitary Store",
-      "subtitle": "Full-Stack E-commerce Website",
+      "title": "Basit Sanitary Store - Full Stack E-commerce",
+      "subtitle": "Professional Hardware & Sanitary Solutions",
       "image": "src/assets/images/BS1.PNG",
-      "description": "A complete full-stack e-commerce platform specializing in sanitary products. Features include browsing, filtering, cart, user accounts, admin dashboard, and full backend integration.",
+      "description": "A robust full-stack e-commerce solution for hardware products. Features advanced product filtering, secure user authentication, and a comprehensive admin dashboard for sales and inventory tracking.",
       "tags": [
         "React.js",
-        "Tailwind CSS",
         "Node.js",
-        "Express.js",
-        "REST API",
         "MySQL",
-        "Firebase"
+        "Firebase",
+        "Dashboard"
       ],
       "features": [
-        "Fully functional product browsing and search.",
-        "User authentication and account management.",
-        "Admin dashboard for inventory and analytics.",
-        "Secure backend built with REST APIs and MySQL."
+        "End-to-end shopping experience with secure cart and checkout.",
+        "Full-featured admin panel for inventory and sales analytics.",
+        "RESTful API integration with a secure MySQL database.",
+        "Real-time image management and authentication via Firebase."
       ],
       "screenshots": [
         "src/assets/images/lottery/home.png",
@@ -260,36 +233,32 @@
       ],
       "videos": [
         {
-          "title": "Website Overview",
+          "title": "Customer App Walkthrough",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FBasitsanitaryWebuserside.mp4?alt=media&token=b6aa71d6-9489-44c3-8a2a-9ef3cd68d007"
         },
         {
-          "title": "Admin Dashboard",
+          "title": "Admin Panel Demo",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FBasitsanitarydashboard.mp4?alt=media&token=f2f9fbe2-6c25-4b14-80de-da62763ae0ec"
         }
       ]
     },
     {
       "id": 2,
-      "title": "ElectroPak – Smart Electronics Platform",
+      "title": "ElectroPak – Integrated Electronics Ecosystem",
       "category": "E-Commerce / Education",
       "image": "src/assets/images/electropakweb.PNG",
       "previewLink": "https://electro-pak-web.vercel.app/",
       "tags": [
         "React.js",
-        "Tailwind CSS",
-        "Node.js",
-        "Express.js",
-        "MySQL",
-        "Firebase",
-        "REST APIs"
+        "Next.js",
+        "Full Stack",
+        "Mobile Sync"
       ],
       "features": [
-        "Developed a full-stack electronics platform for university students.",
-        "Built a responsive web interface using React.js and Tailwind CSS.",
-        "Created a mobile app integrated with the same backend services.",
-        "Implemented backend APIs using Node.js and Express.js.",
-        "Used MySQL for structured data and Firebase for authentication and real-time services."
+        "Architected a multi-platform ecosystem for electronics enthusiasts.",
+        "Unified backend for web and mobile using Node.js and MySQL.",
+        "Optimized frontend for SEO and fast asset loading.",
+        "Integrated real-time project management and community features."
       ],
       "screenshots": [
         "src/assets/images/electropak/web-home.png",

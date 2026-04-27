@@ -7,7 +7,17 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.3); /* Optimized yellowish glow */
+}
+
+button:active {
+  background-color: transparent !important;
+}
+
+/* Ensure navbar buttons don't have tap highlights on mobile */
+nav button {
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {

@@ -26,7 +26,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8" data-aos="fade-up">
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4" style={{ color: colors.primary }}>
+            <h3 className="text-xl font-bold mb-4" style={{ 
+              background: `linear-gradient(90deg, #ffffff, ${colors.primary})`,
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}>
               Basit Tech Solutions
             </h3>
             <p style={{ color: colors.mutedText }}>
@@ -166,7 +170,13 @@ const Footer = () => {
         >
           <p style={{ color: colors.mutedText, fontWeight: 'bold' }}>
             Copyright © 2024 All rights reserved by{" "}
-            <span style={{ color: colors.primary, fontWeight: 'bolder', fontSize: 18 }}>Basit Tech Solutions</span>
+            <span style={{ 
+              background: `linear-gradient(90deg, #ffffff, ${colors.primary})`,
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              fontWeight: 'bolder', 
+              fontSize: 18 
+            }}>Basit Tech Solutions</span>
           </p>
         </div>
       </div>

@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "type": "app",
+    "title": "Full-Stack E-commerce Mobile Solution",
+    "description": "A premium cross-platform e-commerce mobile application built with React Native, featuring secure Stripe payments and real-time backend synchronization.",
+    "image": "src/assets/images/BasitsanitaryAppmain.jpg",
+    "tags": ["React Native", "Stripe", "Full Stack", "Node.js"],
+    "descriptionPoints": [
+      "High-performance cross-platform app for Android & iOS.",
+      "Secure Stripe payment gateway integration.",
+      "Real-time product inventory management."
+    ]
+  },
+  {
+    "id": 2,
+    "type": "app",
+    "title": "Tap & Win - Real-time Prize Game App",
+    "description": "An interactive, real-time lottery-style mobile game featuring animated reward mechanics and live socket communication.",
+    "image": "src/assets/images/lotteryappmain.jpg",
+    "tags": ["Game Dev", "Socket.io", "React Native", "Real-time"],
+    "descriptionPoints": [
+      "Real-time game mechanics via Socket.io.",
+      "Integrated mobile wallet support (JazzCash/EasyPaisa).",
+      "Vibrant animations and smooth UX."
+    ]
+  },
+  {
+    "id": 4,
+    "type": "app",
+    "title": "Pic Nova AI - AI-Powered Media Suite",
+    "description": "Advanced AI-driven photo and video editing application leveraging machine learning for background removal and filters.",
+    "image": "src/assets/images/picnovaoldversion.jpg",
+    "tags": ["AI", "Machine Learning", "React Native", "Firebase"],
+    "descriptionPoints": [
+      "AI-powered background removal and object detection.",
+      "High-performance AI filters and face enhancement.",
+      "Cloud-based ML processing for mobile efficiency."
+    ]
+  },
+  {
+    "id": 1,
+    "type": "web",
+    "title": "ShadowSuite - Cybersecurity Marketplace",
+    "category": "Cybersecurity",
+    "description": "Premium cybersecurity marketplace built with Next.js, featuring real-time WhatsApp support and dynamic product pages.",
+    "image": "src/assets/images/shadowsuit.PNG",
+    "tags": ["Next.js", "Cybersecurity", "Marketplace", "Tailwind"],
+    "features": [
+      "Secure e-commerce architecture for security tools.",
+      "Integrated WhatsApp-based customer support.",
+      "Dynamic product management and interactive UI."
+    ]
+  },
+  {
+    "id": 1,
+    "type": "fullstack",
+    "title": "Basit Sanitary Store - Full Stack E-commerce",
+    "category": "E-Commerce",
+    "description": "Comprehensive full-stack e-commerce solution with advanced filtering, secure auth, and a robust admin dashboard.",
+    "image": "src/assets/images/BS1.PNG",
+    "tags": ["React.js", "Node.js", "MySQL", "Full Stack"],
+    "features": [
+      "End-to-end e-commerce flow with cart and checkout.",
+      "Advanced admin panel for sales analytics.",
+      "REST API-driven architecture for fast processing."
+    ]
+  },
+  {
+    "id": 2,
+    "type": "web",
+    "title": "ElectroPak – Smart Electronics Hub",
+    "category": "E-Commerce / Education",
+    "description": "Full-stack electronics marketplace for university students, featuring a secure Node.js backend and responsive React frontend.",
+    "image": "src/assets/images/electropakweb.PNG",
+    "tags": ["React.js", "Tailwind", "Node.js", "MySQL"],
+    "features": [
+      "Full-stack electronics marketplace for engineers.",
+      "Responsive React.js frontend with Tailwind styling.",
+      "Secure Node.js backend with MySQL integration."
+    ]
+  }
+]

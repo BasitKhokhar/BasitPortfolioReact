@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ui-ux-design",
+    "title": "Expert UI / UX Design Services",
+    "shortDesc": "User-centric UI/UX design solutions specializing in intuitive interfaces, high-fidelity prototyping, and engaging digital user experiences.",
+    "fullDesc": "As a professional UI/UX designer, I create seamless digital journeys that convert visitors into loyal users. My design process integrates psychological principles, user research, and high-fidelity prototyping using Figma and Adobe XD. I specialize in building scalable design systems, wireframing complex workflows, and optimizing user retention through aesthetic and functional clarity. Whether you need a mobile app interface or a complex web portal, my UI/UX solutions ensure your product is accessible, delightful, and business-ready.",
+    "features": [
+      "Strategic User Research & Persona Development",
+      "Interactive Wireframing & Rapid Prototyping",
+      "High-Fidelity UI Design & Visual Branding",
+      "Comprehensive UX Audits & Conversion Optimization",
+      "Scalable Design Systems & Style Guides"
+    ]
+  },
+  {
+    "id": "web-development",
+    "title": "Full Stack Web Development (React & Next.js)",
+    "shortDesc": "High-performance, SEO-optimized web development using React.js and Next.js. I build scalable, secure, and responsive web applications.",
+    "fullDesc": "I deliver fast, secure, and SEO-optimized web applications tailored for business growth. Leveraging modern frameworks like React.js, Next.js, and Tailwind CSS, I build pixel-perfect, mobile-responsive websites with clean, maintainable code. My expertise includes Single Page Applications (SPA), Progressive Web Apps (PWA), and custom API integrations. I focus on core web vitals and performance tuning to ensure your site ranks high on Google and provides an exceptional user experience across all devices.",
+    "features": [
+      "Custom React.js & Next.js Development",
+      "Mobile-Responsive & Adaptive Web Design",
+      "SEO-Friendly Semantic Architecture",
+      "RESTful API & Third-Party Integrations",
+      "Performance Optimization & Speed Tuning"
+    ]
+  },
+  {
+    "id": "app-development",
+    "title": "React Native Mobile App Development",
+    "shortDesc": "Premium cross-platform mobile app development for iOS and Android using React Native, delivering native performance and high engagement.",
+    "fullDesc": "I specialize in React Native mobile app development, providing cross-platform solutions for iOS and Android from a single, high-quality codebase. My apps feature native-level performance, smooth animations, and deep integration with device hardware (GPS, Camera, Push Notifications). I focus on creating robust mobile architectures with offline support and real-time data synchronization. From conceptualization to App Store Optimization (ASO), I ensure your mobile product stands out in a competitive market.",
+    "features": [
+      "Cross-Platform iOS & Android Development",
+      "Native Module & Feature Integration",
+      "Real-time Data Sync with Firebase & Sockets",
+      "App Store Optimization (ASO) & Launch Support",
+      "Scalable Mobile App Architecture & Maintenance"
+    ]
+  },
+  {
+    "id": "e-commerce",
+    "title": "Custom E-Commerce Development Solutions",
+    "shortDesc": "Professional e-commerce website development featuring secure payments, optimized product management, and conversion-focused design.",
+    "fullDesc": "Boost your online sales with a custom-built e-commerce platform designed for performance and security. I develop scalable online stores with optimized product catalogs, secure checkout flows, and seamless payment gateway integrations (Stripe, PayPal). My e-commerce solutions prioritize SEO and fast loading times, ensuring your products are discoverable and your customers have a frictionless shopping experience. From small boutiques to enterprise-level stores, I build e-commerce systems that drive revenue.",
+    "features": [
+      "Secure Stripe & PayPal Payment Integration",
+      "Dynamic Inventory & Product Catalog Management",
+      "Optimized Checkout & Shopping Cart UX",
+      "Custom Admin Dashboards & Analytics",
+      "Scalable Multi-Vendor & B2B E-commerce Support"
+    ]
+  },
+  {
+    "id": "seo-optimization",
+    "title": "Technical SEO & Search Engine Optimization",
+    "shortDesc": "Advanced SEO strategies to boost search engine rankings, increase organic traffic, and improve online visibility for your brand.",
+    "fullDesc": "Online visibility is critical for success. I provide comprehensive SEO services including technical audits, on-page optimization, and high-impact content strategies. I ensure your website is properly indexed by search engines using clean URL structures, semantic HTML5, and advanced Schema.org markup. My data-driven approach focuses on ranking for high-intent keywords, improving click-through rates (CTR), and driving sustainable organic growth. I continuously monitor search trends to keep your business ahead of the competition.",
+    "features": [
+      "Comprehensive Technical SEO Audits",
+      "Advanced Keyword Research & Competitor Analysis",
+      "On-Page SEO & Metadata Management",
+      "Schema Markup & Rich Snippet Optimization",
+      "Performance Tracking & Google Analytics Reporting"
+    ]
+  },
+  {
+    "id": "maintenance",
+    "title": "Professional Website Maintenance & Support",
+    "shortDesc": "Reliable long-term maintenance and technical support to keep your web and mobile products secure, updated, and performing at peak levels.",
+    "fullDesc": "Ensure your digital assets remain secure and high-performing with my professional maintenance and support services. I provide regular security updates, performance monitoring, and feature enhancements to keep your website or app competitive. My support plans include bug fixes, database optimization, and content updates, giving you peace of mind while you focus on your core business. I am committed to 24/7 technical reliability and proactive infrastructure management for all your digital products.",
+    "features": [
+      "Regular Security Patches & Dependency Updates",
+      "Proactive Performance & Uptime Monitoring",
+      "Content Updates & CMS Management",
+      "Expert Bug Fixes & Ongoing Enhancements",
+      "Reliable 24/7 Technical Maintenance Support"
+    ]
+  }
+]

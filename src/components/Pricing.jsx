@@ -74,39 +74,34 @@ const Pricing = () => {
       />
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* Heading */}
-        <div className="relative text-center mb-20 overflow-hidden">
-          {/* Background Shadow Heading */}
+        {/* ================= HEADING WITH SHADOW ================= */}
+        <div className="relative text-center mb-24 overflow-hidden">
+          {/* Shadow Text */}
           <h1
             className="absolute inset-0 flex items-center justify-center font-extrabold uppercase select-none pointer-events-none"
             style={{
-              fontSize: "clamp(60px, 12vw, 120px)",
-              color: "rgba(255,255,255,0.05)",
-              letterSpacing: "12px",
-            }} data-aos="fade-up"
+              fontSize: "clamp(60px, 15vw, 150px)",
+              color: "rgba(255,255,255,0.03)",
+              letterSpacing: "15px",
+            }}
           >
-            Pricing
+            PRICING
           </h1>
 
           {/* Foreground Heading */}
-          <h2
-            className="relative text-5xl font-extrabold mb-4"
-            style={{
-              background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
+          <h2 className="relative text-5xl md:text-7xl font-black mb-6" data-aos="zoom-in">
+            <span style={{ 
+              background: `linear-gradient(to right, #fff, ${colors.primary})`,
               WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }} data-aos="fade-up"
-          >
-            Pricing Plans
+              WebkitTextFillColor: "transparent"
+            }}>
+              Pricing Plans
+            </span>
           </h2>
-          <p
-            className="relative max-w-2xl mx-auto text-lg"
-            style={{
-              color: colors.mutedText,
-            }} data-aos="fade-up"
-          >
-            View the pricing options for my services. Custom deals can be made, so contact me for such
-            deals.
+          <div className="w-24 h-1.5 mx-auto rounded-full mb-8" style={{ background: colors.primary }} />
+          <p className="relative max-w-2xl mx-auto text-lg leading-relaxed" style={{ color: colors.mutedText }} data-aos="fade-up">
+            Transparent pricing for high-quality digital solutions. Custom packages 
+            are available to suit your specific business requirements.
           </p>
         </div>
 

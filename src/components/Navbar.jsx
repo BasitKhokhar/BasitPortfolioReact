@@ -73,20 +73,17 @@ const Navbar = () => {
         {/* Logo */}
         <button
           onClick={scrollToHome}
-          className="text-2xl font-extrabold tracking-tight cursor-pointer group flex items-center gap-2"
-          style={{ background: "transparent" }}
+          className="text-2xl font-extrabold tracking-tight cursor-pointer group flex items-center gap-2 rounded-lg"
+          style={{ background: "transparent", border: "none", outline: "none", WebkitTapHighlightColor: "transparent" }}
         >
           <span
             style={{
-              background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.goldGlow[1]})`,
+              background: `linear-gradient(90deg, #ffffff, ${colors.primary})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
           >
-            Basit
-          </span>
-          <span className="text-white group-hover:text-primary transition-colors duration-300">
-            Tech Solutions
+            Basit Tech Solutions
           </span>
         </button>
 
@@ -97,10 +94,13 @@ const Navbar = () => {
               <li key={link.label}>
                 <button
                   onClick={() => scrollToSection(link.id)}
-                  className="px-5 py-2 text-sm font-bold transition-all duration-300 relative group"
+                  className="px-5 py-2 text-sm font-bold transition-all duration-300 relative group rounded-full"
                   style={{
                     color: activeSection === link.id ? colors.primary : "#bfbfbf",
                     background: "transparent",
+                    border: "none",
+                    outline: "none",
+                    WebkitTapHighlightColor: "transparent", // For mobile/touch clicks
                   }}
                 >
                   <span className="relative z-10">{link.label}</span>
@@ -132,7 +132,8 @@ const Navbar = () => {
           style={{
             color: colors.text,
             background: isScrolled ? "rgba(255,255,255,0.05)" : "transparent",
-            border: isScrolled ? "1px solid rgba(255,255,255,0.1)" : "none"
+            border: isScrolled ? "1px solid rgba(255,255,255,0.1)" : "none",
+            outline: "none",
           }}
           onClick={() => setOpen(!open)}
           aria-label="Toggle Menu"
@@ -162,6 +163,9 @@ const Navbar = () => {
                 style={{
                   color: activeSection === link.id ? colors.primary : "#ffffff",
                   background: activeSection === link.id ? "rgba(255,193,7,0.1)" : "transparent",
+                  border: "none",
+                  outline: "none",
+                  WebkitTapHighlightColor: "transparent",
                 }}
               >
                 {link.label}

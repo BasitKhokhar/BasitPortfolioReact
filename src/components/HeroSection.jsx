@@ -28,7 +28,7 @@ const HeroSection = () => {
     hasTyped.current = true;
 
     typeWriter("Hello!", setSubheading, 150, () => {
-      typeWriter("I'm Basit Khokhar", setName, 150, () => {
+      typeWriter("I'm Talha Basit", setName, 150, () => {
         typeWriter(
           "Senior Full Stack Web & Mobile App Developer",
           setJob,

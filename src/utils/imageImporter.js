@@ -141,6 +141,7 @@ export const imageMap = {
   'src/assets/videos/ElectropakElectrician.mp4': new URL('../assets/videos/ElectropakElectrician.mp4', import.meta.url).href,
   'src/assets/videos/picnova.mp4': new URL('../assets/videos/picnova.mp4', import.meta.url).href,
   'src/assets/videos/PortfolioVideo.mp4': new URL('../assets/videos/PortfolioVideo.mp4', import.meta.url).href,
+  'src/assets/images/portfoliovideo.mp4': new URL('../assets/images/portfoliovideo.mp4', import.meta.url).href,
 
   // APKs
   'src/assets/basitsanitaryapp.apk': new URL('../assets/basitsanitaryapp.apk', import.meta.url).href,

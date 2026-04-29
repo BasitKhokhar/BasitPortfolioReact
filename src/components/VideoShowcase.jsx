@@ -32,7 +32,7 @@ const VideoShowcase = () => {
               controls
             >
               <source
-                src={getImageUrl("https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FPortfolio%20Video.mp4?alt=media&token=e785a409-20ec-467d-9bba-cc6106c43ec9")}
+                src={getImageUrl("src/assets/images/portfoliovideo.mp4")}
                 type="video/mp4"
               />
               Your browser does not support the video tag.

@@ -149,7 +149,7 @@ const AllProjects = () => {
 
                     {/* Detail Button */}
                     <button
-                      onClick={() => navigate(`/project/app/${app.id}`)}
+                      onClick={() => navigate(`/project/app/${app.id}`, { state: { project: app } })}
                       className="w-full py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
                       style={{
                         background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
@@ -254,7 +254,7 @@ const AllProjects = () => {
 
                       {/* Detail Button */}
                       <button
-                        onClick={() => navigate(`/project/web/${project.id}`)}
+                        onClick={() => navigate(`/project/web/${project.id}`, { state: { project } })}
                         className="w-full py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
                         style={{
                           background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,
@@ -337,7 +337,7 @@ const AllProjects = () => {
                         </div>
 
                         <button
-                          onClick={() => navigate(`/project/fullstack/${project.id}`)}
+                          onClick={() => navigate(`/project/fullstack/${project.id}`, { state: { project } })}
                           className="py-2 px-4 rounded-lg font-semibold text-sm transition-all"
                           style={{
                             background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,

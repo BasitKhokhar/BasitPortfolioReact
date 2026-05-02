@@ -4,6 +4,45 @@
   "apps": [
     {
       "id": 1,
+      "type": "app",
+      "title": "PicNova-AI Image Generator(Play Store)",
+      "description": "PicNova is a newly launched AI-powered photo editing mobile application on the Google Play Store, built with React Native and featuring AI face enhancement, old photo restoration, AI avatar generation, secure authentication, push notifications, AdMob monetization, and a premium modern UI/UX optimized for Android devices.",
+      "image": "src/assets/images/picnova/picnova.jpg",
+      "apklink": "src/assets/picnova.apk",
+      "screenshots": [
+        "src/assets/images/picnova/picnova1.jpeg",
+        "src/assets/images/picnova/picnova2.jpeg",
+        "src/assets/images/picnova/picnova3.jpeg",
+        "src/assets/images/picnova/picnova4.jpeg",
+        "src/assets/images/picnova/picnova5.jpeg",
+        "src/assets/images/picnova/picnova6.jpeg",
+        "src/assets/images/picnova/picnova7.jpeg"
+      ],
+      "tags": [
+        "React Native",
+        "Google Login",
+        "AI Photo Editor",
+        "Push Notifications",
+        "AdMob",
+        "Expo",
+        "AI Avatars",
+        "Mobile App"
+      ],
+      "descriptionPoints": [
+        "Secure authentication system with Email Login, Signup, and Google Sign-In integration.",
+        "Modern premium UI/UX with smooth mobile-first responsive design and animations.",
+        "AI face enhancement, image upscaling, and photo quality improvement tools.",
+        "Old photo restoration and black & white image colorization features.",
+        "AI avatar generation with multiple creative and professional styles.",
+        "Real-time push notifications and local system notification support.",
+        "Integrated AdMob monetization system with rewarded and banner ads.",
+        "Feature preview screens with sample images and reusable enhancement modal system.",
+        "Optimized React Native + Expo architecture for high performance on Android devices.",
+        "Scalable full-stack ready structure designed for Play Store production deployment."
+      ]
+    },
+    {
+      "id": 2,
       "title": "Full-Stack E-commerce Mobile Solution",
       "description": "A premium cross-platform e-commerce mobile application designed for the sanitary and hardware industry. Built with React Native, it features a seamless shopping experience, secure payment processing, and real-time inventory management.",
       "image": "src/assets/images/BasitsanitaryAppmain.jpg",
@@ -63,7 +102,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Tap & Win - Real-time Prize Game App",
       "description": "An interactive, real-time lottery-style mobile game built with React Native. It features animated reward mechanics, mobile wallet integrations, and live socket communication for a highly engaging user experience.",
       "image": "src/assets/images/lotteryappmain.jpg",
@@ -108,7 +147,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "ElectroPak - Smart Electronics Ecosystem",
       "description": "A comprehensive mobile solution developed as a Final Year Project. It integrates e-commerce for electrical items, on-demand service booking for electricians, and a reward-based engagement system.",
       "image": "src/assets/images/Electropakmain.jpg",
@@ -152,7 +191,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Pic Nova AI - AI-Powered Media Suite",
       "description": "An advanced AI-driven photo and video editing application. It leverages cutting-edge machine learning models to provide background removal, AI filters, and real-time media stylization.",
       "image": "src/assets/images/picnovaoldversion.jpg",
@@ -187,7 +226,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Mechify - On-Demand Mechanic Service",
       "description": "A smart mobile application combining car spare parts e-commerce with real-time, on-demand mechanic discovery. Features Google Maps integration for live tracking and service booking.",
       "image": "src/assets/images/mechifymain.jpg",

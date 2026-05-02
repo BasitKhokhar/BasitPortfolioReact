@@ -2,10 +2,92 @@
   {
     "id": 1,
     "type": "app",
+    "title": "PicNova-AI Image Generator(Play Store)",
+    "description": "PicNova is a modern AI-powered photo editing mobile application built with React Native, featuring AI face enhancement, old photo restoration, AI avatar generation, secure authentication, push notifications, AdMob monetization, and a premium UI/UX experience optimized for Android devices.",
+    "image": "src/assets/images/picnova/picnova.jpg",
+    "screenshots": [
+      "src/assets/images/picnova/picnova1.jpeg",
+      "src/assets/images/picnova/picnova2.jpeg",
+      "src/assets/images/picnova/picnova3.jpeg",
+      "src/assets/images/picnova/picnova4.jpeg",
+      "src/assets/images/picnova/picnova5.jpeg",
+      "src/assets/images/picnova/picnova6.jpeg",
+      "src/assets/images/picnova/picnova7.jpeg"
+    ],
+    "tags": [
+      "React Native",
+      "Google Login",
+      "AI Photo Editor",
+      "Push Notifications",
+      "AdMob",
+      "Expo",
+      "AI Avatars",
+      "Mobile App"
+    ],
+    "descriptionPoints": [
+      "Secure authentication system with Email Login, Signup, and Google Sign-In integration.",
+      "Modern premium UI/UX with smooth mobile-first responsive design and animations.",
+      "AI face enhancement, image upscaling, and photo quality improvement tools.",
+      "Old photo restoration and black & white image colorization features.",
+      "AI avatar generation with multiple creative and professional styles.",
+      "Real-time push notifications and local system notification support.",
+      "Integrated AdMob monetization system with rewarded and banner ads.",
+      "Feature preview screens with sample images and reusable enhancement modal system.",
+      "Optimized React Native + Expo architecture for high performance on Android devices.",
+      "Scalable full-stack ready structure designed for Play Store production deployment."
+    ]
+  },
+  {
+    "id": 2,
+    "type": "fullstack",
+    "title": "HamdanPOS - Glass & Aluminum ERP System",
+    "category": "Business Management",
+    "description": "Advanced POS and ERP system built for a leading glass & aluminum supplier in Riyadh, including full VPS deployment, real-time inventory, invoicing, and business analytics.",
+    "image": "src/assets/images/hamdanpos/hamdanpos.jpg",
+    "previewLink": "https://hamdanpos.basittech.work/login",
+    "screenshots": [
+      "src/assets/images/hamdanpos/hamdanposmain0.PNG",
+      "src/assets/images/hamdanpos/hamdanposmain1.PNG",
+      "src/assets/images/hamdanpos/hamdanposmain2.PNG",
+      "src/assets/images/hamdanpos/hamdanposmain3.PNG",
+      "src/assets/images/hamdanpos/hamdanposmain4.PNG",
+      "src/assets/images/hamdanpos/hamdanposmain5.PNG",
+      "src/assets/images/hamdanpos/hamdanposmain6.PNG",
+      "src/assets/images/hamdanpos/hamdanposmain7.PNG"
+    ],
+    "tags": [
+      "React.js",
+      "Node.js",
+      "POS System",
+      "VPS Deployment",
+      "MySQL",
+      "ERP",
+      "DevOps",
+      "Dashboard"
+    ],
+    "features": [
+      "Complete POS and ERP solution tailored for the glass & aluminum industry.",
+      "Configured and deployed the full application on a VPS server independently.",
+      "Handled server setup, domain configuration, SSL, and production environment.",
+      "Real-time inventory tracking for products, sheets, and materials.",
+      "Sales, purchase, and invoice management with automated calculations.",
+      "Customer and supplier management system.",
+      "Interactive dashboard with reports and business insights.",
+      "Optimized for high-volume transactions and performance."
+    ]
+  },
+  {
+    "id": 3,
+    "type": "app",
     "title": "Full-Stack E-commerce Mobile Solution",
     "description": "A premium cross-platform e-commerce mobile application built with React Native, featuring secure Stripe payments and real-time backend synchronization.",
     "image": "src/assets/images/BasitsanitaryAppmain.jpg",
-    "tags": ["React Native", "Stripe", "Full Stack", "Node.js"],
+    "tags": [
+      "React Native",
+      "Stripe",
+      "Full Stack",
+      "Node.js"
+    ],
     "descriptionPoints": [
       "High-performance cross-platform app for Android & iOS.",
       "Secure Stripe payment gateway integration.",
@@ -13,53 +95,51 @@
     ]
   },
   {
-    "id": 2,
-    "type": "app",
-    "title": "Tap & Win - Real-time Prize Game App",
-    "description": "An interactive, real-time lottery-style mobile game featuring animated reward mechanics and live socket communication.",
-    "image": "src/assets/images/lotteryappmain.jpg",
-    "tags": ["Game Dev", "Socket.io", "React Native", "Real-time"],
-    "descriptionPoints": [
-      "Real-time game mechanics via Socket.io.",
-      "Integrated mobile wallet support (JazzCash/EasyPaisa).",
-      "Vibrant animations and smooth UX."
-    ]
-  },
-  {
-    "id": 4,
-    "type": "app",
-    "title": "Pic Nova AI - AI-Powered Media Suite",
-    "description": "Advanced AI-driven photo and video editing application leveraging machine learning for background removal and filters.",
-    "image": "src/assets/images/picnovaoldversion.jpg",
-    "tags": ["AI", "Machine Learning", "React Native", "Firebase"],
-    "descriptionPoints": [
-      "AI-powered background removal and object detection.",
-      "High-performance AI filters and face enhancement.",
-      "Cloud-based ML processing for mobile efficiency."
-    ]
-  },
-  {
-    "id": 1,
-    "type": "web",
+    "id": 5,
     "title": "ShadowSuite - Cybersecurity Marketplace",
+    "subtitle": "Next.js Cybersecurity E-commerce Platform",
     "category": "Cybersecurity",
-    "description": "Premium cybersecurity marketplace built with Next.js, featuring real-time WhatsApp support and dynamic product pages.",
+    "description": "ShadowSuite is a premium, secure cybersecurity marketplace built with Next.js and Tailwind CSS. It provides a professional environment for exploring and purchasing advanced penetration testing tools, featuring real-time WhatsApp integration and optimized product visibility.",
     "image": "src/assets/images/shadowsuit.PNG",
-    "tags": ["Next.js", "Cybersecurity", "Marketplace", "Tailwind"],
+    "previewLink": "https://www.shadowsuit.shop/",
+    "tags": [
+      "Next.js",
+      "Cybersecurity",
+      "Tailwind CSS",
+      "WhatsApp API",
+      "E-commerce"
+    ],
     "features": [
-      "Secure e-commerce architecture for security tools.",
-      "Integrated WhatsApp-based customer support.",
-      "Dynamic product management and interactive UI."
+      "Architected a secure marketplace for specialized cybersecurity software.",
+      "Integrated instant customer support via WhatsApp API.",
+      "Implemented SEO-friendly dynamic routing for product pages."
+    ],
+    "screenshots": [
+      "src/assets/images/lottery/home.png",
+      "src/assets/images/lottery/game-board.png",
+      "src/assets/images/lottery/wallet.png",
+      "src/assets/images/lottery/winner-popup.png",
+      "src/assets/images/lottery/history.png"
+    ],
+    "descriptionPoints": [
+      "Architected a secure marketplace for specialized cybersecurity software.",
+      "Integrated instant customer support via WhatsApp API.",
+      "Implemented SEO-friendly dynamic routing for product pages."
     ]
   },
   {
-    "id": 1,
+    "id": 6,
     "type": "fullstack",
     "title": "Basit Sanitary Store - Full Stack E-commerce",
     "category": "E-Commerce",
     "description": "Comprehensive full-stack e-commerce solution with advanced filtering, secure auth, and a robust admin dashboard.",
     "image": "src/assets/images/BS1.PNG",
-    "tags": ["React.js", "Node.js", "MySQL", "Full Stack"],
+    "tags": [
+      "React.js",
+      "Node.js",
+      "MySQL",
+      "Full Stack"
+    ],
     "features": [
       "End-to-end e-commerce flow with cart and checkout.",
       "Advanced admin panel for sales analytics.",
@@ -67,17 +147,21 @@
     ]
   },
   {
-    "id": 2,
-    "type": "web",
-    "title": "ElectroPak – Smart Electronics Hub",
-    "category": "E-Commerce / Education",
-    "description": "Full-stack electronics marketplace for university students, featuring a secure Node.js backend and responsive React frontend.",
-    "image": "src/assets/images/electropakweb.PNG",
-    "tags": ["React.js", "Tailwind", "Node.js", "MySQL"],
-    "features": [
-      "Full-stack electronics marketplace for engineers.",
-      "Responsive React.js frontend with Tailwind styling.",
-      "Secure Node.js backend with MySQL integration."
+    "id": 7,
+    "type": "app",
+    "title": "Tap & Win - Real-time Prize Game App",
+    "description": "An interactive, real-time lottery-style mobile game featuring animated reward mechanics and live socket communication.",
+    "image": "src/assets/images/lotteryappmain.jpg",
+    "tags": [
+      "Game Dev",
+      "Socket.io",
+      "React Native",
+      "Real-time"
+    ],
+    "descriptionPoints": [
+      "Real-time game mechanics via Socket.io.",
+      "Integrated mobile wallet support (JazzCash/EasyPaisa).",
+      "Vibrant animations and smooth UX."
     ]
   }
 ]

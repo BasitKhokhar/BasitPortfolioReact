@@ -131,6 +131,34 @@ export const imageMap = {
   'src/assets/images/picnova/video-effects.png': new URL('../assets/images/picnova/video-effects.png', import.meta.url).href,
   'src/assets/images/picnova/profile.png': new URL('../assets/images/picnova/profile.png', import.meta.url).href,
 
+  // PicNova AI Play store Screenshots
+  'src/assets/images/picnovaai/appicon.png': new URL('../assets/images/picnovaai/appicon.png', import.meta.url).href,
+  'src/assets/images/picnovaai/login.png': new URL('../assets/images/picnovaai/login.png', import.meta.url).href,
+  'src/assets/images/picnovaai/signup.png': new URL('../assets/images/picnovaai/signup.png', import.meta.url).href,
+  'src/assets/images/picnovaai/enhancemodal.png': new URL('../assets/images/picnovaai/enhancemodal.png', import.meta.url).href,
+  'src/assets/images/picnovaai/avtar.png': new URL('../assets/images/picnovaai/avtar.png', import.meta.url).href,
+
+  // PicNova AI - Banner + Screenshots from JSON
+  'src/assets/images/picnova/picnova.jpg': new URL('../assets/images/picnova/picnova.jpg', import.meta.url).href,
+  'src/assets/images/picnova/picnova1.jpeg': new URL('../assets/images/picnova/picnova1.jpeg', import.meta.url).href,
+  'src/assets/images/picnova/picnova2.jpeg': new URL('../assets/images/picnova/picnova2.jpeg', import.meta.url).href,
+  'src/assets/images/picnova/picnova3.jpeg': new URL('../assets/images/picnova/picnova3.jpeg', import.meta.url).href,
+  'src/assets/images/picnova/picnova4.jpeg': new URL('../assets/images/picnova/picnova4.jpeg', import.meta.url).href,
+  'src/assets/images/picnova/picnova5.jpeg': new URL('../assets/images/picnova/picnova5.jpeg', import.meta.url).href,
+  'src/assets/images/picnova/picnova6.jpeg': new URL('../assets/images/picnova/picnova6.jpeg', import.meta.url).href,
+  'src/assets/images/picnova/picnova7.jpeg': new URL('../assets/images/picnova/picnova7.jpeg', import.meta.url).href,
+
+  // Hamdan POS Screenshots
+  'src/assets/images/hamdanpos/hamdanpos.jpg': new URL('../assets/images/hamdanpos/hamdanpos.jpg', import.meta.url).href,
+  'src/assets/images/hamdanpos/hamdanposmain0.PNG': new URL('../assets/images/hamdanpos/hamdanposmain0.PNG', import.meta.url).href,
+  'src/assets/images/hamdanpos/hamdanposmain1.PNG': new URL('../assets/images/hamdanpos/hamdanposmain1.PNG', import.meta.url).href,
+  'src/assets/images/hamdanpos/hamdanposmain2.PNG': new URL('../assets/images/hamdanpos/hamdanposmain2.PNG', import.meta.url).href,
+  'src/assets/images/hamdanpos/hamdanposmain3.PNG': new URL('../assets/images/hamdanpos/hamdanposmain3.PNG', import.meta.url).href,
+  'src/assets/images/hamdanpos/hamdanposmain4.PNG': new URL('../assets/images/hamdanpos/hamdanposmain4.PNG', import.meta.url).href,
+  'src/assets/images/hamdanpos/hamdanposmain5.PNG': new URL('../assets/images/hamdanpos/hamdanposmain5.PNG', import.meta.url).href,
+  'src/assets/images/hamdanpos/hamdanposmain6.PNG': new URL('../assets/images/hamdanpos/hamdanposmain6.PNG', import.meta.url).href,
+  'src/assets/images/hamdanpos/hamdanposmain7.PNG': new URL('../assets/images/hamdanpos/hamdanposmain7.PNG', import.meta.url).href,
+
   // Videos
   'src/assets/videos/BasitSanitaryAppDashboard.mp4': new URL('../assets/videos/BasitSanitaryAppDashboard.mp4', import.meta.url).href,
   'src/assets/videos/abcd.mp4': new URL('../assets/videos/abcd.mp4', import.meta.url).href,

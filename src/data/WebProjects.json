@@ -1,7 +1,8 @@
 {
   "mainTitle": "Web Development Portfolio",
   "subTitle": "Showcasing high-performance, SEO-optimized web applications and full-stack solutions built with React, Next.js, and modern technologies.",
-  "featured": [
+  "featured": [],
+  "projects": [
     {
       "id": 1,
       "title": "ShadowSuite - Cybersecurity Marketplace",
@@ -28,12 +29,15 @@
         "src/assets/images/lottery/wallet.png",
         "src/assets/images/lottery/winner-popup.png",
         "src/assets/images/lottery/history.png"
+      ],
+      "descriptionPoints": [
+        "Architected a secure marketplace for specialized cybersecurity software.",
+        "Integrated instant customer support via WhatsApp API.",
+        "Implemented SEO-friendly dynamic routing for product pages."
       ]
-    }
-  ],
-  "projects": [
+    },
     {
-      "id": 1,
+      "id": 2,
       "title": "ElectroPak – Smart Electronics Hub",
       "category": "E-Commerce / Education",
       "image": "src/assets/images/electropakweb.PNG",
@@ -54,10 +58,17 @@
       "screenshots": [
         "src/assets/images/electropak/web-home.png",
         "src/assets/images/electropak/web-products.png"
+      ],
+      "description": "A comprehensive full-stack electronics marketplace for university students, built with a secure Node.js backend and a highly responsive React frontend.",
+      "descriptionPoints": [
+        "Developed a scalable full-stack marketplace for engineering components.",
+        "Engineered a mobile-responsive UI with React.js and Tailwind CSS.",
+        "Built a robust REST API backend using Node.js and Express.",
+        "Integrated real-time data sync with MySQL and Firebase services."
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "HealthHub - Healthcare Consulting Portal",
       "category": "Medical",
       "image": "src/assets/images/web1.PNG",
@@ -76,10 +87,16 @@
       "screenshots": [
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "A professional healthcare consulting portal designed for medical practitioners, featuring patient-centric UX and optimized accessibility.",
+      "descriptionPoints": [
+        "Designed a professional medical-themed interface for consultants.",
+        "Optimized for high accessibility and mobile responsiveness.",
+        "Focused on patient-centric UX and readable clinic profiles."
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "AutoCare Service Hub - Automobile Landing Page",
       "category": "Automobile",
       "image": "src/assets/images/web2.PNG",
@@ -98,10 +115,16 @@
       "screenshots": [
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "A high-conversion automobile service landing page with interactive elements, intuitive booking forms, and modern performance-optimized aesthetics.",
+      "descriptionPoints": [
+        "Strategic automobile service landing page for higher conversions.",
+        "Interactive service sections and intuitive contact forms.",
+        "Modern aesthetic with performance-optimized asset loading."
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Royal Hotel - Luxury Hospitality Website",
       "category": "Hotel",
       "image": "src/assets/images/web3.PNG",
@@ -119,10 +142,16 @@
       "screenshots": [
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "A premium luxury hospitality website showcasing elegant accommodations, seamless booking flows, and compelling brand storytelling.",
+      "descriptionPoints": [
+        "Premium hotel landing page showcasing luxury accommodations.",
+        "Elegant room categories and seamless booking call-to-actions.",
+        "Aesthetic UI focused on hospitality brand storytelling."
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "IU University Clone - Academic Landing Page",
       "category": "Education",
       "image": "src/assets/images/web4.PNG",
@@ -141,10 +170,16 @@
       "screenshots": [
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "A complete clone of a modern university website, meticulously recreating academic structures, course catalogs, and admission portals.",
+      "descriptionPoints": [
+        "Pixel-perfect recreation of a modern university website.",
+        "Comprehensive sections for courses, admissions, and campus life.",
+        "Optimized for readability and institutional branding."
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Modern Admin Dashboard - Frontend Framework",
       "category": "Dashboard",
       "image": "src/assets/images/web5.PNG",
@@ -162,10 +197,16 @@
       "screenshots": [
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "A modular React.js frontend framework for enterprise-level admin dashboards, featuring advanced data visualization and clean UI design.",
+      "descriptionPoints": [
+        "Responsive admin panel with modern data visualization components.",
+        "Clean, modular UI design for enterprise-level management.",
+        "Optimized performance with React state management."
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Figma-to-Code Conversion - Design to React",
       "category": "UI/UX to Code",
       "image": "src/assets/images/web6.PNG",
@@ -183,10 +224,16 @@
       "screenshots": [
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "A pixel-perfect Figma to React conversion project focusing on semantic HTML/CSS, maintaining strict visual integrity and responsive flow.",
+      "descriptionPoints": [
+        "Transformed complex Figma designs into high-quality semantic code.",
+        "Focused on maintaining visual integrity and responsive flow.",
+        "Clean, maintainable HTML/CSS architecture."
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Elite Fashion Blog - Aesthetic Layout",
       "category": "Fashion",
       "image": "src/assets/images/web7.PNG",
@@ -204,6 +251,12 @@
       "screenshots": [
         "src/assets/images/lottery/home.png",
         "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "An aesthetically pleasing modern fashion blog layout designed with elegant typography, structured whitespace, and mobile-responsive storytelling.",
+      "descriptionPoints": [
+        "Modern fashion blog layout with a focus on visual storytelling.",
+        "Elegant typography and whitespace management for readability.",
+        "Fully responsive design for mobile fashion enthusiasts."
       ]
     }
   ],
@@ -240,6 +293,12 @@
           "title": "Admin Panel Demo",
           "file": "https://firebasestorage.googleapis.com/v0/b/basit-b2712.appspot.com/o/AppVideos%2FBasitsanitarydashboard.mp4?alt=media&token=f2f9fbe2-6c25-4b14-80de-da62763ae0ec"
         }
+      ],
+      "descriptionPoints": [
+        "End-to-end shopping experience with secure cart and checkout.",
+        "Full-featured admin panel for inventory and sales analytics.",
+        "RESTful API integration with a secure MySQL database.",
+        "Real-time image management and authentication via Firebase."
       ]
     },
     {
@@ -265,6 +324,50 @@
         "src/assets/images/electropak/web-products.png",
         "src/assets/images/electropak/app-home.png",
         "src/assets/images/electropak/app-details.png"
+      ],
+      "description": "A comprehensive full-stack electronics marketplace for university students, built with a secure Node.js backend and a highly responsive React frontend.",
+      "descriptionPoints": [
+        "Architected a multi-platform ecosystem for electronics enthusiasts.",
+        "Unified backend for web and mobile using Node.js and MySQL.",
+        "Optimized frontend for SEO and fast asset loading.",
+        "Integrated real-time project management and community features."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "HamdanPOS - Glass & Aluminum ERP System",
+      "category": "Business Management",
+      "description": "Advanced POS and ERP system built for a leading glass & aluminum supplier in Riyadh, including full VPS deployment, real-time inventory, invoicing, and business analytics.",
+      "image": "src/assets/images/hamdanpos/hamdanpos.jpg",
+      "screenshots": [
+        "src/assets/images/hamdanpos/hamdanposmain0.PNG",
+        "src/assets/images/hamdanpos/hamdanposmain1.PNG",
+        "src/assets/images/hamdanpos/hamdanposmain2.PNG",
+        "src/assets/images/hamdanpos/hamdanposmain3.PNG",
+        "src/assets/images/hamdanpos/hamdanposmain4.PNG",
+        "src/assets/images/hamdanpos/hamdanposmain5.PNG",
+        "src/assets/images/hamdanpos/hamdanposmain6.PNG",
+        "src/assets/images/hamdanpos/hamdanposmain7.PNG"
+      ],
+      "tags": [
+        "React.js",
+        "Node.js",
+        "POS System",
+        "VPS Deployment",
+        "MySQL",
+        "ERP",
+        "DevOps",
+        "Dashboard"
+      ],
+      "features": [
+        "Complete POS and ERP solution tailored for the glass & aluminum industry.",
+        "Configured and deployed the full application on a VPS server independently.",
+        "Handled server setup, domain configuration, SSL, and production environment.",
+        "Real-time inventory tracking for products, sheets, and materials.",
+        "Sales, purchase, and invoice management with automated calculations.",
+        "Customer and supplier management system.",
+        "Interactive dashboard with reports and business insights.",
+        "Optimized for high-volume transactions and performance."
       ]
     }
   ]

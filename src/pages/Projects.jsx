@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import colors from "../themes/colors";
-import appProjects from "../data/AppProjects.json";
-import websiteProjects from "../data/WebProjects.json";
+import recentProjects from "../data/RecentProjects.json";
 import { getImageUrl } from "../utils/imageImporter";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,11 +11,8 @@ import 'aos/dist/aos.css';
 const Projects = () => {
   const navigate = useNavigate();
 
-  // Display exactly 3 apps and 3 website projects
-  const displayProjects = [
-    ...appProjects.apps.slice(0, 3).map((app) => ({ ...app, type: "app" })),
-    ...websiteProjects.projects.slice(0, 3).map((web) => ({ ...web, type: "web" })),
-  ];
+  // Use the curated RecentProjects.json, sorted by id ascending (1, 2, 3…)
+  const displayProjects = [...recentProjects].sort((a, b) => a.id - b.id);
 
   useEffect(() => {
     AOS.init({
@@ -167,9 +163,8 @@ const Projects = () => {
                     ))}
                   </ul>
 
-                  {/* Detail Button */}
-                  <button
-                    onClick={() => navigate(`/project/${project.type}/${project.id}`)}
+                    <button
+                      onClick={() => navigate(`/project/${project.type}/${project.id}`, { state: { project } })}
                     className="w-full py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
                     style={{
                       background: `linear-gradient(135deg, ${colors.gradients.goldGlow[0]}, ${colors.gradients.goldGlow[1]})`,

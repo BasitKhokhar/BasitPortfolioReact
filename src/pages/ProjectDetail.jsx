@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import colors from "../themes/colors";
 import appProjects from "../data/AppProjects.json";
@@ -9,11 +9,21 @@ import { getImageUrl } from "../utils/imageImporter";
 const ProjectDetail = () => {
     const { type, id } = useParams();
     const navigate = useNavigate();
+    const location = useLocation();
     const [project, setProject] = useState(null);
     const [imageSliderIndex, setImageSliderIndex] = useState(0);
     const [screenshotSliderIndex, setScreenshotSliderIndex] = useState(0);
 
     useEffect(() => {
+        // If project data is passed via router state, use it immediately
+        if (location.state && location.state.project) {
+            setProject(location.state.project);
+            setImageSliderIndex(0);
+            setScreenshotSliderIndex(0);
+            window.scrollTo(0, 0);
+            return;
+        }
+
         let foundProject = null;
         const projectId = parseInt(id);
 
@@ -131,7 +141,7 @@ const ProjectDetail = () => {
 
                             {/* Title */}
                             <h1
-                                className="text-4xl lg:text-5xl font-extrabold mb-6"
+                                className="text-3xl lg:text-3xl font-extrabold mb-6"
                                 style={{
                                     background: `linear-gradient(90deg, ${colors.primary}, ${colors.gradients.warmGold[1]})`,
                                     WebkitBackgroundClip: "text",
@@ -355,26 +365,42 @@ const ProjectDetail = () => {
                                         <span>📸</span> Screenshots
                                     </h3>
 
-                                    <div
-                                        className={`relative rounded-3xl overflow-hidden mb-6 group shadow-2xl ${screenshotOrientation === "portrait" ? "max-w-[280px] mx-auto" : "w-full"
-                                            }`}
-                                        style={{
-                                            background: `rgba(0,0,0,0.3)`,
-                                            border: `1px solid ${colors.primary}30`,
-                                            aspectRatio: screenshotOrientation === "portrait" ? "9/19" : "16/9",
-                                        }}
-                                    >
-                                        {/* Main Screenshot */}
-                                        <img
-                                            src={getImageUrl(project.screenshots[screenshotSliderIndex])}
-                                            alt={`App Screenshot ${screenshotSliderIndex + 1}`}
-                                            className="w-full h-full object-cover"
-                                        />
+                                    {/* Screenshot Display Wrapper */}
+                                    <div className={`relative mb-6 group ${screenshotOrientation === "portrait" ? "max-w-[280px] mx-auto" : "w-full"}`}>
+                                        
+                                        {/* Inner wrapper for image cropping */}
+                                        <div
+                                            className="relative rounded-3xl overflow-hidden shadow-2xl w-full"
+                                            style={{
+                                                background: `rgba(0,0,0,0.3)`,
+                                                border: `1px solid ${colors.primary}30`,
+                                                aspectRatio: screenshotOrientation === "portrait" ? "9/19" : "16/9",
+                                            }}
+                                        >
+                                            {/* Main Screenshot */}
+                                            <img
+                                                src={getImageUrl(project.screenshots[screenshotSliderIndex])}
+                                                alt={`App Screenshot ${screenshotSliderIndex + 1}`}
+                                                className="w-full h-full object-cover"
+                                            />
 
-                                        {/* Navigation Buttons */}
+                                            {/* Screenshot Counter */}
+                                            <div
+                                                className="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full text-sm font-bold shadow-lg pointer-events-none"
+                                                style={{
+                                                    background: `${colors.primary}dd`,
+                                                    color: colors.background,
+                                                    backdropFilter: "blur(5px)",
+                                                }}
+                                            >
+                                                {screenshotSliderIndex + 1} / {project.screenshots.length}
+                                            </div>
+                                        </div>
+
+                                        {/* Navigation Buttons (Placed outside the image container) */}
                                         <button
                                             onClick={prevScreenshot}
-                                            className={`absolute ${screenshotOrientation === "portrait" ? "-left-14" : "left-4"} top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-all active:scale-90 z-10 shadow-lg`}
+                                            className={`absolute ${screenshotOrientation === "portrait" ? "-left-12 md:-left-16" : "left-2 md:left-4"} top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full opacity-80 hover:opacity-100 transition-all active:scale-90 z-10 shadow-lg`}
                                             style={{
                                                 background: colors.primary,
                                                 color: colors.background,
@@ -384,7 +410,7 @@ const ProjectDetail = () => {
                                         </button>
                                         <button
                                             onClick={nextScreenshot}
-                                            className={`absolute ${screenshotOrientation === "portrait" ? "-right-14" : "right-4"} top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-all active:scale-90 z-10 shadow-lg`}
+                                            className={`absolute ${screenshotOrientation === "portrait" ? "-right-12 md:-right-16" : "right-2 md:right-4"} top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full opacity-80 hover:opacity-100 transition-all active:scale-90 z-10 shadow-lg`}
                                             style={{
                                                 background: colors.primary,
                                                 color: colors.background,
@@ -392,18 +418,6 @@ const ProjectDetail = () => {
                                         >
                                             →
                                         </button>
-
-                                        {/* Screenshot Counter */}
-                                        <div
-                                            className="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full text-sm font-bold shadow-lg"
-                                            style={{
-                                                background: `${colors.primary}dd`,
-                                                color: colors.background,
-                                                backdropFilter: "blur(5px)",
-                                            }}
-                                        >
-                                            {screenshotSliderIndex + 1} / {project.screenshots.length}
-                                        </div>
                                     </div>
 
                                     {/* Screenshot Thumbnail Slider */}

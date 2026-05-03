@@ -85,7 +85,7 @@ const AllProjects = () => {
         {activeTab === "apps" && (
           <div className="animate-fadeIn">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {appProjects.apps.map((app) => (
+              {[...appProjects.apps].reverse().map((app) => (
                 <div
                   key={app.id}
                   className="rounded-2xl overflow-hidden transition-all hover:scale-105 hover:shadow-2xl"
@@ -177,7 +177,7 @@ const AllProjects = () => {
                 Featured Websites
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                {websiteProjects.projects.map((project) => (
+                {[...websiteProjects.projects].reverse().map((project) => (
                   <div
                     key={project.id}
                     className="rounded-2xl overflow-hidden transition-all hover:scale-105 hover:shadow-2xl"
@@ -279,7 +279,7 @@ const AllProjects = () => {
                   Full-Stack Projects
                 </h3>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  {websiteProjects.fullStackProjects.map((project) => (
+                  {[...websiteProjects.fullStackProjects].reverse().map((project) => (
                     <div
                       key={project.id}
                       className="rounded-2xl overflow-hidden transition-all hover:scale-105 cursor-pointer"

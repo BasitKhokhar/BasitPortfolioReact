@@ -1,44 +1,118 @@
 [
   {
     "id": 1,
-    "type": "app",
-    "title": "PicNova-AI Image Generator(Play Store)",
-    "description": "PicNova is a modern AI-powered photo editing mobile application built with React Native, featuring AI face enhancement, old photo restoration, AI avatar generation, secure authentication, push notifications, AdMob monetization, and a premium UI/UX experience optimized for Android devices.",
-    "image": "src/assets/images/picnova/picnova.jpg",
-    "screenshots": [
-      "src/assets/images/picnova/picnova1.jpeg",
-      "src/assets/images/picnova/picnova2.jpeg",
-      "src/assets/images/picnova/picnova3.jpeg",
-      "src/assets/images/picnova/picnova4.jpeg",
-      "src/assets/images/picnova/picnova5.jpeg",
-      "src/assets/images/picnova/picnova6.jpeg",
-      "src/assets/images/picnova/picnova7.jpeg"
-    ],
+    "type": "fullstack",
+    "title": "Basit Sanitary Store - Full Stack E-commerce",
+    "category": "E-Commerce",
+    "description": "Comprehensive full-stack e-commerce solution with advanced filtering, secure auth, and a robust admin dashboard.",
+    "image": "src/assets/images/BS1.PNG",
     "tags": [
-      "React Native",
-      "Google Login",
-      "AI Photo Editor",
-      "Push Notifications",
-      "AdMob",
-      "Expo",
-      "AI Avatars",
-      "Mobile App"
+      "React.js",
+      "Node.js",
+      "MySQL",
+      "Full Stack"
     ],
-    "descriptionPoints": [
-      "Secure authentication system with Email Login, Signup, and Google Sign-In integration.",
-      "Modern premium UI/UX with smooth mobile-first responsive design and animations.",
-      "AI face enhancement, image upscaling, and photo quality improvement tools.",
-      "Old photo restoration and black & white image colorization features.",
-      "AI avatar generation with multiple creative and professional styles.",
-      "Real-time push notifications and local system notification support.",
-      "Integrated AdMob monetization system with rewarded and banner ads.",
-      "Feature preview screens with sample images and reusable enhancement modal system.",
-      "Optimized React Native + Expo architecture for high performance on Android devices.",
-      "Scalable full-stack ready structure designed for Play Store production deployment."
+    "features": [
+      "End-to-end e-commerce flow with cart and checkout.",
+      "Advanced admin panel for sales analytics.",
+      "REST API-driven architecture for fast processing."
     ]
   },
   {
     "id": 2,
+    "type": "app",
+    "title": "Tap & Win - Real-time Prize Game App",
+    "description": "An interactive, real-time lottery-style mobile game featuring animated reward mechanics and live socket communication.",
+    "image": "src/assets/images/lotteryappmain.jpg",
+    "tags": [
+      "Game Dev",
+      "Socket.io",
+      "React Native",
+      "Real-time"
+    ],
+    "descriptionPoints": [
+      "Real-time game mechanics via Socket.io.",
+      "Integrated mobile wallet support (JazzCash/EasyPaisa).",
+      "Vibrant animations and smooth UX."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "ShadowSuite - Cybersecurity Marketplace",
+    "subtitle": "Next.js Cybersecurity E-commerce Platform",
+    "category": "Cybersecurity",
+    "description": "ShadowSuite is a premium, secure cybersecurity marketplace built with Next.js and Tailwind CSS. It provides a professional environment for exploring and purchasing advanced penetration testing tools, featuring real-time WhatsApp integration and optimized product visibility.",
+    "image": "src/assets/images/shadowsuit.PNG",
+    "previewLink": "https://www.shadowsuit.shop/",
+    "tags": [
+      "Next.js",
+      "Cybersecurity",
+      "Tailwind CSS",
+      "WhatsApp API",
+      "E-commerce"
+    ],
+    "features": [
+      "Architected a secure marketplace for specialized cybersecurity software.",
+      "Integrated instant customer support via WhatsApp API.",
+      "Implemented SEO-friendly dynamic routing for product pages."
+    ],
+    "screenshots": [
+      "src/assets/images/lottery/home.png",
+      "src/assets/images/lottery/game-board.png",
+      "src/assets/images/lottery/wallet.png",
+      "src/assets/images/lottery/winner-popup.png",
+      "src/assets/images/lottery/history.png"
+    ],
+    "descriptionPoints": [
+      "Architected a secure marketplace for specialized cybersecurity software.",
+      "Integrated instant customer support via WhatsApp API.",
+      "Implemented SEO-friendly dynamic routing for product pages."
+    ]
+  },
+  {
+    "id": 4,
+    "type": "app",
+    "title": "BK SCANNER - BookKru Event Scanner App",
+    "description": "BK SCANNER is a professional ticket scanning and event management mobile application developed for BookKru, an online ticket booking and event management platform. The app enables fast QR/barcode ticket verification, real-time attendee tracking, offline local server support, and seamless cloud synchronization for smooth event operations.",
+    "image": "src/assets/images/bkscanner/Bkscannerbanner.jpg",
+    "screenshots": [
+      "src/assets/images/bkscanner/BkScanner1.jpeg",
+      "src/assets/images/bkscanner/BkScanner2.jpeg",
+      "src/assets/images/bkscanner/BkScanner3.jpeg",
+      "src/assets/images/bkscanner/BkScanner4.jpeg",
+      "src/assets/images/bkscanner/BkScanner5.jpeg",
+      "src/assets/images/bkscanner/BkScanner6.jpeg",
+      "src/assets/images/bkscanner/BkScanner7.jpeg",
+      "src/assets/images/bkscanner/BkScanner8.jpeg",
+      "src/assets/images/bkscanner/BkScanner9.jpeg",
+      "src/assets/images/bkscanner/BkScanner10.jpeg",
+      "src/assets/images/bkscanner/BkScanner11.jpeg"
+    ],
+    "tags": [
+      "React Native",
+      "QR Scanner",
+      "Barcode Scanner",
+      "BookKru",
+      "Event Management",
+      "Ticket Verification",
+      "Offline Support",
+      "Mobile App"
+    ],
+    "descriptionPoints": [
+      "Developed for BookKru event operations and online ticket management system.",
+      "Secure staff and admin authentication system for controlled event access.",
+      "Fast QR code and barcode ticket scanning with real-time validation.",
+      "Live attendee entry tracking and ticket verification management.",
+      "Offline local server backend support for venues with internet connectivity issues.",
+      "Automatic cloud synchronization between offline and online event data.",
+      "Duplicate ticket detection system for secure and fraud-free event entry.",
+      "Real-time attendee data storage and scan history management.",
+      "Multi-device scanning support optimized for high-traffic event environments.",
+      "Scalable React Native architecture designed for modern event management infrastructure."
+    ]
+  },
+  {
+    "id": 5,
     "type": "fullstack",
     "title": "HamdanPOS - Glass & Aluminum ERP System",
     "category": "Business Management",
@@ -77,91 +151,41 @@
     ]
   },
   {
-    "id": 3,
-    "type": "app",
-    "title": "Full-Stack E-commerce Mobile Solution",
-    "description": "A premium cross-platform e-commerce mobile application built with React Native, featuring secure Stripe payments and real-time backend synchronization.",
-    "image": "src/assets/images/BasitsanitaryAppmain.jpg",
-    "tags": [
-      "React Native",
-      "Stripe",
-      "Full Stack",
-      "Node.js"
-    ],
-    "descriptionPoints": [
-      "High-performance cross-platform app for Android & iOS.",
-      "Secure Stripe payment gateway integration.",
-      "Real-time product inventory management."
-    ]
-  },
-  {
-    "id": 5,
-    "title": "ShadowSuite - Cybersecurity Marketplace",
-    "subtitle": "Next.js Cybersecurity E-commerce Platform",
-    "category": "Cybersecurity",
-    "description": "ShadowSuite is a premium, secure cybersecurity marketplace built with Next.js and Tailwind CSS. It provides a professional environment for exploring and purchasing advanced penetration testing tools, featuring real-time WhatsApp integration and optimized product visibility.",
-    "image": "src/assets/images/shadowsuit.PNG",
-    "previewLink": "https://www.shadowsuit.shop/",
-    "tags": [
-      "Next.js",
-      "Cybersecurity",
-      "Tailwind CSS",
-      "WhatsApp API",
-      "E-commerce"
-    ],
-    "features": [
-      "Architected a secure marketplace for specialized cybersecurity software.",
-      "Integrated instant customer support via WhatsApp API.",
-      "Implemented SEO-friendly dynamic routing for product pages."
-    ],
-    "screenshots": [
-      "src/assets/images/lottery/home.png",
-      "src/assets/images/lottery/game-board.png",
-      "src/assets/images/lottery/wallet.png",
-      "src/assets/images/lottery/winner-popup.png",
-      "src/assets/images/lottery/history.png"
-    ],
-    "descriptionPoints": [
-      "Architected a secure marketplace for specialized cybersecurity software.",
-      "Integrated instant customer support via WhatsApp API.",
-      "Implemented SEO-friendly dynamic routing for product pages."
-    ]
-  },
-  {
     "id": 6,
-    "type": "fullstack",
-    "title": "Basit Sanitary Store - Full Stack E-commerce",
-    "category": "E-Commerce",
-    "description": "Comprehensive full-stack e-commerce solution with advanced filtering, secure auth, and a robust admin dashboard.",
-    "image": "src/assets/images/BS1.PNG",
-    "tags": [
-      "React.js",
-      "Node.js",
-      "MySQL",
-      "Full Stack"
-    ],
-    "features": [
-      "End-to-end e-commerce flow with cart and checkout.",
-      "Advanced admin panel for sales analytics.",
-      "REST API-driven architecture for fast processing."
-    ]
-  },
-  {
-    "id": 7,
     "type": "app",
-    "title": "Tap & Win - Real-time Prize Game App",
-    "description": "An interactive, real-time lottery-style mobile game featuring animated reward mechanics and live socket communication.",
-    "image": "src/assets/images/lotteryappmain.jpg",
+    "title": "PicNova-AI Image Generator(Play Store)",
+    "description": "PicNova is a modern AI-powered photo editing mobile application built with React Native, featuring AI face enhancement, old photo restoration, AI avatar generation, secure authentication, push notifications, AdMob monetization, and a premium UI/UX experience optimized for Android devices.",
+    "image": "src/assets/images/picnova/picnova.jpg",
+    "screenshots": [
+      "src/assets/images/picnova/picnova1.jpeg",
+      "src/assets/images/picnova/picnova2.jpeg",
+      "src/assets/images/picnova/picnova3.jpeg",
+      "src/assets/images/picnova/picnova4.jpeg",
+      "src/assets/images/picnova/picnova5.jpeg",
+      "src/assets/images/picnova/picnova6.jpeg",
+      "src/assets/images/picnova/picnova7.jpeg"
+    ],
     "tags": [
-      "Game Dev",
-      "Socket.io",
       "React Native",
-      "Real-time"
+      "Google Login",
+      "AI Photo Editor",
+      "Push Notifications",
+      "AdMob",
+      "Expo",
+      "AI Avatars",
+      "Mobile App"
     ],
     "descriptionPoints": [
-      "Real-time game mechanics via Socket.io.",
-      "Integrated mobile wallet support (JazzCash/EasyPaisa).",
-      "Vibrant animations and smooth UX."
+      "Secure authentication system with Email Login, Signup, and Google Sign-In integration.",
+      "Modern premium UI/UX with smooth mobile-first responsive design and animations.",
+      "AI face enhancement, image upscaling, and photo quality improvement tools.",
+      "Old photo restoration and black & white image colorization features.",
+      "AI avatar generation with multiple creative and professional styles.",
+      "Real-time push notifications and local system notification support.",
+      "Integrated AdMob monetization system with rewarded and banner ads.",
+      "Feature preview screens with sample images and reusable enhancement modal system.",
+      "Optimized React Native + Expo architecture for high performance on Android devices.",
+      "Scalable full-stack ready structure designed for Play Store production deployment."
     ]
   }
 ]

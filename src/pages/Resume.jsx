@@ -33,7 +33,7 @@ const Resume = () => {
     {
       date: "Aug 2023–Feb 2024",
       title: "Web Development Internship",
-      company: "CoderzPark",
+      company: "WebsCare",
       description: "Assisted in building responsive front-end components and integrating REST APIs.",
     },
   ];
@@ -55,7 +55,7 @@ const Resume = () => {
   }, []);
 
   const TimelineItem = ({ item, isLeft, index }) => (
-    <div 
+    <div
       className={`relative flex items-center justify-between mb-12 w-full ${isLeft ? "flex-row-reverse" : "flex-row"}`}
       data-aos={isLeft ? "fade-right" : "fade-left"}
       data-aos-delay={index * 100}
@@ -65,7 +65,7 @@ const Resume = () => {
 
       {/* Timeline Dot */}
       <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full z-20"
-        style={{ 
+        style={{
           background: colors.primary,
           boxShadow: `0 0 15px ${colors.primary}`,
           border: `2px solid ${colors.background}`
@@ -73,7 +73,7 @@ const Resume = () => {
       />
 
       {/* Card Content */}
-      <div 
+      <div
         className="w-full md:w-5/12 p-6 rounded-2xl relative group overflow-hidden"
         style={{
           background: `rgba(255, 255, 255, 0.03)`,
@@ -83,7 +83,7 @@ const Resume = () => {
         }}
       >
         {/* Glow Overlay */}
-        <div 
+        <div
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           style={{
             background: `radial-gradient(circle at center, ${colors.primary}15, transparent 70%)`
@@ -126,7 +126,7 @@ const Resume = () => {
       />
 
       <div className="container mx-auto px-6 relative z-10">
-        
+
         {/* ================= HEADING WITH SHADOW ================= */}
         <div className="relative text-center mb-24 overflow-hidden">
           {/* Shadow Text */}
@@ -143,7 +143,7 @@ const Resume = () => {
 
           {/* Foreground Heading */}
           <h2 className="relative text-5xl md:text-7xl font-black mb-6" data-aos="zoom-in">
-            <span style={{ 
+            <span style={{
               background: `linear-gradient(to right, #fff, ${colors.primary})`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent"
@@ -159,7 +159,7 @@ const Resume = () => {
 
         {/* Timeline Grid */}
         <div className="flex flex-col md:flex-row gap-16">
-          
+
           {/* Experience Column */}
           <div className="flex-1">
             <div className="flex items-center gap-4 mb-12" data-aos="fade-right">
@@ -171,30 +171,30 @@ const Resume = () => {
               </div>
               <h3 className="text-3xl font-bold text-white">Experience</h3>
             </div>
-            
+
             <div className="space-y-12 relative border-l-2 ml-6 md:ml-0 md:border-l-0" style={{ borderColor: `${colors.primary}30` }}>
-               {/* Mobile Timeline Line */}
-               <div className="absolute left-0 top-0 h-full w-[2px] md:hidden" style={{ background: `linear-gradient(to bottom, ${colors.primary}, transparent)` }} />
-               
-               {experience.map((item, idx) => (
-                 <div key={idx} className="pl-10 md:pl-0" data-aos="fade-up" data-aos-delay={idx * 150}>
-                    <div className="relative p-8 rounded-3xl group transition-all duration-500 hover:translate-y-[-5px]"
-                      style={{
-                        background: `linear-gradient(145deg, rgba(20,20,20,0.8), rgba(10,10,10,0.8))`,
-                        border: `1px solid ${colors.primary}20`,
-                        boxShadow: `0 10px 30px -15px rgba(0,0,0,0.5)`
-                      }}
-                    >
-                      <div className="absolute top-8 -left-[41px] w-5 h-5 rounded-full z-10 hidden md:block"
-                        style={{ background: colors.background, border: `3px solid ${colors.primary}`, boxShadow: `0 0 15px ${colors.primary}` }}
-                      />
-                      <span className="text-sm font-bold mb-3 block" style={{ color: colors.primary }}>{item.date}</span>
-                      <h4 className="text-xl font-bold text-white mb-1">{item.title}</h4>
-                      <p className="text-sm mb-4 font-medium opacity-80" style={{ color: colors.primary }}>{item.company}</p>
-                      <p className="text-sm leading-relaxed" style={{ color: colors.mutedText }}>{item.description}</p>
-                    </div>
-                 </div>
-               ))}
+              {/* Mobile Timeline Line */}
+              <div className="absolute left-0 top-0 h-full w-[2px] md:hidden" style={{ background: `linear-gradient(to bottom, ${colors.primary}, transparent)` }} />
+
+              {experience.map((item, idx) => (
+                <div key={idx} className="pl-10 md:pl-0" data-aos="fade-up" data-aos-delay={idx * 150}>
+                  <div className="relative p-8 rounded-3xl group transition-all duration-500 hover:translate-y-[-5px]"
+                    style={{
+                      background: `linear-gradient(145deg, rgba(20,20,20,0.8), rgba(10,10,10,0.8))`,
+                      border: `1px solid ${colors.primary}20`,
+                      boxShadow: `0 10px 30px -15px rgba(0,0,0,0.5)`
+                    }}
+                  >
+                    <div className="absolute top-8 -left-[41px] w-5 h-5 rounded-full z-10 hidden md:block"
+                      style={{ background: colors.background, border: `3px solid ${colors.primary}`, boxShadow: `0 0 15px ${colors.primary}` }}
+                    />
+                    <span className="text-sm font-bold mb-3 block" style={{ color: colors.primary }}>{item.date}</span>
+                    <h4 className="text-xl font-bold text-white mb-1">{item.title}</h4>
+                    <p className="text-sm mb-4 font-medium opacity-80" style={{ color: colors.primary }}>{item.company}</p>
+                    <p className="text-sm leading-relaxed" style={{ color: colors.mutedText }}>{item.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -209,29 +209,29 @@ const Resume = () => {
               </div>
               <h3 className="text-3xl font-bold text-white">Education</h3>
             </div>
-            
+
             <div className="space-y-12 relative border-l-2 ml-6 md:ml-0 md:border-l-0" style={{ borderColor: `${colors.primary}30` }}>
-               <div className="absolute left-0 top-0 h-full w-[2px] md:hidden" style={{ background: `linear-gradient(to bottom, ${colors.primary}, transparent)` }} />
-               
-               {education.map((item, idx) => (
-                 <div key={idx} className="pl-10 md:pl-0" data-aos="fade-up" data-aos-delay={idx * 150}>
-                    <div className="relative p-8 rounded-3xl group transition-all duration-500 hover:translate-y-[-5px]"
-                      style={{
-                        background: `linear-gradient(145deg, rgba(20,20,20,0.8), rgba(10,10,10,0.8))`,
-                        border: `1px solid ${colors.primary}20`,
-                        boxShadow: `0 10px 30px -15px rgba(0,0,0,0.5)`
-                      }}
-                    >
-                      <div className="absolute top-8 -left-[41px] w-5 h-5 rounded-full z-10 hidden md:block"
-                        style={{ background: colors.background, border: `3px solid ${colors.primary}`, boxShadow: `0 0 15px ${colors.primary}` }}
-                      />
-                      <span className="text-sm font-bold mb-3 block" style={{ color: colors.primary }}>{item.date}</span>
-                      <h4 className="text-xl font-bold text-white mb-1">{item.title}</h4>
-                      <p className="text-sm mb-4 font-medium opacity-80" style={{ color: colors.primary }}>{item.institution}</p>
-                      <p className="text-sm leading-relaxed" style={{ color: colors.mutedText }}>{item.description}</p>
-                    </div>
-                 </div>
-               ))}
+              <div className="absolute left-0 top-0 h-full w-[2px] md:hidden" style={{ background: `linear-gradient(to bottom, ${colors.primary}, transparent)` }} />
+
+              {education.map((item, idx) => (
+                <div key={idx} className="pl-10 md:pl-0" data-aos="fade-up" data-aos-delay={idx * 150}>
+                  <div className="relative p-8 rounded-3xl group transition-all duration-500 hover:translate-y-[-5px]"
+                    style={{
+                      background: `linear-gradient(145deg, rgba(20,20,20,0.8), rgba(10,10,10,0.8))`,
+                      border: `1px solid ${colors.primary}20`,
+                      boxShadow: `0 10px 30px -15px rgba(0,0,0,0.5)`
+                    }}
+                  >
+                    <div className="absolute top-8 -left-[41px] w-5 h-5 rounded-full z-10 hidden md:block"
+                      style={{ background: colors.background, border: `3px solid ${colors.primary}`, boxShadow: `0 0 15px ${colors.primary}` }}
+                    />
+                    <span className="text-sm font-bold mb-3 block" style={{ color: colors.primary }}>{item.date}</span>
+                    <h4 className="text-xl font-bold text-white mb-1">{item.title}</h4>
+                    <p className="text-sm mb-4 font-medium opacity-80" style={{ color: colors.primary }}>{item.institution}</p>
+                    <p className="text-sm leading-relaxed" style={{ color: colors.mutedText }}>{item.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

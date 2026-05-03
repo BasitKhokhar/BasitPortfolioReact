@@ -159,6 +159,20 @@ export const imageMap = {
   'src/assets/images/hamdanpos/hamdanposmain6.PNG': new URL('../assets/images/hamdanpos/hamdanposmain6.PNG', import.meta.url).href,
   'src/assets/images/hamdanpos/hamdanposmain7.PNG': new URL('../assets/images/hamdanpos/hamdanposmain7.PNG', import.meta.url).href,
 
+  // BK Scanner Screenshots
+  'src/assets/images/bkscanner/Bkscannerbanner.jpg': new URL('../assets/images/bkscanner/Bkscannerbanner.jpg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner1.jpeg': new URL('../assets/images/bkscanner/BkScanner1.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner2.jpeg': new URL('../assets/images/bkscanner/BkScanner2.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner3.jpeg': new URL('../assets/images/bkscanner/BkScanner3.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner4.jpeg': new URL('../assets/images/bkscanner/BkScanner4.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner5.jpeg': new URL('../assets/images/bkscanner/BkScanner5.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner6.jpeg': new URL('../assets/images/bkscanner/BkScanner6.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner7.jpeg': new URL('../assets/images/bkscanner/BkScanner7.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner8.jpeg': new URL('../assets/images/bkscanner/BkScanner8.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner9.jpeg': new URL('../assets/images/bkscanner/BkScanner9.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner10.jpeg': new URL('../assets/images/bkscanner/BkScanner10.jpeg', import.meta.url).href,
+  'src/assets/images/bkscanner/BkScanner11.jpeg': new URL('../assets/images/bkscanner/BkScanner11.jpeg', import.meta.url).href,
+
   // Videos
   'src/assets/videos/BasitSanitaryAppDashboard.mp4': new URL('../assets/videos/BasitSanitaryAppDashboard.mp4', import.meta.url).href,
   'src/assets/videos/abcd.mp4': new URL('../assets/videos/abcd.mp4', import.meta.url).href,

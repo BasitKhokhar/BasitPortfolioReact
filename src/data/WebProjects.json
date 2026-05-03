@@ -5,6 +5,290 @@
   "projects": [
     {
       "id": 1,
+      "title": "Elite Fashion Blog - Aesthetic Layout",
+      "category": "Fashion / Early Internship Project",
+      "image": "src/assets/images/web7.PNG",
+      "previewLink": "https://basitkhokhar.github.io/projectfashionblog/",
+      "tags": [
+        "Aesthetic UI",
+        "Blog CMS",
+        "Typography",
+        "Websacare Internship"
+      ],
+      "features": [
+        "Developed at the start of internship at Websacare as a frontend practice project.",
+        "Designed a modern fashion blog layout focused on visual storytelling.",
+        "Implemented elegant typography with proper whitespace management for readability.",
+        "Built a fully responsive design optimized for mobile fashion audiences.",
+        "Focused on UI aesthetics and content presentation structure."
+      ],
+      "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "Elite Fashion Blog is an aesthetic frontend project developed at the beginning of my internship at Websacare. It focuses on modern UI design, typography, and responsive layout techniques to create a visually appealing fashion blogging experience.",
+      "descriptionPoints": [
+        "Developed at the start of internship at Websacare as a frontend training project.",
+        "Designed a modern fashion blog layout focused on storytelling and aesthetics.",
+        "Implemented elegant typography for improved readability and design balance.",
+        "Created structured whitespace-based layout for better visual hierarchy.",
+        "Built a fully responsive interface for mobile and desktop users.",
+        "Focused on improving UI/UX design fundamentals during internship training.",
+        "Practiced layout structuring and visual composition techniques.",
+        "Strengthened frontend styling and design implementation skills."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Figma-to-Code Conversion - Design to React",
+      "category": "UI/UX to Code / Internship Project",
+      "image": "src/assets/images/web6.PNG",
+      "previewLink": "https://basitkhokhar.github.io/project-figma/",
+      "tags": [
+        "Figma",
+        "Responsive Code",
+        "Pixel Perfect",
+        "Websacare Internship"
+      ],
+      "features": [
+        "Developed during internship at Websacare as a UI-to-code conversion project.",
+        "Transformed complex Figma designs into high-quality semantic frontend code.",
+        "Focused on maintaining pixel-perfect visual accuracy and responsiveness.",
+        "Built clean and maintainable HTML/CSS architecture from design files.",
+        "Ensured cross-device compatibility and responsive layout behavior."
+      ],
+      "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "Figma-to-Code Conversion is a UI/UX implementation project developed during an internship at Websacare. It focuses on converting detailed Figma designs into responsive, pixel-perfect frontend code using semantic HTML and CSS while maintaining design accuracy and structure.",
+      "descriptionPoints": [
+        "Developed during internship at Websacare as a UI-to-code conversion task.",
+        "Converted complex Figma designs into structured frontend code.",
+        "Maintained pixel-perfect accuracy between design and implementation.",
+        "Built responsive layouts using clean HTML and CSS practices.",
+        "Focused on semantic structure and maintainable code architecture.",
+        "Ensured consistency across different screen sizes and devices.",
+        "Improved UI development and design interpretation skills.",
+        "Practiced real-world design-to-development workflow during internship."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Modern Admin Dashboard - Frontend Framework",
+      "category": "Dashboard / Internship Project",
+      "image": "src/assets/images/web5.PNG",
+      "previewLink": "https://basitadminpanel.netlify.app/",
+      "tags": [
+        "React.js",
+        "Tailwind CSS",
+        "Data Visualization",
+        "Websacare Internship"
+      ],
+      "features": [
+        "Developed during internship at Websacare as a frontend dashboard project.",
+        "Built a responsive admin panel with modern data visualization components.",
+        "Designed a clean and modular UI suitable for enterprise-level applications.",
+        "Implemented optimized state management using React.js.",
+        "Focused on performance, scalability, and reusable component architecture."
+      ],
+      "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "Modern Admin Dashboard is a React.js frontend framework developed during an internship at Websacare. It focuses on building scalable and responsive admin interfaces with clean UI design and data visualization components for enterprise-level applications.",
+      "descriptionPoints": [
+        "Developed during internship at Websacare as a frontend dashboard system.",
+        "Built a responsive admin panel with modern UI components.",
+        "Integrated data visualization elements for better analytics representation.",
+        "Designed a modular and reusable React.js component structure.",
+        "Optimized performance using efficient state management techniques.",
+        "Focused on enterprise-level UI/UX design principles.",
+        "Improved frontend development skills in dashboard and admin systems.",
+        "Practiced real-world scalable UI architecture during internship training."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "IU University Clone - Academic Landing Page",
+      "category": "Education / Internship Project",
+      "image": "src/assets/images/web4.PNG",
+      "previewLink": "https://basitkhokhar.github.io/second-project/",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Cloning",
+        "Websacare Internship"
+      ],
+      "features": [
+        "Developed during internship at Websacare as a frontend training project.",
+        "Pixel-perfect recreation of a modern university website layout.",
+        "Designed structured sections for courses, admissions, and campus life.",
+        "Implemented clean and responsive UI using HTML, CSS, and JavaScript.",
+        "Focused on institutional branding, readability, and layout accuracy."
+      ],
+      "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "IU University Clone is an academic landing page developed during an internship at Websacare. The project focuses on replicating a modern university website with accurate UI structure, educational sections, and responsive frontend design using core web technologies.",
+      "descriptionPoints": [
+        "Developed during internship at Websacare as a frontend development task.",
+        "Built a pixel-perfect clone of a modern university website.",
+        "Structured sections for academic programs, admissions, and campus details.",
+        "Implemented responsive design using HTML, CSS, and JavaScript.",
+        "Focused on improving frontend development and UI replication skills.",
+        "Ensured clean layout consistency and professional institutional branding.",
+        "Practiced real-world UI cloning and frontend implementation techniques.",
+        "Strengthened understanding of responsive web design and structure alignment."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Royal Hotel - Luxury Hospitality Website",
+      "category": "Hotel / Frontend Practice Project",
+      "image": "src/assets/images/web3.PNG",
+      "previewLink": "https://basitsroyalhotel.netlify.app/",
+      "tags": [
+        "UI/UX Design",
+        "Hospitality",
+        "CSS Animations",
+        "Frontend Practice"
+      ],
+      "features": [
+        "Developed as a frontend practice project to strengthen UI/UX and web design skills.",
+        "Designed a premium hotel landing page showcasing luxury accommodations.",
+        "Created elegant room category sections with visually appealing layouts.",
+        "Implemented smooth UI interactions and CSS-based animations.",
+        "Focused on hospitality branding and modern web presentation techniques."
+      ],
+      "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "Royal Hotel is a luxury hospitality website developed as a frontend practice project. It focuses on elegant UI design, smooth animations, and a premium visual experience to showcase hotel rooms, services, and booking flow concepts.",
+      "descriptionPoints": [
+        "Developed as a frontend practice project to improve UI/UX and CSS skills.",
+        "Built a premium hotel landing page showcasing luxury hospitality design.",
+        "Designed elegant room categories with modern layout structure.",
+        "Implemented smooth CSS animations for enhanced visual experience.",
+        "Focused on branding and storytelling for hospitality presentation.",
+        "Created responsive layout optimized for desktop and mobile devices.",
+        "Improved frontend development skills using real-world hospitality concept.",
+        "Demonstrated ability to design visually appealing and conversion-focused websites."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "HealthHub - Healthcare Consulting Portal",
+      "category": "Medical / University Semester Project",
+      "image": "src/assets/images/web1.PNG",
+      "previewLink": "https://basithealthhub.netlify.app/",
+      "tags": [
+        "React UI",
+        "Healthcare",
+        "Responsive Design",
+        "JavaScript",
+        "Semester Project"
+      ],
+      "features": [
+        "Developed as a university semester project focused on healthcare web solutions.",
+        "Designed a professional medical-themed interface for healthcare consultants.",
+        "Built a responsive and accessible UI optimized for all screen sizes.",
+        "Focused on patient-centric UX with clean and readable clinic profiles.",
+        "Implemented structured layout for medical services and consultation sections."
+      ],
+      "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "HealthHub is a healthcare consulting portal developed as a university semester project. It provides a clean, professional, and patient-friendly interface designed for medical practitioners and clinics, focusing on usability, accessibility, and responsive design.",
+      "descriptionPoints": [
+        "Developed as a university semester project in the healthcare domain.",
+        "Designed a professional and modern medical UI using React-based components.",
+        "Optimized for high accessibility standards and mobile responsiveness.",
+        "Focused on patient-centric experience with simple and readable layouts.",
+        "Created structured sections for doctors, clinics, and consultation services.",
+        "Implemented clean navigation and user-friendly interface design principles.",
+        "Ensured responsive performance across desktop, tablet, and mobile devices.",
+        "Demonstrated frontend development skills in a real-world healthcare scenario."
+      ]
+    },
+    {
+      "id": 7,
+      "title": "AutoCare Service Hub - Automobile Landing Page",
+      "category": "Automobile / University Project",
+      "image": "src/assets/images/web2.PNG",
+      "previewLink": "https://autocarehub.netlify.app/",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "Landing Page",
+        "UI Design",
+        "Semester Project"
+      ],
+      "features": [
+        "Developed as a university semester project for automobile service businesses.",
+        "Designed a modern automobile landing page focused on user engagement and conversions.",
+        "Implemented interactive service sections and responsive contact forms.",
+        "Optimized UI layout and asset loading for better website performance."
+      ],
+      "screenshots": [
+        "src/assets/images/lottery/home.png",
+        "src/assets/images/lottery/game-board.png"
+      ],
+      "description": "AutoCare Service Hub is a responsive automobile service landing page developed as a university semester project. The website focuses on modern UI/UX design, service presentation, customer engagement, and performance optimization for automobile businesses.",
+      "descriptionPoints": [
+        "Developed as a university semester project focused on automobile business web solutions.",
+        "Designed a modern and responsive landing page using HTML5 and CSS3.",
+        "Created strategic service sections to improve customer engagement and conversions.",
+        "Implemented interactive contact and inquiry forms for service booking workflows.",
+        "Optimized website performance with clean layouts and lightweight asset management.",
+        "Focused on professional UI/UX design principles for better usability and accessibility.",
+        "Built a mobile-responsive interface compatible across desktop, tablet, and mobile devices.",
+        "Designed as a practical front-end project demonstrating responsive web development skills."
+      ]
+    },
+    {
+      "id": 8,
+      "title": "ElectroPak – Smart Electronics Hub",
+      "category": "E-Commerce / Education",
+      "image": "src/assets/images/electropakweb.PNG",
+      "previewLink": "https://electro-pak-web.vercel.app/",
+      "tags": [
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "MySQL",
+        "Full Stack",
+        "University Project"
+      ],
+      "features": [
+        "Developed as a university project for engineering and electronics students.",
+        "Built a scalable full-stack marketplace for electronic and engineering components.",
+        "Engineered a responsive React.js and Tailwind CSS frontend interface.",
+        "Developed a secure REST API backend using Node.js and Express.js.",
+        "Integrated MySQL database and Firebase services for real-time data handling."
+      ],
+      "screenshots": [
+        "src/assets/images/electropak/web-home.png",
+        "src/assets/images/electropak/web-products.png"
+      ],
+      "description": "ElectroPak is a full-stack electronics marketplace platform developed as a university project for engineering students. The platform provides a modern web-based solution for browsing, managing, and purchasing electronic components through a responsive React frontend and secure Node.js backend architecture.",
+      "descriptionPoints": [
+        "Developed as a university project focused on smart electronics and engineering solutions.",
+        "Designed a scalable full-stack marketplace for electronic and engineering products.",
+        "Built a responsive and modern frontend using React.js and Tailwind CSS.",
+        "Developed secure RESTful APIs using Node.js and Express.js backend architecture.",
+        "Integrated MySQL database and Firebase services for efficient real-time data management.",
+        "Optimized the platform for responsive performance across desktop and mobile devices.",
+        "Implemented product browsing, category management, and dynamic content rendering.",
+        "Focused on clean UI/UX design principles for improved user experience and accessibility."
+      ]
+    },
+    {
+      "id": 9,
       "title": "ShadowSuite - Cybersecurity Marketplace",
       "subtitle": "Next.js Cybersecurity E-commerce Platform",
       "category": "Cybersecurity",
@@ -34,229 +318,6 @@
         "Architected a secure marketplace for specialized cybersecurity software.",
         "Integrated instant customer support via WhatsApp API.",
         "Implemented SEO-friendly dynamic routing for product pages."
-      ]
-    },
-    {
-      "id": 2,
-      "title": "ElectroPak – Smart Electronics Hub",
-      "category": "E-Commerce / Education",
-      "image": "src/assets/images/electropakweb.PNG",
-      "previewLink": "https://electro-pak-web.vercel.app/",
-      "tags": [
-        "React.js",
-        "Tailwind CSS",
-        "Node.js",
-        "MySQL",
-        "Full Stack"
-      ],
-      "features": [
-        "Developed a scalable full-stack marketplace for engineering components.",
-        "Engineered a mobile-responsive UI with React.js and Tailwind CSS.",
-        "Built a robust REST API backend using Node.js and Express.",
-        "Integrated real-time data sync with MySQL and Firebase services."
-      ],
-      "screenshots": [
-        "src/assets/images/electropak/web-home.png",
-        "src/assets/images/electropak/web-products.png"
-      ],
-      "description": "A comprehensive full-stack electronics marketplace for university students, built with a secure Node.js backend and a highly responsive React frontend.",
-      "descriptionPoints": [
-        "Developed a scalable full-stack marketplace for engineering components.",
-        "Engineered a mobile-responsive UI with React.js and Tailwind CSS.",
-        "Built a robust REST API backend using Node.js and Express.",
-        "Integrated real-time data sync with MySQL and Firebase services."
-      ]
-    },
-    {
-      "id": 3,
-      "title": "HealthHub - Healthcare Consulting Portal",
-      "category": "Medical",
-      "image": "src/assets/images/web1.PNG",
-      "previewLink": "https://basithealthhub.netlify.app/",
-      "tags": [
-        "React UI",
-        "Healthcare",
-        "Responsive Design",
-        "JavaScript"
-      ],
-      "features": [
-        "Designed a professional medical-themed interface for consultants.",
-        "Optimized for high accessibility and mobile responsiveness.",
-        "Focused on patient-centric UX and readable clinic profiles."
-      ],
-      "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png"
-      ],
-      "description": "A professional healthcare consulting portal designed for medical practitioners, featuring patient-centric UX and optimized accessibility.",
-      "descriptionPoints": [
-        "Designed a professional medical-themed interface for consultants.",
-        "Optimized for high accessibility and mobile responsiveness.",
-        "Focused on patient-centric UX and readable clinic profiles."
-      ]
-    },
-    {
-      "id": 4,
-      "title": "AutoCare Service Hub - Automobile Landing Page",
-      "category": "Automobile",
-      "image": "src/assets/images/web2.PNG",
-      "previewLink": "https://autocarehub.netlify.app/",
-      "tags": [
-        "HTML5",
-        "CSS3",
-        "Landing Page",
-        "UI Design"
-      ],
-      "features": [
-        "Strategic automobile service landing page for higher conversions.",
-        "Interactive service sections and intuitive contact forms.",
-        "Modern aesthetic with performance-optimized asset loading."
-      ],
-      "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png"
-      ],
-      "description": "A high-conversion automobile service landing page with interactive elements, intuitive booking forms, and modern performance-optimized aesthetics.",
-      "descriptionPoints": [
-        "Strategic automobile service landing page for higher conversions.",
-        "Interactive service sections and intuitive contact forms.",
-        "Modern aesthetic with performance-optimized asset loading."
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Royal Hotel - Luxury Hospitality Website",
-      "category": "Hotel",
-      "image": "src/assets/images/web3.PNG",
-      "previewLink": "https://basitsroyalhotel.netlify.app/",
-      "tags": [
-        "UI/UX Design",
-        "Hospitality",
-        "CSS Animations"
-      ],
-      "features": [
-        "Premium hotel landing page showcasing luxury accommodations.",
-        "Elegant room categories and seamless booking call-to-actions.",
-        "Aesthetic UI focused on hospitality brand storytelling."
-      ],
-      "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png"
-      ],
-      "description": "A premium luxury hospitality website showcasing elegant accommodations, seamless booking flows, and compelling brand storytelling.",
-      "descriptionPoints": [
-        "Premium hotel landing page showcasing luxury accommodations.",
-        "Elegant room categories and seamless booking call-to-actions.",
-        "Aesthetic UI focused on hospitality brand storytelling."
-      ]
-    },
-    {
-      "id": 6,
-      "title": "IU University Clone - Academic Landing Page",
-      "category": "Education",
-      "image": "src/assets/images/web4.PNG",
-      "previewLink": "https://basitkhokhar.github.io/second-project/",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Cloning"
-      ],
-      "features": [
-        "Pixel-perfect recreation of a modern university website.",
-        "Comprehensive sections for courses, admissions, and campus life.",
-        "Optimized for readability and institutional branding."
-      ],
-      "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png"
-      ],
-      "description": "A complete clone of a modern university website, meticulously recreating academic structures, course catalogs, and admission portals.",
-      "descriptionPoints": [
-        "Pixel-perfect recreation of a modern university website.",
-        "Comprehensive sections for courses, admissions, and campus life.",
-        "Optimized for readability and institutional branding."
-      ]
-    },
-    {
-      "id": 7,
-      "title": "Modern Admin Dashboard - Frontend Framework",
-      "category": "Dashboard",
-      "image": "src/assets/images/web5.PNG",
-      "previewLink": "https://basitadminpanel.netlify.app/",
-      "tags": [
-        "React.js",
-        "Tailwind CSS",
-        "Data Visualization"
-      ],
-      "features": [
-        "Responsive admin panel with modern data visualization components.",
-        "Clean, modular UI design for enterprise-level management.",
-        "Optimized performance with React state management."
-      ],
-      "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png"
-      ],
-      "description": "A modular React.js frontend framework for enterprise-level admin dashboards, featuring advanced data visualization and clean UI design.",
-      "descriptionPoints": [
-        "Responsive admin panel with modern data visualization components.",
-        "Clean, modular UI design for enterprise-level management.",
-        "Optimized performance with React state management."
-      ]
-    },
-    {
-      "id": 8,
-      "title": "Figma-to-Code Conversion - Design to React",
-      "category": "UI/UX to Code",
-      "image": "src/assets/images/web6.PNG",
-      "previewLink": "https://basitkhokhar.github.io/project-figma/",
-      "tags": [
-        "Figma",
-        "Responsive Code",
-        "Pixel Perfect"
-      ],
-      "features": [
-        "Transformed complex Figma designs into high-quality semantic code.",
-        "Focused on maintaining visual integrity and responsive flow.",
-        "Clean, maintainable HTML/CSS architecture."
-      ],
-      "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png"
-      ],
-      "description": "A pixel-perfect Figma to React conversion project focusing on semantic HTML/CSS, maintaining strict visual integrity and responsive flow.",
-      "descriptionPoints": [
-        "Transformed complex Figma designs into high-quality semantic code.",
-        "Focused on maintaining visual integrity and responsive flow.",
-        "Clean, maintainable HTML/CSS architecture."
-      ]
-    },
-    {
-      "id": 9,
-      "title": "Elite Fashion Blog - Aesthetic Layout",
-      "category": "Fashion",
-      "image": "src/assets/images/web7.PNG",
-      "previewLink": "https://basitkhokhar.github.io/projectfashionblog/",
-      "tags": [
-        "Aesthetic UI",
-        "Blog CMS",
-        "Typography"
-      ],
-      "features": [
-        "Modern fashion blog layout with a focus on visual storytelling.",
-        "Elegant typography and whitespace management for readability.",
-        "Fully responsive design for mobile fashion enthusiasts."
-      ],
-      "screenshots": [
-        "src/assets/images/lottery/home.png",
-        "src/assets/images/lottery/game-board.png"
-      ],
-      "description": "An aesthetically pleasing modern fashion blog layout designed with elegant typography, structured whitespace, and mobile-responsive storytelling.",
-      "descriptionPoints": [
-        "Modern fashion blog layout with a focus on visual storytelling.",
-        "Elegant typography and whitespace management for readability.",
-        "Fully responsive design for mobile fashion enthusiasts."
       ]
     }
   ],

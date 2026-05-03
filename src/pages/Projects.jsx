@@ -11,8 +11,8 @@ import 'aos/dist/aos.css';
 const Projects = () => {
   const navigate = useNavigate();
 
-  // Use the curated RecentProjects.json, sorted by id ascending (1, 2, 3…)
-  const displayProjects = [...recentProjects].sort((a, b) => a.id - b.id);
+  // Use the curated RecentProjects.json, reversed to show latest projects first
+  const displayProjects = [...recentProjects].reverse();
 
   useEffect(() => {
     AOS.init({

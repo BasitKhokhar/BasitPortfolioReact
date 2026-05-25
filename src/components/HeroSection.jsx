@@ -30,7 +30,7 @@ const HeroSection = () => {
     typeWriter("Hello!", setSubheading, 150, () => {
       typeWriter("I'm Talha Basit", setName, 150, () => {
         typeWriter(
-          "Senior Full Stack Web & Mobile App Developer",
+          "Full Stack Web & Mobile App Developer",
           setJob,
           150
         );

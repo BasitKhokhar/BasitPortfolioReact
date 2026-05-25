@@ -26,9 +26,9 @@ const Resume = () => {
   const experience = [
     {
       date: "2024–Present",
-      title: "Fullstack Developer",
+      title: "Fullstack App Developer",
       company: "Coderzpark",
-      description: "Developing scalable web and mobile applications using React, Node.js, and React Native.",
+      description: "Developing scalable Android & iOS applications using React Native, Expo, Node.js, Firebase.",
     },
     {
       date: "Aug 2023–Feb 2024",

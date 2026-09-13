@@ -7,7 +7,7 @@
       "title": "Full-Stack E-commerce Mobile Solution - Final Year Project",
       "description": "A premium cross-platform e-commerce mobile application developed as a university Final Year Project for the sanitary and hardware industry. The platform provides a complete digital shopping experience with secure payments, real-time inventory management, order tracking, and admin management features.",
       "image": "src/assets/images/BasitsanitaryAppmain.jpg",
-      "apklink": "src/assets/basitsanitaryapp.apk",
+      "apklink": "https://vps.basittech.work/ImagesBucket/Apps/BasitSanitaryApp.apk",
       "screenshots": [
         "src/assets/images/basitsanitaryapp/1.png",
         "src/assets/images/basitsanitaryapp/2.png",
@@ -256,10 +256,10 @@
     {
       "id": 6,
       "type": "app",
-      "title": "PicNova-AI Image Generator(Play Store)",
+      "title": "PicNova-AI Image Generator(On Play Store)",
       "description": "PicNova is a newly launched AI-powered photo editing mobile application on the Google Play Store, built with React Native and featuring AI face enhancement, old photo restoration, AI avatar generation, secure authentication, push notifications, AdMob monetization, and a premium modern UI/UX optimized for Android devices.",
       "image": "src/assets/images/picnova/picnova.jpg",
-      "apklink": "src/assets/picnova.apk",
+      "apklink": "https://play.google.com/store/apps/details?id=com.basitkhokhar.picnovaapp",
       "screenshots": [
         "src/assets/images/picnova/picnova1.jpeg",
         "src/assets/images/picnova/picnova2.jpeg",

@@ -232,9 +232,17 @@ const ProjectDetail = () => {
                                 {project.apklink && (
                                     <button
                                         onClick={() => {
+                                            const isExternal = /^https?:\/\//i.test(project.apklink);
                                             const link = document.createElement("a");
                                             link.href = getImageUrl(project.apklink);
-                                            link.download = `${project.title}.apk`;
+                                            // Cross-origin files ignore the download attribute, so let the
+                                            // browser handle the APK download in a new tab instead.
+                                            if (isExternal) {
+                                                link.target = "_blank";
+                                                link.rel = "noopener noreferrer";
+                                            } else {
+                                                link.download = `${project.title}.apk`;
+                                            }
                                             document.body.appendChild(link);
                                             link.click();
                                             document.body.removeChild(link);
